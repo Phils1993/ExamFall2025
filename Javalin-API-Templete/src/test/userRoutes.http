@@ -1,0 +1,58 @@
+### Test endpoint (no login required)
+GET {{url}}/auth/test/
+
+### Register a new user (default role = USER)
+POST {{url}}/auth/register/
+Content-Type: application/json
+
+{
+  "username": "Philip",
+  "password": "pass12345"
+}
+
+### Login as normal user (Philip)
+POST {{url}}/auth/login/
+Content-Type: application/json
+
+{
+  "username": "Philip",
+  "password": "pass12345"
+}
+
+> {% // for global use of JWT in endpoints
+    client.global.set("jwt_token", response.body.Token);
+    console.log("User JWT Token:", client.global.get("jwt_token"));
+%}
+
+### Login as admin (Admin)
+POST {{url}}/auth/login/
+Content-Type: application/json
+
+{
+  "username": "PhilipAdmin",
+  "password": "pass12345"
+}
+
+> {%
+    client.global.set("jwt_token", response.body.Token);
+    console.log("Admin JWT Token:", client.global.get("jwt_token"));
+%}
+
+### Protected endpoint (USER role required)
+GET {{url}}/protected/user_demo/
+Accept: application/json
+Authorization: Bearer {{jwt_token}}
+
+### Protected endpoint (ADMIN role required)
+GET {{url}}/protected/admin_demo/
+Accept: application/json
+Authorization: Bearer {{jwt_token}}
+
+### Add admin role to the currently logged‑in user
+POST {{url}}/auth/user/addrole/
+Content-Type: application/json
+Authorization: Bearer {{jwt_token}}
+
+{
+  "role": "admin"
+}

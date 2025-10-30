@@ -182,4 +182,3 @@ POST is used for creating new resources, while PUT is used for updating or repla
 Repository: ItemBookingAPIExamOkt-025
 
 User: phil1993
-
