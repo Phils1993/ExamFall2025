@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 > {% // for global use of JWT in endpoints
-    client.global.set("jwt_token", response.body.Token);
+    client.global.set("jwt_token", response.body.token);
     console.log("User JWT Token:", client.global.get("jwt_token"));
 %}
 
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 
 > {%
-    client.global.set("jwt_token", response.body.Token);
+    client.global.set("jwt_token", response.body.token);
     console.log("Admin JWT Token:", client.global.get("jwt_token"));
 %}
 

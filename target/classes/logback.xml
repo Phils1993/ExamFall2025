@@ -1,0 +1,43 @@
+<configuration>
+    <!-- Suppress noisy logs -->
+    <logger name="org.testcontainers" level="WARN"/>
+    <logger name="org.hibernate.SQL" level="WARN"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="WARN"/>
+    <logger name="org.hibernate.engine.jdbc.batch.internal.BatchingBatch" level="ERROR"/>
+    <logger name="docker" level="WARN"/>
+
+    <!-- Console Appender (for cloud/Kubernetes logs) -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Rolling File Appender (daily rotation, unlimited history) -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- No maxHistory means keep all rotated logs -->
+            <cleanHistoryOnStart>false</cleanHistoryOnStart>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Async wrapper for performance -->
+    <appender name="ASYNC_CONSOLE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT"/>
+    </appender>
+
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE"/>
+    </appender>
+
+    <!-- Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="ASYNC_CONSOLE"/>
+        <appender-ref ref="ASYNC_FILE"/>
+    </root>
+</configuration>

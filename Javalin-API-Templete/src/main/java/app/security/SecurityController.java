@@ -44,7 +44,7 @@ public class SecurityController implements ISecurityController {
                 String token = createToken(userDTO);
                 ObjectNode on = objectMapper
                         .createObjectNode()
-                        .put("Token", token)
+                        .put("token", token)
                         .put("username", userDTO.getUsername());
                 ctx.json(on).status(200);
             } catch (Exception e) {

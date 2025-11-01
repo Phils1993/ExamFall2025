@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Javalin-API-Templete/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/workflow.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ExamFall2025.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ExamFall2025.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/46e5306c-05b3-4588-b261-fd4358196d5e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/46e5306c-05b3-4588-b261-fd4358196d5e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/app/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/app/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/app/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/app/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/app/security/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/src/main/java/app/security/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/src/test/userRoutes.http" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/src/test/userRoutes.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Templete/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,6 +387,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.app.security.Main.executor": "Run",
+    "Application.src.main.java.Main.executor": "Run",
     "HTTP Request.userRoutes | Login as admin (Admin).executor": "Run",
     "HTTP Request.userRoutes | Login as normal user (Philip).executor": "Run",
     "HTTP Request.userRoutes | Register a new user (default role = USER).executor": "Run",
@@ -477,6 +482,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="src.main.java.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Main" />
+      <module name="ExamFall2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="userRoutes | Login as admin (Admin)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Javalin-API-Templete/src/test/userRoutes.http" executionIdentifier="Login as admin (Admin)" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -488,6 +506,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.src.main.java.Main" />
       <item itemvalue="Application.app.security.Main" />
       <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
       <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
@@ -495,6 +514,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.src.main.java.Main" />
         <item itemvalue="HTTP Request.userRoutes | Register a new user (default role = USER)" />
         <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
         <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
@@ -519,6 +539,7 @@
       <updated>1761826769529</updated>
       <workItem from="1761826770874" duration="1483000" />
       <workItem from="1761987963297" duration="1135000" />
+      <workItem from="1762000341452" duration="638000" />
     </task>
     <servers />
   </component>

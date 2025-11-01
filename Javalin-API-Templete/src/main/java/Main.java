@@ -1,3 +1,5 @@
+
+
 import app.config.ApplicationConfig;
 import app.config.HibernateConfig;
 import jakarta.persistence.EntityManagerFactory;

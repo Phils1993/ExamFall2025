@@ -2,7 +2,8 @@
 <module type="JAVA_MODULE" version="4">
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Javalin-API-Templete" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Javalin-API-Templete/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Javalin-API-Templete/src/main/resources" type="java-resource" />
     </content>
   </component>
 </module>
