@@ -30,7 +30,7 @@
         <configuration>
           <transformers>
             <transformer>
-              <mainClass>${project.groupId}.Main</mainClass>
+              <mainClass>app.Main</mainClass>
             </transformer>
           </transformers>
         </configuration>
