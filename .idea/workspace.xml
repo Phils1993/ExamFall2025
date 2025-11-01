@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Javalin-API-Template/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Template/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javalin-API-Template/target/app.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Template/target/app.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javalin-API-Template/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Template/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javalin-API-Template/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Template/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

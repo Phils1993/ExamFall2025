@@ -20,7 +20,7 @@ jobs:
           distribution: 'corretto'
 
       - name: Build with Maven
-        working-directory: ./ExamFall2025/Javalin-API-Template
+        working-directory: ./Javalin-API-Template
         env:
           DEPLOYED: ${{ secrets.DEPLOYED }}
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
