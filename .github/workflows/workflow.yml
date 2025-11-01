@@ -1,5 +1,5 @@
 # .github/workflows/workflow.yml
-name: CI/CD WORKFLOW for Hotel API
+name: CI/CD WORKFLOW for Exam fall 2025
 
 on:
   push:
@@ -20,6 +20,7 @@ jobs:
           distribution: 'corretto'
 
       - name: Build with Maven
+        working-directory: ./ExamFall2025/Javalin-API-Template
         env:
           DEPLOYED: ${{ secrets.DEPLOYED }}
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
