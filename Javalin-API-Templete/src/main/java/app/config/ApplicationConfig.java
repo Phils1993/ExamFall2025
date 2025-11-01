@@ -5,7 +5,6 @@ import app.security.SecurityController;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.javalin.Javalin;
-import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.config.JavalinConfig;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;

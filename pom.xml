@@ -175,7 +175,7 @@
                 <configuration>
                     <transformers>
                         <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                            <mainClass>Main</mainClass>
+                            <mainClass>${project.groupId}.Main</mainClass>
                         </transformer>
                     </transformers>
                 </configuration>
