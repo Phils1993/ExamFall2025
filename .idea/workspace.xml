@@ -5,48 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/dependency-reduced-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javalin-API-Templete/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/app.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/config/ApplicationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/config/HibernateConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/config/RoutesRegistry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/config/ServiceRegistry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/EksOFController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/IController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/daos/IDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/exceptions/ApiException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/exceptions/EntityNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/exceptions/NotAuthorizedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/exceptions/TokenCreationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/exceptions/TokenVerificationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/exceptions/ValidationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/mapper/eksOfMapperUse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/routes/EksForRoutes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/routes/Routes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/ISecurityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/ISecurityDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/ISecurityUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/Roles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/SecurityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/SecurityDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/security/SecurityRoutes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/services/EksForServiceLayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/services/ServiceAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/utils/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-app.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javalin-API-Template/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Javalin-API-Template/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,7 +360,7 @@
   &quot;isOnboardingCommentShown&quot;: true
 }</component>
   <component name="HttpClientSelectedEnvironments">
-    <file url="file://$PROJECT_DIR$/Javalin-API-Templete/src/test/userRoutes.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/Javalin-API-Template/src/test/userRoutes.http" environment="dev" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -413,41 +373,40 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.app.security.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.src.main.java.Main.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.userRoutes | Login as admin (Admin).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.userRoutes | Login as normal user (Philip).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.userRoutes | Register a new user (default role = USER).executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ExamFall2025 [clean,validate,compile...].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.app.security.Main.executor": "Run",
+    "Application.src.main.java.Main.executor": "Run",
+    "HTTP Request.userRoutes | Login as admin (Admin).executor": "Run",
+    "HTTP Request.userRoutes | Login as normal user (Philip).executor": "Run",
+    "HTTP Request.userRoutes | Register a new user (default role = USER).executor": "Run",
+    "Maven.ExamFall2025 [clean,validate,compile...].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rest.client.default.execution.environment": "dev",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025" />
@@ -559,7 +518,7 @@
       <updated>1761826769529</updated>
       <workItem from="1761826770874" duration="1483000" />
       <workItem from="1761987963297" duration="1135000" />
-      <workItem from="1762000341452" duration="1684000" />
+      <workItem from="1762000341452" duration="2401000" />
     </task>
     <servers />
   </component>
