@@ -1,5 +1,5 @@
 package app.Populator;
-
+/*
 import app.config.HibernateConfig;
 import app.entities.Guide;
 import app.entities.Trip;
@@ -10,7 +10,7 @@ import jakarta.persistence.EntityManagerFactory;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/*
+
 public class EksForPopulator {
 
     private final EntityManagerFactory emf;
@@ -118,3 +118,4 @@ public class EksForPopulator {
         System.out.println("Database populated successfully!");
     }
 }
+*/

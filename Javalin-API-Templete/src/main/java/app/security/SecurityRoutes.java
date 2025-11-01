@@ -8,7 +8,7 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 import static io.javalin.apibuilder.ApiBuilder.get;
 import static io.javalin.apibuilder.ApiBuilder.path;
 
-public class SecrurityRoutes {
+public class SecurityRoutes {
     private final SecurityController securityController = new SecurityController();
     private static final ObjectMapper jsonMapper = new Utils().getObjectMapper();
 
