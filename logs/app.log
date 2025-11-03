@@ -1,229 +1,80 @@
-2025-11-01 10:25:16 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
-2025-11-01 10:25:16 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
-2025-11-01 10:25:16 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-11-01 10:25:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
-2025-11-01 10:25:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
-2025-11-01 10:25:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
-2025-11-01 10:25:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2025-11-01 10:25:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
-2025-11-01 10:25:17 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-2025-11-01 10:25:18 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@bbb6f0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - Starting Javalin ...
-2025-11-01 10:25:19 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
-2025-11-01 10:25:19 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
-2025-11-01 10:25:19 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@12209826{/api/v1,null,AVAILABLE}
-2025-11-01 10:25:19 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@6c9bf3b5{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
-2025-11-01 10:25:19 [INFO] org.eclipse.jetty.server.Server - Started Server@7cc1f72c{STARTING}[11.0.24,sto=0] @4207ms
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - Javalin started in 264ms \o/
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/Javalin-API-Templete/target/classes/public/'
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
-2025-11-01 10:25:19 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 318 days old. Consider checking for a newer version.).
-2025-11-01 10:25:24 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+2025-11-03 13:47:55 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-03 13:47:55 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-03 13:47:56 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-03 13:47:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-03 13:47:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-03 13:47:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-03 13:47:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-03 13:47:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-03 13:47:57 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-03 13:47:59 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@37c7766e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-03 13:47:59 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-11-03 13:47:59 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@fddd7ae] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-03 13:49:00 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-03 13:49:00 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-03 13:49:01 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-03 13:49:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-03 13:49:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-03 13:49:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-03 13:49:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-03 13:49:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-03 13:49:03 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-03 13:49:04 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2dd178f3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-03 13:49:05 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
+2025-11-03 13:49:05 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-03 13:49:05 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@ee2ae9a{/api/v1,null,AVAILABLE}
+2025-11-03 13:49:05 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@1c00d406{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-03 13:49:05 [INFO] org.eclipse.jetty.server.Server - Started Server@85ab964{STARTING}[11.0.24,sto=0] @6650ms
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - Javalin started in 496ms \o/
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/Javalin-API-Template/target/classes/public/'
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-03 13:49:05 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 320 days old. Consider checking for a newer version.).
+2025-11-03 13:49:45 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
 Request: GET [/api/v1/index.html]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@7046c9fe
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"TuesoKXAgrsTuetOox513U", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Tue, 28 Oct 2025 07:30:00 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@2605dfc5
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=71649acb-89d9-4d50-a15d-fbe84f69b13f!ihn5N4En1xKsJajQWdrt2zNJCH0f2fErHDt+IETH2V0=; PGADMIN_LANGUAGE=en, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"7irNDBgqZes7irMli0kWn8", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Thu, 30 Oct 2025 12:18:30 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=71649acb-89d9-4d50-a15d-fbe84f69b13f!ihn5N4En1xKsJajQWdrt2zNJCH0f2fErHDt+IETH2V0=, PGADMIN_LANGUAGE=en}
     Body: 
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200 OK], execution took 25.41 ms
-    Headers: {Accept-Ranges=bytes, Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Last-Modified=Sat, 01 Nov 2025 09:24:39 GMT, Date=Sat, 01 Nov 2025 09:25:24 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=text/html;charset=null}
+Response: [304 Not Modified], execution took 34.36 ms
+    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"7irNDBgqZes7irMli0kWn8", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Mon, 03 Nov 2025 12:49:45 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
     No body was set
 ----------------------------------------------------------------------------------
-2025-11-01 10:25:24 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+2025-11-03 13:49:45 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
 Request: GET [/api/v1/]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5b51e9f5
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"TuesoKXAgrsTuetOox513U", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Tue, 28 Oct 2025 07:30:00 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@1c5da87e
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=71649acb-89d9-4d50-a15d-fbe84f69b13f!ihn5N4En1xKsJajQWdrt2zNJCH0f2fErHDt+IETH2V0=; PGADMIN_LANGUAGE=en, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"7irNDBgqZes7irMli0kWn8", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Thu, 30 Oct 2025 12:18:30 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=71649acb-89d9-4d50-a15d-fbe84f69b13f!ihn5N4En1xKsJajQWdrt2zNJCH0f2fErHDt+IETH2V0=, PGADMIN_LANGUAGE=en}
     Body: 
     QueryString: null
     QueryParams: {}
     FormParams: {}
-Response: [200 OK], execution took 175.02 ms
-    Headers: {Accept-Ranges=bytes, Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Last-Modified=Sat, 01 Nov 2025 09:24:39 GMT, Date=Sat, 01 Nov 2025 09:25:24 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=text/html;charset=null}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 10:25:29 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/index.html]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@ade5b2a
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"N1R1EcCalukN1R0i/4hJ7o", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 09:24:39 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [304 Not Modified], execution took 23.06 ms
-    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Sat, 01 Nov 2025 09:25:29 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 10:25:29 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@64c03d26
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"N1R1EcCalukN1R0i/4hJ7o", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 09:24:39 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [304 Not Modified], execution took 56.59 ms
-    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Sat, 01 Nov 2025 09:25:29 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 10:26:17 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/index.html]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@2fe590c2
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"N1R1EcCalukN1R0i/4hJ7o", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 09:24:39 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [304 Not Modified], execution took 11.08 ms
-    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Sat, 01 Nov 2025 09:26:17 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 10:26:17 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@21226b4e
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"N1R1EcCalukN1R0i/4hJ7o", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 09:24:39 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [304 Not Modified], execution took 26.19 ms
-    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Sat, 01 Nov 2025 09:26:17 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 10:29:11 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
-2025-11-01 10:29:11 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
-2025-11-01 10:29:12 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-11-01 10:29:12 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
-2025-11-01 10:29:12 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
-2025-11-01 10:29:12 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
-2025-11-01 10:29:12 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2025-11-01 10:29:12 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
-2025-11-01 10:29:14 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-2025-11-01 10:29:16 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@251c90f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - Starting Javalin ...
-2025-11-01 10:29:17 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
-2025-11-01 10:29:17 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
-2025-11-01 10:29:17 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6e321d9d{/api/v1,null,AVAILABLE}
-2025-11-01 10:29:17 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@2326180c{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
-2025-11-01 10:29:17 [INFO] org.eclipse.jetty.server.Server - Started Server@61d2f267{STARTING}[11.0.24,sto=0] @7487ms
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - Javalin started in 536ms \o/
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/Javalin-API-Templete/target/classes/public/'
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
-2025-11-01 10:29:17 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 318 days old. Consider checking for a newer version.).
-2025-11-01 10:29:20 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/index.html]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@75e06d77
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"N1R1EcCalukN1R0i/4hJ7o", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 09:24:39 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [304 Not Modified], execution took 24.38 ms
-    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Sat, 01 Nov 2025 09:29:19 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 10:29:20 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@61fdc0fa
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"N1R1EcCalukN1R0i/4hJ7o", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 09:24:39 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [304 Not Modified], execution took 212.10 ms
-    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"N1R1EcCalukN1R0i/4hJ7o", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Sat, 01 Nov 2025 09:29:19 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 13:44:32 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
-2025-11-01 13:44:32 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
-2025-11-01 13:44:32 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-2025-11-01 13:44:32 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
-2025-11-01 13:44:32 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
-2025-11-01 13:44:32 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
-2025-11-01 13:44:32 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
-2025-11-01 13:44:32 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
-2025-11-01 13:44:33 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-2025-11-01 13:44:34 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2c9306d3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
-2025-11-01 13:44:34 [INFO] io.javalin.Javalin - Starting Javalin ...
-2025-11-01 13:44:34 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
-2025-11-01 13:44:34 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
-2025-11-01 13:44:34 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@349312d5{/api/v1,null,AVAILABLE}
-2025-11-01 13:44:35 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@1f172892{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
-2025-11-01 13:44:35 [INFO] org.eclipse.jetty.server.Server - Started Server@23c7cb18{STARTING}[11.0.24,sto=0] @3903ms
-2025-11-01 13:44:35 [INFO] io.javalin.Javalin - Javalin started in 323ms \o/
-2025-11-01 13:44:35 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/target/classes/public/'
-2025-11-01 13:44:35 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
-2025-11-01 13:44:35 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 318 days old. Consider checking for a newer version.).
-2025-11-01 13:44:39 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/index.html]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@2a5ef3d9
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=7d187374-5cb0-42b3-832f-f08f7d0d93c9!UMzferBWbxfG0ey2/EyRVr3g2MXx6oBSlRLvUO2U3m0=; PGADMIN_LANGUAGE=en, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"b66R0CGQeGwb66QSh6KVOE", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 11:07:55 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=7d187374-5cb0-42b3-832f-f08f7d0d93c9!UMzferBWbxfG0ey2/EyRVr3g2MXx6oBSlRLvUO2U3m0=, PGADMIN_LANGUAGE=en}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [200 OK], execution took 25.31 ms
-    Headers: {Accept-Ranges=bytes, Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"QRJI0EWTGHAQRJJSnCdJ+Q", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Last-Modified=Thu, 30 Oct 2025 12:18:30 GMT, Date=Sat, 01 Nov 2025 12:44:39 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=text/html;charset=null}
-    No body was set
-----------------------------------------------------------------------------------
-2025-11-01 13:44:39 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
-Request: GET [/api/v1/]
-    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@16e0cf7d
-    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=7d187374-5cb0-42b3-832f-f08f7d0d93c9!UMzferBWbxfG0ey2/EyRVr3g2MXx6oBSlRLvUO2U3m0=; PGADMIN_LANGUAGE=en, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"b66R0CGQeGwb66QSh6KVOE", sec-ch-ua="Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Sat, 01 Nov 2025 11:07:55 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
-    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=7d187374-5cb0-42b3-832f-f08f7d0d93c9!UMzferBWbxfG0ey2/EyRVr3g2MXx6oBSlRLvUO2U3m0=, PGADMIN_LANGUAGE=en}
-    Body: 
-    QueryString: null
-    QueryParams: {}
-    FormParams: {}
-Response: [200 OK], execution took 112.43 ms
-    Headers: {Accept-Ranges=bytes, Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"QRJI0EWTGHAQRJJSnCdJ+Q", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Last-Modified=Thu, 30 Oct 2025 12:18:30 GMT, Date=Sat, 01 Nov 2025 12:44:39 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=text/html;charset=null}
+Response: [304 Not Modified], execution took 187.09 ms
+    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"7irNDBgqZes7irMli0kWn8", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Mon, 03 Nov 2025 12:49:45 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
     No body was set
 ----------------------------------------------------------------------------------
