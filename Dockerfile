@@ -5,7 +5,7 @@
  RUN apk update && apk add --no-cache curl
 
  # Copy the jar file into the image
- COPY Javalin-API-Template/target/app.jar /app.jar
+ COPY ExamFall2025/target/app.jar /app.jar
 
  # Expose the port your app runs on
  EXPOSE 7070
