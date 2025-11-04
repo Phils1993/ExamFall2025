@@ -7,6 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.io.Serial;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,8 +15,8 @@ import java.util.Set;
 @Getter
 @Setter
 @Table(name = "roles")
-@EqualsAndHashCode
-public class Role {
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+public class Role implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;

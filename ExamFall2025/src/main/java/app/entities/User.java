@@ -10,9 +10,6 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Purpose: To handle security in the API
- */
 @Entity
 @Table(name = "users")
 @NamedQueries(@NamedQuery(name = "User.deleteAllRows", query = "DELETE from User"))
@@ -20,6 +17,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 public class User implements Serializable {
 
@@ -34,6 +32,7 @@ public class User implements Serializable {
     @Basic(optional = false)
     @Column(name = "user_name", length = 25)
     @JsonProperty("username")
+    @EqualsAndHashCode.Include
     private String username;
 
     @Basic(optional = false)

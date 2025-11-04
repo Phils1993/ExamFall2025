@@ -79,7 +79,7 @@
             <version>${jackson.version}</version>
         </dependency>
 
-        <!-- Hibernate + PostgreSQL -->
+        <!-- Hibernate + PostgresSQL -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
