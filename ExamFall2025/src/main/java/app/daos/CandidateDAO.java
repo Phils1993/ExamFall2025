@@ -2,6 +2,7 @@ package app.daos;
 
 import app.entities.Candidate;
 import app.entities.CandidateSkill;
+import app.entities.CandidateSkillId;
 import app.entities.Skill;
 import app.enums.Category;
 import jakarta.persistence.EntityManager;
@@ -106,73 +107,69 @@ public class CandidateDAO implements ICandidateDAO {
     @Override
     public Candidate findByIdWithSkills(Long id) {
         try (EntityManager em = emf.createEntityManager()) {
-            String jpql = "SELECT c FROM Candidate c " +
-                    "LEFT JOIN FETCH c.candidateSkills cs " +
-                    "LEFT JOIN FETCH cs.skill s " +
-                    "WHERE c.id = :id";
-            TypedQuery<Candidate> q = em.createQuery(jpql, Candidate.class);
-            q.setParameter("id", id);
-            try {
-                return q.getSingleResult();
-            } catch (NoResultException nre) {
-                return null;
-            }
+            return em.createQuery(
+                            "select c from Candidate c left join fetch c.candidateSkills " +
+                                    "cs left join fetch cs.skill where c.id " +
+                                    "= :id", Candidate.class)
+                    .setParameter("id", id)
+                    .getResultStream()
+                    .findFirst()
+                    .orElse(null);
         }
     }
 
     @Override
     public Candidate addSkill(Long candidateId, Long skillId) {
-        EntityManager em = emf.createEntityManager();
+        EntityManager em = null;
         try {
+            em = emf.createEntityManager();
             em.getTransaction().begin();
 
-            Candidate candidate = em.find(Candidate.class, candidateId);
-            if (candidate == null) {
+            Candidate managedCandidate = em.find(Candidate.class, candidateId);
+            Skill managedSkill = em.find(Skill.class, skillId);
+
+            if (managedCandidate == null) {
                 em.getTransaction().rollback();
-                return null;
+                throw new IllegalArgumentException("Candidate not found: " + candidateId);
             }
-
-            Skill skill = em.find(Skill.class, skillId);
-            if (skill == null) {
+            if (managedSkill == null) {
                 em.getTransaction().rollback();
-                return null;
+                throw new IllegalArgumentException("Skill not found: " + skillId);
             }
 
-            // check for existing relation with a query
-            TypedQuery<Long> existsQuery = em.createQuery(
-                    "SELECT COUNT(cs) FROM CandidateSkill cs WHERE cs.candidate.id = :cid AND cs.skill.id = :sid",
-                    Long.class);
-            existsQuery.setParameter("cid", candidateId);
-            existsQuery.setParameter("sid", skillId);
-            Long count = existsQuery.getSingleResult();
-            if (count != null && count > 0) {
-                em.getTransaction().commit(); // nothing to change
-                // return loaded candidate including skills
-                return findByIdWithSkills(candidateId);
-            }
+            CandidateSkill cs = CandidateSkill.builder()
+                    .id(new CandidateSkillId(managedCandidate.getId(), managedSkill.getId()))
+                    .candidate(managedCandidate)
+                    .skill(managedSkill)
+                    .build();
 
-            // create relation
-            CandidateSkill cs = new CandidateSkill();
-            cs.setCandidate(candidate);
-            cs.setSkill(skill);
+            // keep both sides consistent
+            managedCandidate.addSkill(cs);
+            managedSkill.addCandidateSkill(cs);
+
             em.persist(cs);
-
-            // maintain in-memory relationship if collection is initialized
-            if (candidate.getCandidateSkills() != null) {
-                candidate.getCandidateSkills().add(cs);
-            }
-
             em.getTransaction().commit();
-            // return reloaded candidate with skills
-            return findByIdWithSkills(candidateId);
+
+            // reload candidate with skills in a new EntityManager to return a safe detached instance
+            try (EntityManager em2 = emf.createEntityManager()) {
+                return em2.createQuery(
+                                "select c from Candidate c " +
+                                        "left join fetch c.candidateSkills cs left join fetch cs.skill " +
+                                        "where c.id = :id", Candidate.class)
+                        .setParameter("id", candidateId)
+                        .getResultStream()
+                        .findFirst()
+                        .orElse(null);
+            }
         } catch (RuntimeException ex) {
-            if (em.getTransaction().isActive()) em.getTransaction().rollback();
-            logger.error("Failed to add skill {} to candidate {}", skillId, candidateId, ex);
+            if (em != null && em.getTransaction().isActive()) {
+                try { em.getTransaction().rollback(); } catch (Exception ignored) {}
+            }
+            logger.error("addSkill failed", ex);
             throw ex;
-        } finally {
-            em.close();
         }
     }
+
 
     @Override
     public Candidate removeSkill(Long candidateId, Long skillId) {

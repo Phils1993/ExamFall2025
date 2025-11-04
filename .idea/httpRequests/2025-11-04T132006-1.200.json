@@ -1,0 +1,65 @@
+[
+  {
+    "id": 6,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  }
+]
