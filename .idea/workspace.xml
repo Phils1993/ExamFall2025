@@ -5,26 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
-      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/SkillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillCreateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatsApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatsItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/TopCandidatePopularityDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/SkillRoutes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/SkillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-01T143501.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-01T143511.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-01T143531.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-01T143541.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104724-1.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104724.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104724.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104725.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104725.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104725.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104726-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104726.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T104742.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T105129.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T105717.500.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/RoutesRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/RoutesRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ServiceRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/AbstractDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/ICandidateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/ICandidateDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/SkillDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/SkillDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/CandidateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/CandidateMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/EksForRoutes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/Routes.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/CandidateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/ServiceAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/ServiceAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/routes.http" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/skillRoutes.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/tripRoutes.http" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/RoutesRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/RoutesRegistry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ServiceRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ServiceRegistry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/AbstractDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/AbstractDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/controllers/CandidateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/controllers/CandidateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/AbstractDAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/CandidateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/CandidateDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/ICandidateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/ICandidateDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/SkillDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/SkillDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/CandidateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/CandidateMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO$SkillDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO$SkillDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill$SkillBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill$SkillBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/CandidateRoutes.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/CandidateRoutes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/EksForRoutes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/Routes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/CandidateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/CandidateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/ServiceAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/ServiceAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -387,6 +428,7 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/ExamFall2025/src/test/userRoutes.http" environment="dev" />
     <file url="file://$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/ExamFall2025/src/test/skillRoutes.http" environment="dev" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -402,10 +444,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Populator.executor": "Run",
     "Application.app.security.Main.executor": "Run",
     "Application.src.main.java.Main.executor": "Run",
     "HTTP Request.All in candidateRoutes.executor": "Run",
+    "HTTP Request.All in skillRoutes.executor": "Run",
+    "HTTP Request.candidateRoutes | Create a new candidate.executor": "Run",
+    "HTTP Request.candidateRoutes | Create a skill.executor": "Run",
+    "HTTP Request.candidateRoutes | Delete candidate.executor": "Run",
+    "HTTP Request.candidateRoutes | Diagnostic endpoint (optional).executor": "Run",
     "HTTP Request.candidateRoutes | Get all candidates (no auth).executor": "Run",
+    "HTTP Request.candidateRoutes | Get all skills.executor": "Run",
+    "HTTP Request.candidateRoutes | Get candidate by id.executor": "Run",
+    "HTTP Request.candidateRoutes | Get top candidate by average popularity (report).executor": "Run",
+    "HTTP Request.candidateRoutes | Report: candidate with highest average popularity.executor": "Run",
+    "HTTP Request.candidateRoutes | Update candidate.executor": "Run",
+    "HTTP Request.skillRoutes | Get skill by id.executor": "Run",
     "HTTP Request.userRoutes | Login as admin (Admin).executor": "Run",
     "HTTP Request.userRoutes | Login as normal user (Philip) (1).executor": "Run",
     "HTTP Request.userRoutes | Login as normal user (Philip).executor": "Run",
@@ -420,7 +474,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "userStory3+4",
+    "git-widget-placeholder": "US__5+6",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025",
@@ -459,7 +513,10 @@
           <value>
             <map>
               <entry key="All in candidateRoutes" value="STOPPED" />
-              <entry key="candidateRoutes | Get all candidates (no auth)" value="STOPPED" />
+              <entry key="All in skillRoutes" value="STOPPED" />
+              <entry key="candidateRoutes | Get top candidate by average popularity (report)" value="STOPPED" />
+              <entry key="candidateRoutes | Report: candidate with highest average popularity" value="STOPPED" />
+              <entry key="skillRoutes | Get skill by id" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -484,56 +541,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app.security.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
-        <env name="DB_NAME" value="exam_fall_2025" />
-        <env name="DB_PASSWORD" value="postgres" />
-        <env name="DB_USERNAME" value="postgres" />
-        <env name="DEPLOYED" value="prod" />
-        <env name="ISSUER" value="philip1993" />
-        <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
-        <env name="TOKEN_EXPIRE_TIME" value="1800000" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="app.security.Main" />
-      <module name="ExamFall2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.security.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in candidateRoutes" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http">
       <method v="2" />
     </configuration>
-    <configuration name="candidateRoutes | Get all candidates (no auth)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Get all candidates (no auth)" runType="Run single request">
+    <configuration name="All in skillRoutes" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ExamFall2025/src/test/skillRoutes.http">
       <method v="2" />
     </configuration>
-    <configuration name="userRoutes | Login as admin (Admin)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Javalin-API-Template/src/test/userRoutes.http" executionIdentifier="Login as admin (Admin)" index="4" runType="Run single request">
+    <configuration name="candidateRoutes | Get top candidate by average popularity (report)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Get top candidate by average popularity (report)" index="9" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="userRoutes | Login as normal user (Philip) (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Javalin-API-Template/src/test/userRoutes.http" executionIdentifier="Login as normal user (Philip)" index="3" runType="Run single request">
+    <configuration name="candidateRoutes | Report: candidate with highest average popularity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Report: candidate with highest average popularity" index="13" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="skillRoutes | Get skill by id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/skillRoutes.http" executionIdentifier="Get skill by id" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.app.security.Main" />
       <item itemvalue="HTTP Request.All in candidateRoutes" />
-      <item itemvalue="HTTP Request.candidateRoutes | Get all candidates (no auth)" />
-      <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip) (1)" />
-      <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
+      <item itemvalue="HTTP Request.All in skillRoutes" />
+      <item itemvalue="HTTP Request.candidateRoutes | Get top candidate by average popularity (report)" />
+      <item itemvalue="HTTP Request.candidateRoutes | Report: candidate with highest average popularity" />
+      <item itemvalue="HTTP Request.skillRoutes | Get skill by id" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.candidateRoutes | Get all candidates (no auth)" />
+        <item itemvalue="HTTP Request.candidateRoutes | Get top candidate by average popularity (report)" />
+        <item itemvalue="HTTP Request.skillRoutes | Get skill by id" />
+        <item itemvalue="HTTP Request.All in skillRoutes" />
         <item itemvalue="HTTP Request.All in candidateRoutes" />
-        <item itemvalue="Application.app.security.Main" />
-        <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
-        <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip) (1)" />
+        <item itemvalue="HTTP Request.candidateRoutes | Report: candidate with highest average popularity" />
       </list>
     </recent_temporary>
   </component>

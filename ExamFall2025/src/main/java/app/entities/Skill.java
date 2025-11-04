@@ -22,6 +22,9 @@ public class Skill {
     @Column(name = "skill_id")
     private Long id;
 
+    @Column(unique = true)
+    private String slug;
+
     @Column(nullable = false)
     private String name;
 

@@ -1,0 +1,6 @@
+{
+  "title": "Endpoint PUT /skills/1 not found",
+  "status": 404,
+  "type": "https://javalin.io/documentation#endpointnotfound",
+  "details": {}
+}
