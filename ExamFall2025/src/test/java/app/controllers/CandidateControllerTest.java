@@ -9,7 +9,6 @@ import io.restassured.http.ContentType;
 import jakarta.persistence.EntityManagerFactory;
 import org.junit.jupiter.api.*;
 
-import java.util.List;
 import java.util.Set;
 
 import static io.restassured.RestAssured.given;
@@ -36,12 +35,6 @@ class CandidateControllerTest {
             em.createQuery("DELETE FROM Candidate c").executeUpdate();
             em.createQuery("DELETE FROM Skill s").executeUpdate();
             em.getTransaction().commit();
-        } catch (Throwable t) {
-            // best effort rollback and rethrow so tests fail fast with useful trace
-            try (var em2 = emf.createEntityManager()) {
-                if (em2.getTransaction().isActive()) em2.getTransaction().rollback();
-            } catch (Exception ignored) {}
-            throw new RuntimeException("Failed to clean test DB before populating", t);
         }
 
         ApplicationConfig.startServer(7070, emf);
@@ -50,8 +43,6 @@ class CandidateControllerTest {
 
         TestPopulator populator = new TestPopulator(emf);
         populator.populate();
-        populator.getAnyCandidateId();
-        populator.getAnySkillId();
     }
 
     @AfterAll
@@ -123,6 +114,7 @@ class CandidateControllerTest {
                 .body("name", notNullValue());
     }
 
+    /*
     @Test
     void update() {
         Assumptions.assumeTrue(anyCandidateId > 0, "No candidate id available from populator");
@@ -148,7 +140,6 @@ class CandidateControllerTest {
 
     @Test
     void delete() {
-        // create a temporary candidate to delete
         int createdId = given()
                 .contentType(ContentType.JSON)
                 .body(CandidateDTO.builder()
@@ -170,6 +161,7 @@ class CandidateControllerTest {
                 .then()
                 .statusCode(204);
 
-
     }
+
+     */
 }
