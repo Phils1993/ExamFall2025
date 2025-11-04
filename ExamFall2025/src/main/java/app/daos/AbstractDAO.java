@@ -1,18 +1,20 @@
 package app.daos;
-/*
+
 import app.exceptions.ApiException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.logging.Logger;
 
 public class AbstractDAO <T> implements IDAO <T>{
 
-private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
+private static Logger logger = (Logger) LoggerFactory.getLogger(AbstractDAO.class);
 
 // Logger til debug-specifik information (kan bruges til tracing)
-    private static final Logger debugLogger = LoggerFactory.getLogger("app");
+    private static final Logger debugLogger = (Logger) LoggerFactory.getLogger("app");
 
     protected final EntityManagerFactory emf;
     private final Class<T> entityClass;
@@ -23,7 +25,7 @@ private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
     }
 
     @Override
-    public T findById(Long id) {
+    public T getById(Long id) {
         try(EntityManager em = emf.createEntityManager()) {
             return em.find(entityClass, id);
         }
@@ -78,4 +80,3 @@ private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
 
 }
 
- */

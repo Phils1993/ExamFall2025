@@ -1,5 +1,5 @@
+package app;
 
-/*
 import app.config.ApplicationConfig;
 import app.config.HibernateConfig;
 import jakarta.persistence.EntityManagerFactory;
@@ -14,5 +14,3 @@ public class Main {
         ApplicationConfig.startServer(7070,emf);
     }
 }
-
- */

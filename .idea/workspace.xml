@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/eksEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/eksEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/Populator/Populator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/ICandidateDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/ISkillDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/SkillDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidateCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkillId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/enums/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/CandidateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/IDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/IDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/eksEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/enums/eksForEnums.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,6 +361,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -375,6 +405,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Populator.executor": "Run",
     "Application.app.security.Main.executor": "Run",
     "Application.src.main.java.Main.executor": "Run",
     "HTTP Request.userRoutes | Login as admin (Admin).executor": "Run",
@@ -391,10 +422,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "userStory1+2",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025",
+    "last_opened_file_path": "C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -412,6 +443,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025" />
       <recent name="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -422,20 +454,40 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="app" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Application.Populator">
+    <configuration name="Populator" type="Application" factoryName="Application">
       <envs>
         <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
         <env name="DB_NAME" value="exam_fall_2025" />
         <env name="DB_PASSWORD" value="postgres" />
         <env name="DB_USERNAME" value="postgres" />
+        <env name="DEPLOYED" value="prod" />
         <env name="ISSUER" value="philip1993" />
         <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
         <env name="TOKEN_EXPIRE_TIME" value="1800000" />
-        <env name="DEPLOYED" value="prod" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="app.Populator.Populator" />
+      <module name="ExamFall2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app.Main" type="Application" factoryName="Application">
+      <envs>
+        <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
+        <env name="DB_NAME" value="exam_fall_2025" />
+        <env name="DB_PASSWORD" value="postgres" />
+        <env name="DB_USERNAME" value="postgres" />
+        <env name="DEPLOYED" value="prod" />
+        <env name="ISSUER" value="philip1993" />
+        <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
+        <env name="TOKEN_EXPIRE_TIME" value="1800000" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="ExamFall2025" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -474,7 +526,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.app.Main" />
+      <item itemvalue="Application.Populator" />
       <item itemvalue="Application.app.security.Main" />
       <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip) (1)" />
       <item itemvalue="HTTP Request.userRoutes | Register a new user (default role = USER) (1)" />
@@ -508,6 +561,7 @@
       <workItem from="1761987963297" duration="1135000" />
       <workItem from="1762000341452" duration="2401000" />
       <workItem from="1762173810664" duration="3283000" />
+      <workItem from="1762239866068" duration="5403000" />
     </task>
     <servers />
   </component>
