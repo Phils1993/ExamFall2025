@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/testPopulator/TestPopulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/testPopulator/TestPopulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/testPopulator/TestPopulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/testPopulator/TestPopulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-    </list>
+    <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -415,6 +406,8 @@
     "HTTP Request.userRoutes | Register a new user (default role = USER).executor": "Run",
     "JUnit.CandidateControllerTest.create.executor": "Run",
     "JUnit.CandidateControllerTest.executor": "Run",
+    "JUnit.CandidateControllerTest.getAll.executor": "Run",
+    "JUnit.CandidateControllerTest.getAllCandidates.executor": "Run",
     "JUnit.CandidateControllerTest.getById.executor": "Run",
     "JUnit.CandidateControllerTest.update.executor": "Run",
     "Maven. [clean,validate,compile,test,package...].executor": "Run",
@@ -466,19 +459,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="app.controllers" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationStatuses">
-      <map>
-        <entry key="HttpClient.HttpRequestRunConfigurationType">
-          <value>
-            <map>
-              <entry key="All in candidateRoutes" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="RunManager" selected="JUnit.CandidateControllerTest">
     <configuration name="Main" type="Application" factoryName="Application">
