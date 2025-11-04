@@ -5,6 +5,7 @@ import app.dtos.CandidateDTO;
 import app.entities.Candidate;
 import app.entities.CandidateSkill;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -34,5 +35,19 @@ public class CandidateMapper {
         if (dto.getPhone() != null) candidate.setPhone(dto.getPhone());
         if (dto.getEducation() != null) candidate.setEducation(dto.getEducation());
         // Do not touch skills here; linking handled by DAO operations to avoid transient ID issues
+    }
+
+    public static Candidate toEntity(CandidateCreateDTO dto) {
+        if (dto == null) return null;
+        Candidate c = Candidate.builder()
+                .name(dto.getName())
+                .phone(dto.getPhone())
+                .education(dto.getEducation())
+                .build();
+
+        // Keep the collection non-null to avoid NPEs in service/DAO code.
+        c.setCandidateSkills(new HashSet<>());
+
+        return c;
     }
 }

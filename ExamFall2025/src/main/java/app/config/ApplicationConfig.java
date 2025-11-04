@@ -17,8 +17,8 @@ public class ApplicationConfig {
     private static Javalin app;
 
     public static Javalin startServer(int port, EntityManagerFactory emf) {
-        //ServiceRegistry services = new ServiceRegistry(emf);
-        RoutesRegistry routes = new RoutesRegistry(emf);
+        ServiceRegistry serviceRegistry = new ServiceRegistry(emf);
+        RoutesRegistry routes = new RoutesRegistry(serviceRegistry);
         
         app = Javalin.create(config -> configure(config, routes));
         // Dette gør at rollen bliver godkendt og gennemgået FØR endpointet bliver iværksat

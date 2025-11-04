@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "name": "Bob Berg",
+  "phone": "+45 20000002",
+  "education": "BSc Information Systems",
+  "skillIds": [
+    2,
+    3,
+    4
+  ]
+}

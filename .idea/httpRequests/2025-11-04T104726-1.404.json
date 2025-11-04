@@ -1,0 +1,6 @@
+{
+  "title": "Endpoint GET /skills not found",
+  "status": 404,
+  "type": "https://javalin.io/documentation#endpointnotfound",
+  "details": {}
+}

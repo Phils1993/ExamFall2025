@@ -7,8 +7,12 @@ import jakarta.persistence.NoResultException;
 import jakarta.persistence.TypedQuery;
 
 import java.util.Optional;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class SkillDAO extends AbstractDAO<Skill> implements ISkillDAO {
+
+    private static final Logger logger = LoggerFactory.getLogger(SkillDAO.class);
+    private static final Logger debugLogger = LoggerFactory.getLogger("app");
 
     public SkillDAO(EntityManagerFactory emf) {
         super(emf,  Skill.class);

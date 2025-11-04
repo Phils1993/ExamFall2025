@@ -2,26 +2,24 @@ package app.daos;
 
 import app.config.HibernateConfig;
 import app.entities.Candidate;
-import app.entities.Skill;
-import app.daos.AbstractDAO;
-import app.daos.CandidateDAO;
-import app.entities.Candidate;
 import app.entities.CandidateSkill;
 import app.entities.CandidateSkillId;
 import app.entities.Skill;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.TypedQuery;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Optional;
-import java.util.logging.Logger;
 
-public class CandidateDAO extends AbstractDAO<Candidate>  implements ICandidateDAO {
 
-    private static Logger logger = (Logger) LoggerFactory.getLogger(CandidateDAO.class);
+public class CandidateDAO extends AbstractDAO<Candidate> implements ICandidateDAO {
+
+    private static Logger logger = LoggerFactory.getLogger(CandidateDAO.class);
 
     // Logger til debug-specifik information (kan bruges til tracing)
-    private static final Logger debugLogger = (Logger) LoggerFactory.getLogger("app");
+    private static final Logger debugLogger = LoggerFactory.getLogger("app");
 
     private final EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
     private EntityManager em;
@@ -33,7 +31,21 @@ public class CandidateDAO extends AbstractDAO<Candidate>  implements ICandidateD
 
     @Override
     public Optional<Candidate> findByIdWithSkills(Long id) {
-        return Optional.empty();
+        try (EntityManager em = emf.createEntityManager()) {
+            // join-fetch candidateSkills and skill to initialize collections in one query
+            TypedQuery<Candidate> q = em.createQuery(
+                    "SELECT DISTINCT c FROM Candidate c " +
+                            "LEFT JOIN FETCH c.candidateSkills cs " +
+                            "LEFT JOIN FETCH cs.skill s " +
+                            "WHERE c.id = :id", Candidate.class);
+            q.setParameter("id", id);
+            try {
+                Candidate c = q.getSingleResult();
+                return Optional.ofNullable(c);
+            } catch (jakarta.persistence.NoResultException nre) {
+                return Optional.empty();
+            }
+        }
     }
 
     @Override
