@@ -15,7 +15,7 @@ public class HibernateConfig {
 
     private static EntityManagerFactory emf;
     private static EntityManagerFactory emfTest;
-    private static Boolean isTest = false;
+    private static Boolean isTest = (Boolean) false;
 
     public static void setTest(Boolean test) {
         isTest = test;
@@ -33,7 +33,7 @@ public class HibernateConfig {
 
     public static EntityManagerFactory getEntityManagerFactoryForTest() {
         if (emfTest == null){
-            setTest(true);
+            setTest(Boolean.valueOf(true));
             emfTest = createEMF(getTest());  // No DB needed for test
         }
         return emfTest;

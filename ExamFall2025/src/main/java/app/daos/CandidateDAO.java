@@ -36,6 +36,7 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
             em.getTransaction().commit();
             return candidate;
         } catch (Exception e) {
+            logger.error("Failed to create candidate", e);
             throw new ApiException(500, "Failed to create candidate");
         }
     }
@@ -51,12 +52,13 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
                     Candidate.class
             ).setParameter("id", id).getSingleResult();
         } catch (NoResultException e) {
+            logger.error("Candidate not found with id: {}", id, e);
             throw new ApiException(404, "Candidate not found with id: " + id);
         } catch (Exception e) {
+            logger.error("Failed to retrieve candidate by id: {}", id, e);
             throw new ApiException(500, "Failed to retrieve candidate by id");
         }
     }
-
 
     @Override
     public Candidate update(Candidate candidate) {
@@ -66,6 +68,7 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
             em.getTransaction().commit();
             return updatedCandidate;
         } catch (Exception e) {
+            logger.error("Failed to update candidate with id: {}", candidate.getId(), e);
             throw new ApiException(500, "Failed to update candidate with id: " + candidate.getId());
         }
     }
@@ -82,13 +85,12 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
             } else {
                 throw new ApiException(404, "Candidate not found with id: " + id);
             }
-        } catch (ApiException e) {
-            throw new ApiException(500, "no candidate deleted");
+        } catch (Exception e) {
+            logger.error("Failed to delete candidate with id: {}", id, e);
+            throw new ApiException(500, "Failed to delete candidate with id: " + id);
         }
     }
 
-
-    //Får alle kandidater med deres respektive skills
     @Override
     public List<Candidate> getAll() {
         try (EntityManager em = emf.createEntityManager()) {
@@ -99,10 +101,10 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
                     Candidate.class
             ).getResultList();
         } catch (Exception e) {
+            logger.error("Failed to retrieve all candidates", e);
             throw new ApiException(500, "Failed to retrieve all candidates");
         }
     }
-
 
     public Candidate getTopCandidateEntityByAveragePopularity(Map<String, SkillEnrichedDTO> enrichedMap) {
         try (EntityManager em = emf.createEntityManager()) {
@@ -135,12 +137,10 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
 
             return bestCandidate;
         } catch (Exception e) {
-            e.printStackTrace(); // ← tilføj dette
+            logger.error("Failed to calculate top candidate by popularity", e);
             throw new ApiException(500, "Failed to calculate top candidate by popularity");
         }
-
     }
-
 
     public Candidate linkSkill(Integer candidateId, Integer skillId) {
         try (EntityManager em = emf.createEntityManager()) {
@@ -160,10 +160,10 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
             em.getTransaction().commit();
             return candidate;
         } catch (Exception e) {
+            logger.error("Failed to link skill {} to candidate {}", skillId, candidateId, e);
             throw new ApiException(500, "Failed to link skill to candidate");
         }
     }
-
 
     public Candidate removeSkill(Integer candidateId, Integer skillId) {
         try (EntityManager em = emf.createEntityManager()) {
@@ -183,6 +183,7 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
             em.getTransaction().commit();
             return candidate;
         } catch (Exception e) {
+            logger.error("Failed to remove skill {} from candidate {}", skillId, candidateId, e);
             throw new ApiException(500, "Failed to remove skill from candidate");
         }
     }
@@ -190,18 +191,20 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
     public List<Candidate> getAllBySkillCategory(Category category) {
         try (EntityManager em = emf.createEntityManager()) {
             return em.createQuery("""
-                            SELECT DISTINCT c
-                            FROM Candidate c
-                            JOIN c.candidateSkills cs
-                            JOIN cs.skill s
-                            WHERE s.category = :category
-                            """, Candidate.class)
+                        SELECT DISTINCT c
+                        FROM Candidate c
+                        JOIN c.candidateSkills cs
+                        JOIN cs.skill s
+                        WHERE s.category = :category
+                        """, Candidate.class)
                     .setParameter("category", category)
                     .getResultList();
         } catch (Exception e) {
+            logger.error("Failed to retrieve candidates by skill category: {}", category, e);
             throw new ApiException(500, "Failed to retrieve candidates by skill category");
         }
     }
+
 
 
 }

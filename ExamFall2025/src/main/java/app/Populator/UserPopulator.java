@@ -1,6 +1,7 @@
 package app.Populator;
 
 import app.config.HibernateConfig;
+import app.entities.User;
 import app.security.ISecurityDAO;
 import app.security.SecurityDAO;
 
@@ -12,8 +13,11 @@ public class UserPopulator {
         dao.createRole("User");
         dao.createRole("Admin");
 
-        dao.createUser("Philip", "pass12345");
-        dao.createUser("PhilipAdmin", "pass12345");
+        User user = dao.createUser("Philip", "pass12345");
+        System.out.println("Philip bcrypt: " + user.getPassword());
+
+        User admin = dao.createUser("PhilipAdmin", "pass12345");
+        System.out.println("PhilipAdmin bcrypt: " + admin.getPassword());
 
         dao.addUserRole("Philip", "User");
         dao.addUserRole("PhilipAdmin", "Admin");
