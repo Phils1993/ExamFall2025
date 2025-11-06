@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -474,22 +474,7 @@
       <recent name="app.controllers" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="configurationStatuses">
-      <map>
-        <entry key="HttpClient.HttpRequestRunConfigurationType">
-          <value>
-            <map>
-              <entry key="All in candidateRoutes" value="STOPPED" />
-              <entry key="userRoutes | Login as admin (Admin)" value="STOPPED" />
-              <entry key="userRoutes | Login as normal user (Philip)" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.populator.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <envs>
         <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
