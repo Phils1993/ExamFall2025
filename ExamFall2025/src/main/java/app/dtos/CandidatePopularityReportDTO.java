@@ -2,12 +2,12 @@ package app.dtos;
 
 import lombok.*;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class TopCandidatePopularityDTO {
-    private Long id;
+@Builder
+public class CandidatePopularityReportDTO {
+    private Integer id;
     private Double averagePopularity;
 }

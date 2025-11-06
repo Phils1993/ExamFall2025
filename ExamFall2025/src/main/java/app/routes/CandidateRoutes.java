@@ -1,27 +1,25 @@
 package app.routes;
 
 import app.controllers.CandidateController;
-import app.services.CandidateService;
+import app.daos.CandidateDAO;
+import app.services.ServiceAPI;
 import io.javalin.apibuilder.EndpointGroup;
 import static io.javalin.apibuilder.ApiBuilder.*;
-import jakarta.persistence.EntityManagerFactory;
 
 public class CandidateRoutes {
 
     private final CandidateController controller;
+    private final ServiceAPI serviceAPI;
 
-    public CandidateRoutes(CandidateService candidateService) {
-        this.controller = new CandidateController(candidateService);
+    public CandidateRoutes(CandidateDAO candidateDAO,  ServiceAPI serviceAPI) {
+        this.controller = new CandidateController(candidateDAO);
+        this.serviceAPI = serviceAPI;
     }
 
     public EndpointGroup getRoutes() {
         return () -> {
             path("candidates", () -> {
-                // Use getAllCandidates which handles both:
-                // GET /candidates  (no query param) and
-                // GET /candidates?category={category} (filtered)
                 get(controller.getAllCandidates());
-
                 post(controller.create());
 
                 path("{id}", () -> {
@@ -32,11 +30,10 @@ public class CandidateRoutes {
 
                 path("{candidateId}/skills/{skillId}", () -> {
                     put(controller.linkSkill());
-                    delete(controller.removeSkill()); // if you support removing via DELETE
+                    delete(controller.removeSkill());
                 });
             });
 
-            // Reports namespace
             path("reports", () -> {
                 path("candidates", () -> {
                     get("top-by-popularity", controller.getTopByPopularity());

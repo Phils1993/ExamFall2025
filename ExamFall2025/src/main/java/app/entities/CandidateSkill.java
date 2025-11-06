@@ -6,11 +6,12 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "candidate_skill", uniqueConstraints = @UniqueConstraint(columnNames = {"candidate_id", "skill_id"}))
-@Data
+@Table(name = "candidate_skill",
+        uniqueConstraints = @UniqueConstraint(columnNames = {"candidate_id", "skill_id"}))
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@Getter
+@Setter
 public class CandidateSkill {
 
     @EmbeddedId
@@ -19,23 +20,20 @@ public class CandidateSkill {
     @ManyToOne(fetch = FetchType.LAZY)
     @MapsId("candidateId")
     @JoinColumn(name = "candidate_id")
-    @ToString.Exclude
     private Candidate candidate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @MapsId("skillId")
     @JoinColumn(name = "skill_id")
-    @ToString.Exclude
     private Skill skill;
 
-
     public static CandidateSkill of(Candidate candidate, Skill skill) {
+        CandidateSkillId id = new CandidateSkillId(candidate.getId(), skill.getId());
         CandidateSkill cs = new CandidateSkill();
-        cs.id = new CandidateSkillId(candidate.getId(), skill.getId());
-        cs.candidate = candidate;
-        cs.skill = skill;
+        cs.setId(id);
+        cs.setCandidate(candidate);
+        cs.setSkill(skill);
         return cs;
     }
-
 }
 

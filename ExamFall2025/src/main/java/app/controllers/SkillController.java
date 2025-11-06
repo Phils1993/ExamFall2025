@@ -1,66 +1,78 @@
 package app.controllers;
 
+/*
+import app.daos.SkillDAO;
 import app.dtos.SkillCreateDTO;
 import app.dtos.SkillDTO;
-import app.services.SkillService;
+import app.entities.Skill;
+import app.mapper.SkillMapper;
 import io.javalin.http.Handler;
 import io.javalin.http.HttpStatus;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
-public class SkillController  implements IController {
+public class SkillController implements IController {
 
-    private final SkillService service;
+    private final SkillDAO skillDAO;
+    private final SkillMapper mapper = new SkillMapper();
 
-    public SkillController(SkillService service) {
-        this.service = service;
+    public SkillController(SkillDAO skillDAO) {
+        this.skillDAO = skillDAO;
     }
 
+    @Override
     public Handler create() {
         return ctx -> {
             SkillCreateDTO dto = ctx.bodyAsClass(SkillCreateDTO.class);
-            SkillDTO created = service.create(dto);
-            ctx.status(HttpStatus.CREATED).json(created);
+            Skill skill = mapper.fromCreateDto(dto);
+            Skill created = skillDAO.create(skill);
+            ctx.status(HttpStatus.CREATED).json(new SkillDTO(created));
         };
     }
 
+    @Override
     public Handler getAll() {
         return ctx -> {
-            List<SkillDTO> all = service.getAll();
-            ctx.status(HttpStatus.OK).json(all);
+            List<Skill> all = skillDAO.getAll();
+            List<SkillDTO> dtos = all.stream()
+                    .map(SkillDTO::new)
+                    .collect(Collectors.toList());
+            ctx.status(HttpStatus.OK).json(dtos);
         };
     }
 
+    @Override
     public Handler getById() {
         return ctx -> {
-            Long id = Long.parseLong(ctx.pathParam("id"));
-            SkillDTO dto = service.getById(id);
-            if (dto == null) {
+            Integer id = Integer.parseInt(ctx.pathParam("id"));
+            Skill skill = skillDAO.getById(id);
+            if (skill == null) {
                 ctx.status(HttpStatus.NOT_FOUND).json(Map.of("msg", "Skill not found"));
                 return;
             }
-            ctx.status(HttpStatus.OK).json(dto);
+            ctx.status(HttpStatus.OK).json(new SkillDTO(skill));
         };
     }
 
+    @Override
     public Handler update() {
         return ctx -> {
-            Long id = Long.parseLong(ctx.pathParam("id"));
+            Integer id = Integer.parseInt(ctx.pathParam("id"));
             SkillCreateDTO dto = ctx.bodyAsClass(SkillCreateDTO.class);
-            SkillDTO updated = service.update(id, dto);
-            if (updated == null) {
-                ctx.status(HttpStatus.NOT_FOUND).json(Map.of("msg", "Skill not found"));
-                return;
-            }
-            ctx.status(HttpStatus.OK).json(updated);
+            Skill skill = mapper.fromCreateDto(dto);
+            skill.setId(id);
+            Skill updated = skillDAO.update(skill);
+            ctx.status(HttpStatus.OK).json(new SkillDTO(updated));
         };
     }
 
+    @Override
     public Handler delete() {
         return ctx -> {
-            Long id = Long.parseLong(ctx.pathParam("id"));
-            boolean removed = service.delete(id);
+            Integer id = Integer.parseInt(ctx.pathParam("id"));
+            boolean removed = skillDAO.delete(id);
             if (!removed) {
                 ctx.status(HttpStatus.NOT_FOUND).json(Map.of("msg", "Skill not found"));
                 return;
@@ -69,3 +81,5 @@ public class SkillController  implements IController {
         };
     }
 }
+
+ */

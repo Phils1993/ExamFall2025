@@ -16,8 +16,9 @@ public class CandidateSkillId implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Column(name = "candidate_id")
-    private Long candidateId;
+    private Integer candidateId;
 
     @Column(name = "skill_id")
-    private Long skillId;
+    private Integer skillId;
+
 }

@@ -1,6 +1,7 @@
 package app.config;
 
 import app.entities.*;
+import app.enums.Category;
 import app.utils.Utils;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
@@ -45,6 +46,7 @@ public class HibernateConfig {
         configuration.addAnnotatedClass(CandidateSkill.class);
         configuration.addAnnotatedClass(Candidate.class);
         configuration.addAnnotatedClass(Skill.class);
+
     }
 
     private static EntityManagerFactory createEMF(boolean forTest) {

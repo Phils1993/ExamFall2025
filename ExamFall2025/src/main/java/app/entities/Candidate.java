@@ -8,7 +8,8 @@ import java.util.HashSet;
 import java.util.Set;
 @Entity
 @Table(name = "candidate")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -18,7 +19,7 @@ public class Candidate {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     @Column(name = "candidate_id")
-    private Long id;
+    private Integer id;
 
     @Column(nullable = false)
     private String name;
@@ -33,13 +34,15 @@ public class Candidate {
     private Set<CandidateSkill> candidateSkills = new HashSet<>();
 
     // Helper methods to keep both sides in sync
-    public void addSkill(CandidateSkill cs) {
+    public void addSkill(Skill skill) {
+        CandidateSkill cs = CandidateSkill.of(this, skill);
         candidateSkills.add(cs);
-        cs.setCandidate(this);
+        skill.getCandidateSkills().add(cs);
     }
 
-    public void removeSkill(CandidateSkill cs) {
-        candidateSkills.remove(cs);
-        cs.setCandidate(null);
+    public void removeSkill(Skill skill) {
+        candidateSkills.removeIf(cs -> cs.getSkill().equals(skill));
+        skill.getCandidateSkills().removeIf(cs -> cs.getCandidate().equals(this));
     }
+
 }

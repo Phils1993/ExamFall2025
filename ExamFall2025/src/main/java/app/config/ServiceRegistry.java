@@ -1,5 +1,6 @@
 package app.config;
 
+/*
 import app.services.CandidateService;
 import app.services.SkillService;
 import jakarta.persistence.EntityManagerFactory;
@@ -15,3 +16,5 @@ public class ServiceRegistry {
         this.skillService = new SkillService(emf);
     }
 }
+
+ */

@@ -1,19 +1,19 @@
 package app.daos;
 
+/*
 import app.entities.Skill;
+import app.enums.Category;
+import app.exceptions.ApiException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.NoResultException;
-import jakarta.persistence.TypedQuery;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-public class SkillDAO implements ISkillDAO {
+
+public class SkillDAO implements IDAO<Skill, Integer> {
 
     private static final Logger logger = LoggerFactory.getLogger(SkillDAO.class);
     private static final Logger debugLogger = LoggerFactory.getLogger("app");
@@ -25,71 +25,79 @@ public class SkillDAO implements ISkillDAO {
     }
 
     @Override
-    public Skill getById(Long id) {
+    public Skill getById(Integer id) {
         try (EntityManager em = emf.createEntityManager()) {
-            return em.find(Skill.class, id);
+            return em.createQuery("SELECT s FROM Skill s WHERE s.id = :id", Skill.class)
+                    .setParameter("id", id)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            throw new ApiException(404, "Skill not found with id: " + id);
+        } catch (Exception e) {
+            throw new ApiException(500, "Failed to retrieve skill by id");
         }
     }
 
     @Override
-    public Set<Skill> getAll() {
+    public List<Skill> getAll() {
         try (EntityManager em = emf.createEntityManager()) {
-            List<Skill> list = em.createQuery("SELECT s FROM Skill s", Skill.class).getResultList();
-            return new HashSet<>(list);
+            return em.createQuery("SELECT s FROM Skill s", Skill.class).getResultList();
+        } catch (Exception e) {
+            throw new ApiException(500, "Failed to retrieve all skills");
         }
     }
 
     @Override
-    public Skill create(Skill s) {
+    public Skill create(Skill skill) {
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-            em.persist(s);
+            em.persist(skill);
             em.getTransaction().commit();
-            return s;
-        } catch (RuntimeException e) {
-            logger.error("Failed to create Skill", e);
-            throw e;
+            return skill;
+        } catch (Exception e) {
+            throw new ApiException(500, "Failed to create skill");
         }
     }
 
     @Override
-    public Skill update(Skill s) {
+    public Skill update(Skill skill) {
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-            Skill merged = em.merge(s);
+            Skill updatedSkill = em.merge(skill);
             em.getTransaction().commit();
-            return merged;
-        } catch (RuntimeException e) {
-            logger.error("Failed to update Skill", e);
-            throw e;
+            return updatedSkill;
+        } catch (Exception e) {
+            throw new ApiException(500, "Failed to update skill with id: " + skill.getId());
         }
     }
 
     @Override
-    public void delete(Long id) {
+    public boolean delete(Integer id) {
         try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-            Skill found = em.find(Skill.class, id);
-            if (found != null) {
-                em.remove(found);
+            Skill skill = em.find(Skill.class, id);
+            if (skill != null) {
+                em.getTransaction().begin();
+                em.remove(skill);
+                em.getTransaction().commit();
+                return true;
+            } else {
+                throw new ApiException(404, "Skill not found with id: " + id);
             }
-            em.getTransaction().commit();
-        } catch (RuntimeException e) {
-            logger.error("Failed to delete Skill id={}", id, e);
-            throw e;
+        } catch (Exception e) {
+            throw new ApiException(500, "Failed to delete skill with id: " + id);
         }
     }
 
-    @Override
-    public Optional<Skill> findByName(String name) {
+    public List<Skill> getByCategory(Category category) {
         try (EntityManager em = emf.createEntityManager()) {
-            TypedQuery<Skill> q = em.createQuery("SELECT s FROM Skill s WHERE s.name = :name", Skill.class);
-            q.setParameter("name", name);
-            try {
-                return Optional.of(q.getSingleResult());
-            } catch (NoResultException nre) {
-                return Optional.empty();
-            }
+            return em.createQuery("SELECT s FROM Skill s WHERE s.category = :cat", Skill.class)
+                    .setParameter("cat", category)
+                    .getResultList();
+        } catch (Exception e) {
+            throw new ApiException(500, "Failed to retrieve skills by category: " + category);
         }
     }
+
+
 }
+
+ */

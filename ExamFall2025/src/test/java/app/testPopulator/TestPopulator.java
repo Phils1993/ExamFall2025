@@ -8,10 +8,12 @@ import app.entities.Skill;
 import app.enums.Category;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
 
 import java.util.List;
 
 public class TestPopulator {
+
     private final EntityManagerFactory emf;
     private Long testCandidateId;
     private Long testSkillId;
@@ -21,15 +23,18 @@ public class TestPopulator {
     }
 
     public void populate() {
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction tx = em.getTransaction();
 
-            // Clear old data — adjust table names if your schema differs
-            em.createNativeQuery("TRUNCATE TABLE candidate_skill RESTART IDENTITY CASCADE").executeUpdate();
-            em.createNativeQuery("TRUNCATE TABLE candidate RESTART IDENTITY CASCADE").executeUpdate();
-            em.createNativeQuery("TRUNCATE TABLE skill RESTART IDENTITY CASCADE").executeUpdate();
+        try {
+            tx.begin();
 
-            // Create skills
+            // Clear existing test data in the right order
+            em.createQuery("DELETE FROM CandidateSkill").executeUpdate();
+            em.createQuery("DELETE FROM Candidate").executeUpdate();
+            em.createQuery("DELETE FROM Skill").executeUpdate();
+
+            // --- Create skills ---
             Skill java = Skill.builder()
                     .name("Java")
                     .slug("java")
@@ -44,11 +49,10 @@ public class TestPopulator {
                     .description("Relational DB")
                     .build();
 
-            List<Skill> skills = List.of(java, postgres);
-            skills.forEach(em::persist);
-            em.flush(); // ensure IDs assigned
+            em.persist(java);
+            em.persist(postgres);
 
-            // Create candidate
+            // --- Create candidate ---
             Candidate cand = Candidate.builder()
                     .name("Test Candidate")
                     .phone("+45 10000000")
@@ -56,31 +60,39 @@ public class TestPopulator {
                     .build();
 
             em.persist(cand);
-            em.flush(); // ensure candidate id assigned
+            em.flush(); // ensure IDs are assigned
 
-            // Link candidate to skills using CandidateSkill and keep both sides in sync
+            // --- Create candidate-skill links ---
             CandidateSkill cs1 = CandidateSkill.builder()
                     .id(new CandidateSkillId(cand.getId(), java.getId()))
                     .candidate(cand)
                     .skill(java)
                     .build();
-            cand.addSkill(cs1);
-            java.addCandidateSkill(cs1);
-            em.persist(cs1);
 
             CandidateSkill cs2 = CandidateSkill.builder()
                     .id(new CandidateSkillId(cand.getId(), postgres.getId()))
                     .candidate(cand)
                     .skill(postgres)
                     .build();
-            cand.addSkill(cs2);
-            postgres.addCandidateSkill(cs2);
+
+            em.persist(cs1);
             em.persist(cs2);
 
-            em.getTransaction().commit();
+            // Keep both sides in sync (optional but good practice)
+            cand.getCandidateSkills().addAll(List.of(cs1, cs2));
+            java.getCandidateSkills().add(cs1);
+            postgres.getCandidateSkills().add(cs2);
+
+            tx.commit();
 
             this.testCandidateId = cand.getId();
-            this.testSkillId = java.getId(); // return one skill id for convenience
+            this.testSkillId = java.getId();
+
+        } catch (Exception e) {
+            if (tx.isActive()) tx.rollback();
+            throw e;
+        } finally {
+            em.close();
         }
     }
 

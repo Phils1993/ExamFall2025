@@ -1,11 +1,13 @@
 package app.services;
 
-import app.dtos.SkillStatDTO;
-import app.dtos.SkillStatsApiResponse;
-import app.dtos.SkillStatsItemDTO;
+import app.dtos.SkillEnrichedDTO;
+import app.dtos.SkillStatsResponseDTO;
+import app.dtos.SkillStatsDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URI;
@@ -19,6 +21,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class ServiceAPI {
+
+    private final Logger logger = LoggerFactory.getLogger(ServiceAPI.class);
+
     private static final String DEFAULT_BASE_URL = "https://apiprovider.cphbusinessapps.dk/api/v1/skills/stats";
     private final String baseUrl;
     private final HttpClient client;
@@ -28,10 +33,6 @@ public class ServiceAPI {
 
     public ServiceAPI() {
         this(DEFAULT_BASE_URL, Duration.ofSeconds(5));
-    }
-
-    public ServiceAPI(String baseUrl) {
-        this(baseUrl, Duration.ofSeconds(5));
     }
 
     public ServiceAPI(String baseUrl, Duration timeout) {
@@ -49,7 +50,7 @@ public class ServiceAPI {
     /**
      * Fetch stats for the provided slugs. Returns an empty map on error or when provider has no data.
      */
-    public Map<String, SkillStatDTO> fetchStatsForSlugs(Set<String> slugs) {
+    public Map<String, SkillEnrichedDTO> fetchStatsForSlugs(Set<String> slugs) {
         if (slugs == null || slugs.isEmpty()) return Collections.emptyMap();
 
         try {
@@ -75,45 +76,36 @@ public class ServiceAPI {
 
             HttpRequest req = rb.build();
             HttpResponse<String> resp = client.send(req, HttpResponse.BodyHandlers.ofString());
+
             if (resp.statusCode() != 200 || resp.body() == null || resp.body().isBlank()) {
+                System.err.println("API call failed: " + resp.statusCode());
                 return Collections.emptyMap();
             }
 
-            SkillStatsApiResponse wrapper = mapper.readValue(resp.body(), SkillStatsApiResponse.class);
-            List<SkillStatsItemDTO> items = wrapper.getData();
+            SkillStatsResponseDTO wrapper = mapper.readValue(resp.body(), SkillStatsResponseDTO.class);
+            List<SkillStatsDTO> items = wrapper.getData();
 
-            if ((items == null || items.isEmpty()) && wrapper.getObjects() != null) {
-                for (SkillStatsApiResponse.WrapperObject w : wrapper.getObjects()) {
-                    if (w.getContent() != null && !w.getContent().isBlank()) {
-                        try {
-                            SkillStatsApiResponse inner = mapper.readValue(w.getContent(), SkillStatsApiResponse.class);
-                            if (inner.getData() != null && !inner.getData().isEmpty()) {
-                                items = inner.getData();
-                                break;
-                            }
-                        } catch (Exception ignored) {
-                        }
-                    }
-                }
+            if (items == null || items.isEmpty()) {
+                System.err.println("No skill data returned from API");
+                return Collections.emptyMap();
             }
-
-            if (items == null || items.isEmpty()) return Collections.emptyMap();
 
             return items.stream()
                     .filter(Objects::nonNull)
                     .filter(i -> i.getSlug() != null && !i.getSlug().isBlank())
                     .collect(Collectors.toMap(
-                            SkillStatsItemDTO::getSlug,
-                            i -> new SkillStatDTO(i.getSlug(), i.getPopularityScore(), i.getAverageSalary()),
+                            SkillStatsDTO::getSlug,
+                            i -> new SkillEnrichedDTO(i.getSlug(), i.getPopularityScore(), i.getAverageSalary()),
                             (a, b) -> a,
                             LinkedHashMap::new
                     ));
-        } catch (IOException e) {
-            return Collections.emptyMap();
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+            if (e instanceof InterruptedException) Thread.currentThread().interrupt();
             return Collections.emptyMap();
         } catch (Exception e) {
+            e.printStackTrace();
             return Collections.emptyMap();
         }
     }

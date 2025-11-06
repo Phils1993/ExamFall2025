@@ -1,18 +1,13 @@
-# Candidates API requests (copy‑paste ready)
-# Set your base URL before running, e.g.:
-# @variable url https://localhost:7000
-
 ### Get all candidates (no filter)
 GET {{url}}/candidates
 Accept: application/json
 
 ### Get all candidates filtered by skill category
-# Example: ?category=PROG_LANG
 GET {{url}}/candidates?category=PROG_LANG
 Accept: application/json
 
-### Get candidate by id
-GET {{url}}/candidates/5
+### Get candidate by ID
+GET {{url}}/candidates/1
 Accept: application/json
 
 ### Create a new candidate
@@ -23,39 +18,33 @@ Content-Type: application/json
   "name": "Lars Nielsen",
   "phone": "+45 20 12 34 56",
   "education": "MSc Software Engineering",
-  "skillIds": [
-    1,
-    2
-  ]
+  "skillIds": [1, 2]
 }
 
 ### Update candidate
-PUT {{url}}/candidates/7
+PUT {{url}}/candidates/3
 Content-Type: application/json
 
 {
   "name": "Lars N.",
   "phone": "+45 20 12 34 56",
   "education": "MSc Distributed Systems",
-  "skillIds": [
-    1,
-    3
-  ]
+  "skillIds": [1, 3]
 }
 
 ### Delete candidate
-DELETE {{url}}/candidates/8
+DELETE {{url}}/candidates/3
 
-### Link existing skill to candidate (add skill relation)
+### Link existing skill to candidate
 PUT {{url}}/candidates/6/skills/3
 
-### Unlink existing skill from candidate (remove skill relation)
+### Unlink existing skill from candidate
 DELETE {{url}}/candidates/10/skills/3
 
-### Get top candidate by average popularity (report)
+### Get top candidate by average popularity
 GET {{url}}/reports/candidates/top-by-popularity
 Accept: application/json
 
-### Example invalid category (expect 400)
+### Invalid category (expect 400)
 GET {{url}}/candidates?category=UNKNOWN
 Accept: application/json

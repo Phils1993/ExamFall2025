@@ -2,7 +2,7 @@ package app.controllers;
 
 import app.config.ApplicationConfig;
 import app.config.HibernateConfig;
-import app.dtos.CandidateDTO;
+import app.dtos.CandidateCreateDTO;
 import app.testPopulator.TestPopulator;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -41,8 +41,14 @@ class CandidateControllerTest {
         RestAssured.baseURI = "http://localhost" + BASE;
         RestAssured.port = 7070;
 
+        // prod DB to test if it works?
+        //Populator populator = new Populator(emf);
+        //populator.populate();
+
         TestPopulator populator = new TestPopulator(emf);
         populator.populate();
+        anyCandidateId = populator.getTestCandidateId();
+        anySkillId = populator.getTestSkillId();
     }
 
     @AfterAll
@@ -53,7 +59,7 @@ class CandidateControllerTest {
 
     @Test
     void create() {
-        CandidateDTO dto = CandidateDTO.builder()
+        CandidateCreateDTO dto = CandidateCreateDTO.builder()
                 .name("Test Candidate")
                 .phone("+45 11 22 33 44")
                 .education("BSc Testing")
@@ -114,16 +120,16 @@ class CandidateControllerTest {
                 .body("name", notNullValue());
     }
 
-    /*
+
     @Test
     void update() {
         Assumptions.assumeTrue(anyCandidateId > 0, "No candidate id available from populator");
 
-        CandidateDTO dto = CandidateDTO.builder()
+        CandidateCreateDTO dto = CandidateCreateDTO.builder()
                 .name("Updated Candidate")
                 .phone("+45 99 88 77 66")
                 .education("MSc Updated")
-                .skillIds(Set.of())
+                .skillIds(Set.of()) // skills not updated here
                 .build();
 
         given()
@@ -140,14 +146,17 @@ class CandidateControllerTest {
 
     @Test
     void delete() {
-        int createdId = given()
+        CandidateCreateDTO createDto = CandidateCreateDTO.builder()
+                .name("Temp Delete")
+                .phone("+45 90000000")
+                .education("Temp")
+                .skillIds(Set.of())
+                .build();
+
+        // Extract ID as Integer first, then convert to Long
+        Integer idInt = given()
                 .contentType(ContentType.JSON)
-                .body(CandidateDTO.builder()
-                        .name("Temp Delete")
-                        .phone("+45 90000000")
-                        .education("Temp")
-                        .skillIds(Set.of())
-                        .build())
+                .body(createDto)
                 .when()
                 .post("/candidates")
                 .then()
@@ -155,13 +164,13 @@ class CandidateControllerTest {
                 .extract()
                 .path("id");
 
+        Long createdId = idInt != null ? idInt.longValue() : null;
+
+        // Delete using Long ID
         given()
                 .when()
                 .delete("/candidates/{id}", createdId)
                 .then()
                 .statusCode(204);
-
     }
-
-     */
 }

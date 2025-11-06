@@ -8,19 +8,21 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "skill", uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))
-@Data
+@Table(name = "skill")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@ToString
 public class Skill {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     @Column(name = "skill_id")
-    private Long id;
+    private Integer id;
 
     @Column(unique = true)
     private String slug;
@@ -30,6 +32,7 @@ public class Skill {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @ToString.Exclude
     private Category category;
 
     @Column(length = 2000)
@@ -37,16 +40,7 @@ public class Skill {
 
     @OneToMany(mappedBy = "skill", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
+    @ToString.Exclude
     private Set<CandidateSkill> candidateSkills = new HashSet<>();
 
-    // Helper methods to keep both sides in sync
-    public void addCandidateSkill(CandidateSkill cs) {
-        candidateSkills.add(cs);
-        cs.setSkill(this);
-    }
-
-    public void removeCandidateSkill(CandidateSkill cs) {
-        candidateSkills.remove(cs);
-        cs.setSkill(null);
-    }
 }

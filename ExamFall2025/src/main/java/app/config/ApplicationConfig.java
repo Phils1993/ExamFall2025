@@ -1,7 +1,9 @@
 package app.config;
 
+import app.daos.CandidateDAO;
 import app.exceptions.ApiException;
 import app.security.SecurityController;
+import app.services.ServiceAPI;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.javalin.Javalin;
@@ -17,15 +19,16 @@ public class ApplicationConfig {
     private static Javalin app;
 
     public static Javalin startServer(int port, EntityManagerFactory emf) {
-        ServiceRegistry serviceRegistry = new ServiceRegistry(emf);
-        RoutesRegistry routes = new RoutesRegistry(serviceRegistry);
-        
+        CandidateDAO candidateDAO = new CandidateDAO(emf);
+        ServiceAPI serviceAPI = new ServiceAPI();
+
+        RoutesRegistry routes = new RoutesRegistry(candidateDAO, serviceAPI);
+
         app = Javalin.create(config -> configure(config, routes));
-        // Dette gør at rollen bliver godkendt og gennemgået FØR endpointet bliver iværksat
+
         SecurityController securityController = new SecurityController();
         app.beforeMatched(securityController.authenticate());
         app.beforeMatched(securityController.authorize());
-
 
         setCORS();
         setSecurity();

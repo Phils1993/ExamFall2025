@@ -2,16 +2,16 @@ package app.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
+
 import java.time.OffsetDateTime;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class SkillStatsItemDTO {
+public class SkillStatsDTO {
     @JsonProperty("slug")
     private String slug;
 
@@ -21,7 +21,7 @@ public class SkillStatsItemDTO {
     @JsonProperty("averageSalary")
     private Integer averageSalary;
 
-    // optional fields if you later want them
+    // Optional fields if needed later
     @JsonProperty("id")
     private String externalId;
 
