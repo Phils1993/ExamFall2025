@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2" />
+    <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamFall2025/ExamFall2025.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115133-1.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115133.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115134.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115134.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -379,67 +396,67 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Populator.executor": "Run",
-    "Application.TestPopulator.executor": "Run",
-    "Application.app.security.Main.executor": "Run",
-    "Application.src.main.java.Main.executor": "Run",
-    "HTTP Request.All in candidateRoutes.executor": "Run",
-    "HTTP Request.All in skillRoutes.executor": "Run",
-    "HTTP Request.candidateRoutes | Create a new candidate.executor": "Run",
-    "HTTP Request.candidateRoutes | Create a skill.executor": "Run",
-    "HTTP Request.candidateRoutes | Delete candidate.executor": "Run",
-    "HTTP Request.candidateRoutes | Diagnostic endpoint (optional).executor": "Run",
-    "HTTP Request.candidateRoutes | Get all candidates (no auth).executor": "Run",
-    "HTTP Request.candidateRoutes | Get all skills.executor": "Run",
-    "HTTP Request.candidateRoutes | Get candidate by id.executor": "Run",
-    "HTTP Request.candidateRoutes | Get top candidate by average popularity (report).executor": "Run",
-    "HTTP Request.candidateRoutes | Report: candidate with highest average popularity.executor": "Run",
-    "HTTP Request.candidateRoutes | Update candidate.executor": "Run",
-    "HTTP Request.skillRoutes | Get skill by id.executor": "Run",
-    "HTTP Request.userRoutes | Login as admin (Admin).executor": "Run",
-    "HTTP Request.userRoutes | Login as normal user (Philip) (1).executor": "Run",
-    "HTTP Request.userRoutes | Login as normal user (Philip).executor": "Run",
-    "HTTP Request.userRoutes | Register a new user (default role = USER) (1).executor": "Run",
-    "HTTP Request.userRoutes | Register a new user (default role = USER).executor": "Run",
-    "JUnit.CandidateControllerTest.create.executor": "Run",
-    "JUnit.CandidateControllerTest.executor": "Run",
-    "JUnit.CandidateControllerTest.getAll.executor": "Run",
-    "JUnit.CandidateControllerTest.getAllCandidates.executor": "Run",
-    "JUnit.CandidateControllerTest.getById.executor": "Run",
-    "JUnit.CandidateControllerTest.update.executor": "Run",
-    "Maven. [clean,validate,compile,test,package...].executor": "Run",
-    "Maven.ExamFall2025 [clean,validate,compile...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "rest.client.default.execution.environment": "dev",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Populator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestPopulator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.app.security.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.src.main.java.Main.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in candidateRoutes.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in skillRoutes.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Create a new candidate.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Create a skill.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Delete candidate.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Diagnostic endpoint (optional).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Get all candidates (no auth).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Get all skills.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Get candidate by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Get top candidate by average popularity (report).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Report: candidate with highest average popularity.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Update candidate.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.skillRoutes | Get skill by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.userRoutes | Login as admin (Admin).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.userRoutes | Login as normal user (Philip) (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.userRoutes | Login as normal user (Philip).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.userRoutes | Register a new user (default role = USER) (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.userRoutes | Register a new user (default role = USER).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.create.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.getAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.getAllCandidates.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.getById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.update.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [clean,validate,compile,test,package...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ExamFall2025 [clean,validate,compile...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025" />
@@ -460,7 +477,22 @@
       <recent name="app.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CandidateControllerTest">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="All in candidateRoutes" value="STOPPED" />
+              <entry key="candidateRoutes | Get candidate by id" value="STOPPED" />
+              <entry key="candidateRoutes | Get top candidate by average popularity (report)" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <envs>
         <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
@@ -478,18 +510,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPopulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.testPopulator.TestPopulator" />
+    <configuration name="Populator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
+        <env name="DB_NAME" value="exam_fall_2025" />
+        <env name="DB_PASSWORD" value="postgres" />
+        <env name="DB_USERNAME" value="postgres" />
+        <env name="DEPLOYED" value="prod" />
+        <env name="ISSUER" value="philip1993" />
+        <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
+        <env name="TOKEN_EXPIRE_TIME" value="1800000" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="app.Populator.Populator" />
       <module name="ExamFall2025" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="app.testPopulator.*" />
+          <option name="PATTERN" value="app.Populator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="All in candidateRoutes" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="candidateRoutes | Get candidate by id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Get candidate by id" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="candidateRoutes | Get top candidate by average popularity (report)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Get top candidate by average popularity (report)" index="9" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="CandidateControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExamFall2025" />
@@ -506,69 +557,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CandidateControllerTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ExamFall2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="app.controllers" />
-      <option name="MAIN_CLASS_NAME" value="app.controllers.CandidateControllerTest" />
-      <option name="METHOD_NAME" value="getAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidateControllerTest.getAllCandidates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ExamFall2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="app.controllers" />
-      <option name="MAIN_CLASS_NAME" value="app.controllers.CandidateControllerTest" />
-      <option name="METHOD_NAME" value="getAllCandidates" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidateControllerTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ExamFall2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="app.controllers" />
-      <option name="MAIN_CLASS_NAME" value="app.controllers.CandidateControllerTest" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.TestPopulator" />
+      <item itemvalue="Application.Populator" />
+      <item itemvalue="HTTP Request.All in candidateRoutes" />
+      <item itemvalue="HTTP Request.candidateRoutes | Get candidate by id" />
+      <item itemvalue="HTTP Request.candidateRoutes | Get top candidate by average popularity (report)" />
       <item itemvalue="JUnit.CandidateControllerTest" />
-      <item itemvalue="JUnit.CandidateControllerTest.getAll" />
-      <item itemvalue="JUnit.CandidateControllerTest.getAllCandidates" />
-      <item itemvalue="JUnit.CandidateControllerTest.update" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.All in candidateRoutes" />
+        <item itemvalue="Application.Populator" />
         <item itemvalue="JUnit.CandidateControllerTest" />
-        <item itemvalue="JUnit.CandidateControllerTest.update" />
-        <item itemvalue="JUnit.CandidateControllerTest.getAllCandidates" />
-        <item itemvalue="JUnit.CandidateControllerTest.getAll" />
-        <item itemvalue="Application.TestPopulator" />
+        <item itemvalue="HTTP Request.candidateRoutes | Get top candidate by average popularity (report)" />
+        <item itemvalue="HTTP Request.candidateRoutes | Get candidate by id" />
       </list>
     </recent_temporary>
   </component>
@@ -591,6 +594,7 @@
       <workItem from="1761987963297" duration="1135000" />
       <workItem from="1762000341452" duration="2401000" />
       <workItem from="1762173810664" duration="3283000" />
+      <workItem from="1762433709335" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="merged US 1+2">
       <option name="closed" value="true" />

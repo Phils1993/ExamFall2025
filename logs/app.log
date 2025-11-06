@@ -6734,3 +6734,1224 @@ Response: [400 Bad Request], execution took 3.52 ms
 2025-11-04 13:46:51 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
 2025-11-04 13:46:51 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
 2025-11-04 13:46:51 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@432a6a69] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:25:36 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:25:36 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:25:36 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:25:36 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:25:36 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 13:25:36 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:25:36 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:25:36 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:25:37 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:25:39 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@656842bc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:25:39 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 13:25:39 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - constraint "uk5ljf2l2h4odhtxrsuohlro4ir" of relation "skill" does not exist, skipping
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/skills]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills/{id}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/skills/{id}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/skills/{id}]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 13:25:40 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 13:25:40 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.17+10-LTS
+2025-11-06 13:25:41 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 13:25:41 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@ff1f465{/api/v1,null,AVAILABLE}
+2025-11-06 13:25:41 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@57bdceaa{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 13:25:41 [INFO] org.eclipse.jetty.server.Server - Started Server@26d028f7{STARTING}[11.0.24,sto=0] @6002ms
+2025-11-06 13:25:41 [INFO] io.javalin.Javalin - Javalin started in 321ms \o/
+2025-11-06 13:25:41 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 13:25:41 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 13:25:41 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 13:25:46 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/index.html]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@2f6e5edc
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"I6omDYop6TsI6onl78n1q8", sec-ch-ua="Chromium";v="142", "Microsoft Edge";v="142", "Not_A Brand";v="99", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Thu, 30 Oct 2025 12:18:30 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [304 Not Modified], execution took 27.47 ms
+    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"I6omDYop6TsI6onl78n1q8", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:25:45 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
+    No body was set
+----------------------------------------------------------------------------------
+2025-11-06 13:25:46 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5ac4f6c
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, If-None-Match=W/"I6omDYop6TsI6onl78n1q8", sec-ch-ua="Chromium";v="142", "Microsoft Edge";v="142", "Not_A Brand";v="99", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", If-Modified-Since=Thu, 30 Oct 2025 12:18:30 GMT, Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [304 Not Modified], execution took 278.34 ms
+    Headers: {Cache-Control=max-age=0, Access-Control-Allow-Origin=*, ETag=W/"I6omDYop6TsI6onl78n1q8", Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:25:45 GMT, Access-Control-Allow-Headers=Content-Type, Authorization}
+    No body was set
+----------------------------------------------------------------------------------
+2025-11-06 13:25:49 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/routes]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@79c074bc
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, sec-ch-ua="Chromium";v="142", "Microsoft Edge";v="142", "Not_A Brand";v="99", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 40.74 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Content-Encoding=gzip, Date=Thu, 06 Nov 2025 12:25:49 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=text/html;charset=utf-8}
+    Body is gzipped (13671 bytes, not logged)
+----------------------------------------------------------------------------------
+2025-11-06 13:27:06 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:27:06 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:27:06 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:27:06 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:27:06 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:27:06 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:27:06 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:27:06 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:27:07 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:27:09 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@582a3b19] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:27:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:27:29 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:27:29 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:27:29 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:27:29 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:27:29 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:27:29 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:27:29 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:27:29 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:27:30 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:27:31 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@49491770] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:28:14 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:28:14 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:28:14 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:28:14 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:28:14 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 13:28:14 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:28:14 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:28:14 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:28:15 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:28:17 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5bec3e0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/skills]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills/{id}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/skills/{id}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/skills/{id}]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 13:28:18 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.17+10-LTS
+2025-11-06 13:28:18 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 13:28:18 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7ab1ad9{/api/v1,null,AVAILABLE}
+2025-11-06 13:28:18 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@377dbc50{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 13:28:18 [INFO] org.eclipse.jetty.server.Server - Started Server@70d5d96b{STARTING}[11.0.24,sto=0] @5308ms
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - Javalin started in 296ms \o/
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 13:28:18 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 13:29:14 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@30389cbd
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 668.23 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:13 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 317 bytes (starts on next line):
+    [{"id":1,"name":"Alice Andersen","phone":"+45 20000001","education":"MSc Computer Science","skillIds":[1,3,5]},{"id":2,"name":"Bob Berg","phone":"+45 20000002","education":"BSc Information Systems","skillIds":[2,4]},{"id":3,"name":"Lars N.","phone":"+45 20000003","education":"MSc Distributed Systems","skillIds":[]}]
+----------------------------------------------------------------------------------
+2025-11-06 13:29:15 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@39a5741d
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=PROG_LANG
+    QueryParams: {category=[PROG_LANG]}
+    FormParams: {}
+Response: [200 OK], execution took 102.25 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 210 bytes (starts on next line):
+    [{"id":1,"name":"Alice Andersen","phone":"+45 20000001","education":"MSc Computer Science","skillIds":[1]},{"id":2,"name":"Bob Berg","phone":"+45 20000002","education":"BSc Information Systems","skillIds":[2]}]
+----------------------------------------------------------------------------------
+2025-11-06 13:29:15 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/5]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@73a12a48
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 66.62 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 19 bytes (starts on next line):
+    Candidate not found
+----------------------------------------------------------------------------------
+2025-11-06 13:29:16 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@6d2687cc
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=135, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 578.10 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 112 bytes (starts on next line):
+    {"id":4,"name":"Lars Nielsen","phone":"+45 20 12 34 56","education":"MSc Software Engineering","skillIds":[1,2]}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:16 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/7]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3b4947ee
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=129, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 42.59 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:16 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 103 bytes (starts on next line):
+    {"id":5,"name":"Lars N.","phone":"+45 20 12 34 56","education":"MSc Distributed Systems","skillIds":[]}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:16 [ERROR] app.config.ApplicationConfig - An exception occurred
+app.exceptions.ApiException: Candidate not found
+	at app.services.CandidateService.delete(CandidateService.java:127)
+	at app.controllers.CandidateController.lambda$delete$5(CandidateController.java:99)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 13:29:16 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/8]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@7732a767
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 22.95 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:16 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 42 bytes (starts on next line):
+    {"status":404,"msg":"Candidate not found"}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:17 [ERROR] app.daos.CandidateDAO - addSkill failed
+java.lang.IllegalArgumentException: Candidate not found: 6
+	at app.daos.CandidateDAO.addSkill(CandidateDAO.java:133)
+	at app.services.CandidateService.linkSkill(CandidateService.java:140)
+	at app.controllers.CandidateController.lambda$linkSkill$7(CandidateController.java:125)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 13:29:17 [ERROR] app.config.ApplicationConfig - An exception occurred
+java.lang.IllegalArgumentException: Candidate not found: 6
+	at app.daos.CandidateDAO.addSkill(CandidateDAO.java:133)
+	at app.services.CandidateService.linkSkill(CandidateService.java:140)
+	at app.controllers.CandidateController.lambda$linkSkill$7(CandidateController.java:125)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 13:29:17 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/6/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3a82eda0
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500 Server Error], execution took 35.12 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:17 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 44 bytes (starts on next line):
+    {"status":500,"msg":"Internal server error"}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:17 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/10/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@73722738
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 64.72 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:17 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 40 bytes (starts on next line):
+    {"error":"Candidate or Skill not found"}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:17 [INFO] app.services.CandidateService - Collected 5 unique slugs for popularity lookup
+2025-11-06 13:29:19 [INFO] app.services.CandidateService - Fetched 5 skill stats from external provider
+2025-11-06 13:29:19 [INFO] app.services.CandidateService - Top candidate by average popularity: id=4, avg=94.0
+2025-11-06 13:29:19 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5cfffe9e
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 1289.78 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:17 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 33 bytes (starts on next line):
+    {"id":4,"averagePopularity":94.0}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:19 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@6e7206f9
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=UNKNOWN
+    QueryParams: {category=[UNKNOWN]}
+    FormParams: {}
+Response: [400 Bad Request], execution took 2.76 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:19 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 66 bytes (starts on next line):
+    {"error":"Invalid category","message":"Unknown category: UNKNOWN"}
+----------------------------------------------------------------------------------
+2025-11-06 13:29:23 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@1461fe05
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, sec-ch-ua="Chromium";v="142", "Microsoft Edge";v="142", "Not_A Brand";v="99", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 32.22 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:23 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 534 bytes (starts on next line):
+    [{"id":5,"name":"Lars N.","phone":"+45 20 12 34 56","education":"MSc Distributed Systems","skillIds":[]},{"id":1,"name":"Alice Andersen","phone":"+45 20000001","education":"MSc Computer Science","skillIds":[1,3,5]},{"id":2,"name":"Bob Berg","phone":"+45 20000002","education":"BSc Information Systems","skillIds":[2,4]},{"id":3,"name":"Lars N.","phone":"+45 20000003","education":"MSc Distributed Systems","skillIds":[]},{"id":4,"name":"Lars Nielsen","phone":"+45 20 12 34 56","education":"MSc Software Engineering","skillIds":[1,2]}]
+----------------------------------------------------------------------------------
+2025-11-06 13:29:59 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/5]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@277c7b47
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 9.00 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:29:59 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 103 bytes (starts on next line):
+    {"id":5,"name":"Lars N.","phone":"+45 20 12 34 56","education":"MSc Distributed Systems","skillIds":[]}
+----------------------------------------------------------------------------------
+2025-11-06 13:30:19 [INFO] app.services.CandidateService - Collected 5 unique slugs for popularity lookup
+2025-11-06 13:30:20 [INFO] app.services.CandidateService - Fetched 5 skill stats from external provider
+2025-11-06 13:30:20 [INFO] app.services.CandidateService - Top candidate by average popularity: id=4, avg=94.0
+2025-11-06 13:30:20 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@8ac9947
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 90.55 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:30:19 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 33 bytes (starts on next line):
+    {"id":4,"averagePopularity":94.0}
+----------------------------------------------------------------------------------
+2025-11-06 13:30:40 [INFO] app.services.CandidateService - Collected 5 unique slugs for popularity lookup
+2025-11-06 13:30:40 [INFO] app.services.CandidateService - Fetched 5 skill stats from external provider
+2025-11-06 13:30:40 [INFO] app.services.CandidateService - Top candidate by average popularity: id=4, avg=94.0
+2025-11-06 13:30:40 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@368ca97c
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 77.67 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:30:40 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 33 bytes (starts on next line):
+    {"id":4,"averagePopularity":94.0}
+----------------------------------------------------------------------------------
+2025-11-06 13:31:25 [INFO] app.services.CandidateService - Collected 5 unique slugs for popularity lookup
+2025-11-06 13:31:25 [INFO] app.services.CandidateService - Fetched 5 skill stats from external provider
+2025-11-06 13:31:25 [INFO] app.services.CandidateService - Top candidate by average popularity: id=4, avg=94.0
+2025-11-06 13:31:25 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@2bb418f1
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 180.22 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 12:31:25 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 33 bytes (starts on next line):
+    {"id":4,"averagePopularity":94.0}
+----------------------------------------------------------------------------------
+2025-11-06 13:56:54 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:56:54 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:56:54 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:56:54 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:56:54 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:56:54 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:56:54 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:56:54 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:56:56 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:56:57 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@43c7fe8a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:56:58 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@747f6c5a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:56:59 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:57:47 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:57:47 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:57:48 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:57:48 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:57:48 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:57:48 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:57:48 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:57:48 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:57:49 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:57:51 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@632cf7d3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:57:51 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@736b21ee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:57:52 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:59:18 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 13:59:18 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 13:59:18 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 13:59:18 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 13:59:18 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-06 13:59:18 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 13:59:18 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 13:59:18 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 13:59:20 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 13:59:21 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@632cf7d3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:59:21 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@736b21ee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 13:59:22 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/]
+2025-11-06 14:02:01 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 14:02:01 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 14:02:01 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 14:02:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 14:02:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/]
+2025-11-06 14:02:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 14:02:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 14:02:01 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 14:02:02 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 14:02:03 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@aa1bb14] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:02:04 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6dae70f9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:02:04 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/]
+2025-11-06 14:03:27 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 14:03:27 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 14:03:28 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 14:03:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 14:03:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 14:03:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 14:03:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 14:03:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 14:03:29 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 14:03:30 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47fb7ec9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate_skill" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "skill" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 14:03:30 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-11-06 14:03:30 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@53a301f3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:03:31 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 14:04:21 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 14:04:21 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 14:04:21 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 14:04:21 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 14:04:21 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 14:04:21 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 14:04:21 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 14:04:21 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 14:04:22 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 14:04:23 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47fb7ec9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:04:24 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77c66a4f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/skills]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills/{id}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/skills/{id}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/skills/{id}]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 14:04:24 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.17+10-LTS
+2025-11-06 14:04:24 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 14:04:24 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4e2109fe{/api/v1,null,AVAILABLE}
+2025-11-06 14:04:24 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@63dc3420{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 14:04:24 [INFO] org.eclipse.jetty.server.Server - Started Server@278de2b2{STARTING}[11.0.24,sto=0] @4668ms
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - Javalin started in 298ms \o/
+2025-11-06 14:04:24 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 14:04:25 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 14:04:25 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 14:04:32 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5501a9dd
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 560.67 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:32 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 2 bytes (starts on next line):
+    []
+----------------------------------------------------------------------------------
+2025-11-06 14:04:33 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@19a3a12a
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=PROG_LANG
+    QueryParams: {category=[PROG_LANG]}
+    FormParams: {}
+Response: [200 OK], execution took 70.60 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:33 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 2 bytes (starts on next line):
+    []
+----------------------------------------------------------------------------------
+2025-11-06 14:04:33 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/5]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@69fa9690
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 49.60 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:33 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 19 bytes (starts on next line):
+    Candidate not found
+----------------------------------------------------------------------------------
+2025-11-06 14:04:34 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@30ec6f46
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=135, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 350.95 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:33 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 109 bytes (starts on next line):
+    {"id":1,"name":"Lars Nielsen","phone":"+45 20 12 34 56","education":"MSc Software Engineering","skillIds":[]}
+----------------------------------------------------------------------------------
+2025-11-06 14:04:34 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/7]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@4a381ef9
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=129, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 77.46 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:34 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 103 bytes (starts on next line):
+    {"id":2,"name":"Lars N.","phone":"+45 20 12 34 56","education":"MSc Distributed Systems","skillIds":[]}
+----------------------------------------------------------------------------------
+2025-11-06 14:04:34 [ERROR] app.config.ApplicationConfig - An exception occurred
+app.exceptions.ApiException: Candidate not found
+	at app.services.CandidateService.delete(CandidateService.java:127)
+	at app.controllers.CandidateController.lambda$delete$5(CandidateController.java:99)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 14:04:34 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/8]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5c2d2299
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 13.55 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:34 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 42 bytes (starts on next line):
+    {"status":404,"msg":"Candidate not found"}
+----------------------------------------------------------------------------------
+2025-11-06 14:04:34 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/6/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@57ff1083
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 8.77 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:34 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 28 bytes (starts on next line):
+    Candidate or Skill not found
+----------------------------------------------------------------------------------
+2025-11-06 14:04:35 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/10/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@43a1dd0a
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 115.18 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:34 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 40 bytes (starts on next line):
+    {"error":"Candidate or Skill not found"}
+----------------------------------------------------------------------------------
+2025-11-06 14:04:35 [INFO] app.services.CandidateService - Collected 0 unique slugs for popularity lookup
+2025-11-06 14:04:35 [INFO] app.services.CandidateService - No skill slugs available on candidates; cannot compute popularity
+2025-11-06 14:04:35 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3f4fc6bb
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 13.24 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:35 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 43 bytes (starts on next line):
+    {"msg":"No candidate with popularity data"}
+----------------------------------------------------------------------------------
+2025-11-06 14:04:35 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@4e42a11a
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=UNKNOWN
+    QueryParams: {category=[UNKNOWN]}
+    FormParams: {}
+Response: [400 Bad Request], execution took 2.77 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:04:35 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 66 bytes (starts on next line):
+    {"message":"Unknown category: UNKNOWN","error":"Invalid category"}
+----------------------------------------------------------------------------------
+2025-11-06 14:05:22 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 14:05:22 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 14:05:23 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 14:05:23 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 14:05:23 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 14:05:23 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 14:05:23 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 14:05:23 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 14:05:24 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 14:05:25 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47fb7ec9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:05:25 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77c66a4f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:05:26 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 14:05:50 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 14:05:50 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 14:05:50 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 14:05:50 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-11-06 14:05:50 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/exam_fall_2025]
+2025-11-06 14:05:50 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 14:05:50 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 14:05:50 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 14:05:51 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 14:05:53 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ac5b4c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/skills]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/skills/{id}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/skills/{id}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/skills/{id}]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 14:05:53 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 14:05:53 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.17+10-LTS
+2025-11-06 14:05:54 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 14:05:54 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7ab1ad9{/api/v1,null,AVAILABLE}
+2025-11-06 14:05:54 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@377dbc50{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 14:05:54 [INFO] org.eclipse.jetty.server.Server - Started Server@70d5d96b{STARTING}[11.0.24,sto=0] @4734ms
+2025-11-06 14:05:54 [INFO] io.javalin.Javalin - Javalin started in 311ms \o/
+2025-11-06 14:05:54 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 14:05:54 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 14:05:54 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 14:06:00 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@6024077c
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 610.49 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:05:59 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 214 bytes (starts on next line):
+    [{"id":1,"name":"Alice Andersen","phone":"+45 20000001","education":"MSc Computer Science","skillIds":[1,3]},{"id":2,"name":"Bob Berg","phone":"+45 20000002","education":"BSc Information Systems","skillIds":[2,4]}]
+----------------------------------------------------------------------------------
+2025-11-06 14:06:00 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@458e15c5
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=PROG_LANG
+    QueryParams: {category=[PROG_LANG]}
+    FormParams: {}
+Response: [200 OK], execution took 74.40 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:00 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 210 bytes (starts on next line):
+    [{"id":1,"name":"Alice Andersen","phone":"+45 20000001","education":"MSc Computer Science","skillIds":[1]},{"id":2,"name":"Bob Berg","phone":"+45 20000002","education":"BSc Information Systems","skillIds":[2]}]
+----------------------------------------------------------------------------------
+2025-11-06 14:06:00 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/5]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@72c5785f
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 69.73 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:00 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 19 bytes (starts on next line):
+    Candidate not found
+----------------------------------------------------------------------------------
+2025-11-06 14:06:01 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@e9f08d2
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=135, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 522.92 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:00 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 112 bytes (starts on next line):
+    {"id":3,"name":"Lars Nielsen","phone":"+45 20 12 34 56","education":"MSc Software Engineering","skillIds":[1,2]}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:01 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/7]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3927c73c
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=129, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 112.30 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:01 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 103 bytes (starts on next line):
+    {"id":4,"name":"Lars N.","phone":"+45 20 12 34 56","education":"MSc Distributed Systems","skillIds":[]}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:01 [ERROR] app.config.ApplicationConfig - An exception occurred
+app.exceptions.ApiException: Candidate not found
+	at app.services.CandidateService.delete(CandidateService.java:127)
+	at app.controllers.CandidateController.lambda$delete$5(CandidateController.java:99)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 14:06:01 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/8]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@6dad958f
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 17.74 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:01 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 42 bytes (starts on next line):
+    {"status":404,"msg":"Candidate not found"}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:01 [ERROR] app.daos.CandidateDAO - addSkill failed
+java.lang.IllegalArgumentException: Candidate not found: 6
+	at app.daos.CandidateDAO.addSkill(CandidateDAO.java:133)
+	at app.services.CandidateService.linkSkill(CandidateService.java:140)
+	at app.controllers.CandidateController.lambda$linkSkill$7(CandidateController.java:125)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 14:06:01 [ERROR] app.config.ApplicationConfig - An exception occurred
+java.lang.IllegalArgumentException: Candidate not found: 6
+	at app.daos.CandidateDAO.addSkill(CandidateDAO.java:133)
+	at app.services.CandidateService.linkSkill(CandidateService.java:140)
+	at app.controllers.CandidateController.lambda$linkSkill$7(CandidateController.java:125)
+	at io.javalin.router.Endpoint.handle(Endpoint.kt:52)
+	at io.javalin.router.ParsedEndpoint.handle(ParsedEndpoint.kt:15)
+	at io.javalin.http.servlet.DefaultTasks.HTTP$lambda$9$lambda$7$lambda$6(DefaultTasks.kt:52)
+	at io.javalin.http.servlet.JavalinServlet.handleTask(JavalinServlet.kt:99)
+	at io.javalin.http.servlet.JavalinServlet.handleSync(JavalinServlet.kt:64)
+	at io.javalin.http.servlet.JavalinServlet.handle(JavalinServlet.kt:50)
+	at io.javalin.http.servlet.JavalinServlet.service(JavalinServlet.kt:30)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:52)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:764)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:529)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1381)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1303)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122)
+	at org.eclipse.jetty.server.Server.handle(Server.java:563)
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277)
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.produce(AdaptiveExecutionStrategy.java:193)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-06 14:06:01 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/6/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3a82eda0
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [500 Server Error], execution took 19.90 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:01 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 44 bytes (starts on next line):
+    {"status":500,"msg":"Internal server error"}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:02 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/10/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@349d0bdc
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 66.86 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:02 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 40 bytes (starts on next line):
+    {"error":"Candidate or Skill not found"}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:02 [INFO] app.services.CandidateService - Collected 0 unique slugs for popularity lookup
+2025-11-06 14:06:02 [INFO] app.services.CandidateService - No skill slugs available on candidates; cannot compute popularity
+2025-11-06 14:06:02 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@7384fa64
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 20.38 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:02 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 43 bytes (starts on next line):
+    {"msg":"No candidate with popularity data"}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:02 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@80389ac
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=UNKNOWN
+    QueryParams: {category=[UNKNOWN]}
+    FormParams: {}
+Response: [400 Bad Request], execution took 2.91 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:02 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 66 bytes (starts on next line):
+    {"message":"Unknown category: UNKNOWN","error":"Invalid category"}
+----------------------------------------------------------------------------------
+2025-11-06 14:06:11 [INFO] app.services.CandidateService - Collected 0 unique slugs for popularity lookup
+2025-11-06 14:06:11 [INFO] app.services.CandidateService - No skill slugs available on candidates; cannot compute popularity
+2025-11-06 14:06:11 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@49421f7d
+    Headers: {Cookie=Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02; Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1; Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d; pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=; PGADMIN_LANGUAGE=en, Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, Connection=keep-alive, User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0, Sec-Fetch-Site=none, Sec-Fetch-Dest=document, Host=localhost:7070, Accept-Encoding=gzip, deflate, br, zstd, Sec-Fetch-Mode=navigate, sec-ch-ua="Chromium";v="142", "Microsoft Edge";v="142", "Not_A Brand";v="99", sec-ch-ua-mobile=?0, Upgrade-Insecure-Requests=1, sec-ch-ua-platform="Windows", Sec-Fetch-User=?1, Accept-Language=da,en;q=0.9,en-GB;q=0.8,en-US;q=0.7}
+    Cookies: {Idea-ec21c14a=c70a59d8-58d1-4d36-8cd7-b51c7cc8ef02, Idea-ec21c509=3734311e-fb3f-4594-ab0f-48d48559b0e1, Idea-ec21c50a=73aabfbb-4d62-4326-afec-47fb30f5085d, pga4_session=f481ee5a-e988-472b-b317-641659dcbb0e!ZbwQVzc/unPH2306ZohKNY5x7YVNihygvYgf2v+X9Rw=, PGADMIN_LANGUAGE=en}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [404 Not Found], execution took 32.75 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 13:06:11 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 43 bytes (starts on next line):
+    {"msg":"No candidate with popularity data"}
+----------------------------------------------------------------------------------
