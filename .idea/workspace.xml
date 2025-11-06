@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ServiceRegistry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/SkillController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/SkillDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -445,7 +440,11 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -604,7 +603,7 @@
       <workItem from="1762000341452" duration="2401000" />
       <workItem from="1762173810664" duration="3283000" />
       <workItem from="1762413034679" duration="16718000" />
-      <workItem from="1762429913922" duration="452000" />
+      <workItem from="1762429913922" duration="920000" />
     </task>
     <task id="LOCAL-00001" summary="merged US 1+2">
       <option name="closed" value="true" />
@@ -623,5 +622,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merged US 1+2" />
     <option name="LAST_COMMIT_MESSAGE" value="merged US 1+2" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
