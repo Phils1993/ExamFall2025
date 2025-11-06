@@ -1,0 +1,86 @@
+[
+  {
+    "id": 5,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [],
+    "enrichedSkills": []
+  },
+  {
+    "id": 7,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [],
+    "enrichedSkills": []
+  },
+  {
+    "id": 4,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [],
+    "enrichedSkills": []
+  },
+  {
+    "id": 1,
+    "name": "Alice Andersen",
+    "phone": "+45 20000001",
+    "education": "MSc Computer Science",
+    "skillIds": [
+      5,
+      1
+    ],
+    "enrichedSkills": [
+      {
+        "slug": "spring-boot",
+        "popularityScore": 88,
+        "averageSalary": 115000
+      },
+      {
+        "slug": "java",
+        "popularityScore": 93,
+        "averageSalary": 120000
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Lars N.",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Distributed Systems",
+    "skillIds": [],
+    "enrichedSkills": []
+  },
+  {
+    "id": 6,
+    "name": "Lars N.",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Distributed Systems",
+    "skillIds": [],
+    "enrichedSkills": []
+  },
+  {
+    "id": 2,
+    "name": "Bob Berg",
+    "phone": "+45 20000002",
+    "education": "BSc Information Systems",
+    "skillIds": [
+      2,
+      4
+    ],
+    "enrichedSkills": [
+      {
+        "slug": "python",
+        "popularityScore": 95,
+        "averageSalary": 118000
+      },
+      {
+        "slug": "docker",
+        "popularityScore": 90,
+        "averageSalary": 118000
+      }
+    ]
+  }
+]

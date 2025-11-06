@@ -1,0 +1,22 @@
+package app.Populator;
+
+import app.config.HibernateConfig;
+import app.security.ISecurityDAO;
+import app.security.SecurityDAO;
+
+public class UserPopulator {
+
+    public static void populateDefaultUsers() {
+        ISecurityDAO dao = new SecurityDAO(HibernateConfig.getEntityManagerFactory());
+
+        dao.createRole("User");
+        dao.createRole("Admin");
+
+        dao.createUser("Philip", "pass12345");
+        dao.createUser("PhilipAdmin", "pass12345");
+
+        dao.addUserRole("Philip", "User");
+        dao.addUserRole("PhilipAdmin", "Admin");
+    }
+
+}

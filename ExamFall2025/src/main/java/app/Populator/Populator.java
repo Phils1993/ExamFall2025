@@ -29,23 +29,42 @@ public class Populator {
                 return;
             }
 
-            // --- Skills ---
-            Skill java = Skill.builder().name("Java").category(Category.PROG_LANG).description("General purpose language").build();
-            Skill python = Skill.builder().name("Python").category(Category.PROG_LANG).description("Scripting and data").build();
-            Skill postgres = Skill.builder().name("PostgreSQL").category(Category.DB).description("Relational DB").build();
-            Skill docker = Skill.builder().name("Docker").category(Category.DEVOPS).description("Containerization").build();
-            Skill spring = Skill.builder().name("Spring Boot").category(Category.FRAMEWORK).description("Java framework").build();
+            // --- Skills with correct slugs ---
+            Skill java = createSkill("Java", Category.PROG_LANG, "General purpose language");
+            Skill python = createSkill("Python", Category.PROG_LANG, "Scripting and data");
+            Skill postgres = createSkill("PostgreSQL", Category.DB, "Relational DB");
+            Skill docker = createSkill("Docker", Category.DEVOPS, "Containerization");
+            Skill spring = createSkill("Spring Boot", Category.FRAMEWORK, "Java framework");
 
             List<Skill> skills = List.of(java, python, postgres, docker, spring);
-            skills.forEach(em::persist);
+            skills.forEach(skill -> {
+                System.out.println("Persisting skill: " + skill.getName() + " → slug: " + skill.getSlug());
+                em.persist(skill);
+            });
             em.flush(); // assign IDs
 
             // --- Candidates ---
-            Candidate alice = Candidate.builder().name("Alice Andersen").phone("+45 20000001").education("MSc Computer Science").build();
-            Candidate bob = Candidate.builder().name("Bob Berg").phone("+45 20000002").education("BSc Information Systems").build();
+            Candidate alice = Candidate.builder()
+                    .name("Alice Andersen")
+                    .phone("+45 20000001")
+                    .education("MSc Computer Science")
+                    .build();
+
+            Candidate bob = Candidate.builder()
+                    .name("Bob Berg")
+                    .phone("+45 20000002")
+                    .education("BSc Information Systems")
+                    .build();
+
+            Candidate empty = Candidate.builder()
+                    .name("Lars N.")
+                    .phone("+45 20000003")
+                    .education("MSc Distributed Systems")
+                    .build();
 
             em.persist(alice);
             em.persist(bob);
+            em.persist(empty);
             em.flush(); // assign IDs
 
             // --- Link skills using helper methods ---
@@ -62,6 +81,15 @@ public class Populator {
         } finally {
             em.close();
         }
+    }
+
+    private Skill createSkill(String name, Category category, String description) {
+        return Skill.builder()
+                .name(name)
+                .slug(name.toLowerCase().replace(" ", "-"))
+                .category(category)
+                .description(description)
+                .build();
     }
 
     public static void main(String[] args) {

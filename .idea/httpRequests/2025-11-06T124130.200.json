@@ -1,0 +1,60 @@
+[
+  {
+    "id": 3,
+    "name": "Lars N.",
+    "phone": "+45 20000003",
+    "education": "MSc Distributed Systems",
+    "skillIds": [],
+    "enrichedSkills": []
+  },
+  {
+    "id": 1,
+    "name": "Alice Andersen",
+    "phone": "+45 20000001",
+    "education": "MSc Computer Science",
+    "skillIds": [
+      1,
+      5,
+      3
+    ],
+    "enrichedSkills": [
+      {
+        "slug": "java",
+        "popularityScore": 93,
+        "averageSalary": 120000
+      },
+      {
+        "slug": "spring-boot",
+        "popularityScore": 88,
+        "averageSalary": 115000
+      },
+      {
+        "slug": "postgresql",
+        "popularityScore": 86,
+        "averageSalary": 130000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob Berg",
+    "phone": "+45 20000002",
+    "education": "BSc Information Systems",
+    "skillIds": [
+      4,
+      2
+    ],
+    "enrichedSkills": [
+      {
+        "slug": "docker",
+        "popularityScore": 90,
+        "averageSalary": 118000
+      },
+      {
+        "slug": "python",
+        "popularityScore": 95,
+        "averageSalary": 118000
+      }
+    ]
+  }
+]

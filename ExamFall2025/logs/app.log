@@ -4189,3 +4189,436 @@ Response: [200 OK], execution took 24.85 ms
 ----------------------------------------------------------------------------------
 2025-11-04 14:32:16 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7655dc27] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-11-04 14:32:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:46:40 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 12:46:40 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 12:46:41 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 12:46:41 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-11-06 12:46:41 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:46:41 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 12:46:41 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 12:46:41 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 12:46:42 [INFO] tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-06 12:46:42 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 5945564d54cb2d9249da43d5c3324c701ad62a534250cf34a6a482552ecff282
+2025-11-06 12:46:44 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT1.7957235S
+2025-11-06 12:46:44 [INFO] tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2025-11-06 12:46:44 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 9298adc4ad838f77f3ac48e8e4392de323add9f8129f11ee762e3fe6017052d1
+2025-11-06 12:46:46 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT2.8287354S
+2025-11-06 12:46:46 [INFO] tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55864/test?loggerLevel=OFF)
+2025-11-06 12:46:47 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 12:46:48 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@25bc65ab] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate_skill" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "skill" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:46:48 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-11-06 12:46:48 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4fd92289] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:46:49 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 12:46:49 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@400e741] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:46:49 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3be369fc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 12:46:49 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
+2025-11-06 12:46:49 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 12:46:49 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3a663a45{/api/v1,null,AVAILABLE}
+2025-11-06 12:46:49 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@7b6854b5{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 12:46:49 [INFO] org.eclipse.jetty.server.Server - Started Server@684f7f1c{STARTING}[11.0.24,sto=0] @10607ms
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - Javalin started in 241ms \o/
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 12:46:49 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 12:46:51 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/auth/login/]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@33020a0c
+    Headers: {Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=47, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username": "Philip", "password": "pass12345"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 169.30 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:51 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 213 bytes (starts on next line):
+    {"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY","username":"Philip"}
+----------------------------------------------------------------------------------
+2025-11-06 12:46:53 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@792a64a6
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=91, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Test Candidate","phone":"+45 11 22 33 44","education":"BSc Testing","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 273.62 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:52 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 120 bytes (starts on next line):
+    {"id":2,"name":"Test Candidate","phone":"+45 11 22 33 44","education":"BSc Testing","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+2025-11-06 12:46:53 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3995e114
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=78, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 15.08 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:53 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 107 bytes (starts on next line):
+    {"id":3,"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+2025-11-06 12:46:53 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@df7dc4b
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204 No Content], execution took 44.83 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:53 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    No body was set
+----------------------------------------------------------------------------------
+2025-11-06 12:46:54 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@1f376152
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=application/json, application/javascript, text/javascript, text/json, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 776.52 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:53 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 364 bytes (starts on next line):
+    [{"id":2,"name":"Test Candidate","phone":"+45 11 22 33 44","education":"BSc Testing","skillIds":[],"enrichedSkills":[]},{"id":1,"name":"Test Candidate","phone":"+45 10000000","education":"MSc Testing","skillIds":[2,1],"enrichedSkills":[{"slug":"postgresql","popularityScore":86,"averageSalary":130000},{"slug":"java","popularityScore":93,"averageSalary":120000}]}]
+----------------------------------------------------------------------------------
+2025-11-06 12:46:54 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/1]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5e112e34
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=94, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Updated Candidate","phone":"+45 99 88 77 66","education":"MSc Updated","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 56.81 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:54 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 123 bytes (starts on next line):
+    {"id":1,"name":"Updated Candidate","phone":"+45 99 88 77 66","education":"MSc Updated","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+2025-11-06 12:46:54 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/1]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@28708e67
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=application/json, application/javascript, text/javascript, text/json, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 10.86 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:54 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 123 bytes (starts on next line):
+    {"id":1,"name":"Updated Candidate","phone":"+45 99 88 77 66","education":"MSc Updated","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+2025-11-06 12:46:54 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@c46f9a1
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDExLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.1Qa8Z1EiKrSr6u8sMr2U4UxoCuwdjW9SEEUAb3FJAlY, Accept=application/json, application/javascript, text/javascript, text/json, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: category=PROG_LANG
+    QueryParams: {category=[PROG_LANG]}
+    FormParams: {}
+Response: [200 OK], execution took 18.89 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:46:54 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 2 bytes (starts on next line):
+    []
+----------------------------------------------------------------------------------
+2025-11-06 12:46:54 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@196f9b75] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:46:54 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:47:20 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 12:47:20 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 12:47:20 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 12:47:20 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-11-06 12:47:20 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:47:20 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 12:47:20 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 12:47:20 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 12:47:22 [INFO] tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-06 12:47:22 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: a63fe29e5b945eee75fdf0ef64ce81652725689744c69d5dec9e9f219f7ea6fd
+2025-11-06 12:47:23 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT1.1319096S
+2025-11-06 12:47:23 [INFO] tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2025-11-06 12:47:23 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 9985343e1fb0c5985b65986557ad92cece2fd530a47e22574c19dbecca7f9a9c
+2025-11-06 12:47:25 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT2.4470495S
+2025-11-06 12:47:25 [INFO] tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:55894/test?loggerLevel=OFF)
+2025-11-06 12:47:26 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4a5d5b38] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate_skill" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "skill" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:47:27 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2524d07a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:47:27 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 12:47:27 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 12:47:27 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 12:47:28 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75dbe490] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:47:28 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c579b5b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 12:47:28 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
+2025-11-06 12:47:28 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 12:47:28 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@ea45a5b{/api/v1,null,AVAILABLE}
+2025-11-06 12:47:28 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@c247363{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 12:47:28 [INFO] org.eclipse.jetty.server.Server - Started Server@1af6974c{STARTING}[11.0.24,sto=0] @10243ms
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - Javalin started in 307ms \o/
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 12:47:28 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 12:47:31 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/auth/login/]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@21284793
+    Headers: {Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=47, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username": "Philip", "password": "pass12345"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 235.43 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:47:31 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 213 bytes (starts on next line):
+    {"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDUxLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.nNzsPj3223l0REiTIgdq9Pb6x9Ypz7d8rn7XSi6t374","username":"Philip"}
+----------------------------------------------------------------------------------
+2025-11-06 12:47:33 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@4819f853
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDUxLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.nNzsPj3223l0REiTIgdq9Pb6x9Ypz7d8rn7XSi6t374, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=78, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 286.63 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:47:32 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 107 bytes (starts on next line):
+    {"id":2,"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+2025-11-06 12:47:33 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/2]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@232ff458
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNDUxLCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.nNzsPj3223l0REiTIgdq9Pb6x9Ypz7d8rn7XSi6t374, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204 No Content], execution took 58.90 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:47:33 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    No body was set
+----------------------------------------------------------------------------------
+2025-11-06 12:47:33 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ff1b0d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:47:33 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:49:48 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-11-06 12:49:48 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-11-06 12:49:49 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 12:49:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-11-06 12:49:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:49:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 12:49:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 12:49:49 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 12:49:50 [INFO] tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-11-06 12:49:50 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: 4093744e2b0a934768eebdd5836b2d2fee75edbf0949fef2449209cc74fa4cb3
+2025-11-06 12:49:51 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT0.9547122S
+2025-11-06 12:49:51 [INFO] tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2025-11-06 12:49:51 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 945688159ddda5506e3caf347d41fbbb75e9cf88778370f62c767bcc8f777f3b
+2025-11-06 12:49:54 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT3.0449269S
+2025-11-06 12:49:54 [INFO] tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:61875/test?loggerLevel=OFF)
+2025-11-06 12:49:54 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4738131e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate_skill" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "skill" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-11-06 12:49:56 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@11120583] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:49:56 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-11-06 12:49:56 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@34e68840] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:49:56 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@510203de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-11-06 12:49:56 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-11-06 12:49:57 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-11-06 12:49:57 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.16+8-LTS
+2025-11-06 12:49:57 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-11-06 12:49:57 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@361c4981{/api/v1,null,AVAILABLE}
+2025-11-06 12:49:57 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@3d1b43d8{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-11-06 12:49:57 [INFO] org.eclipse.jetty.server.Server - Started Server@4cbb11e4{STARTING}[11.0.24,sto=0] @10140ms
+2025-11-06 12:49:57 [INFO] io.javalin.Javalin - Javalin started in 144ms \o/
+2025-11-06 12:49:57 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-11-06 12:49:57 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-11-06 12:49:57 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 323 days old. Consider checking for a newer version.).
+2025-11-06 12:49:59 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/auth/login/]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5b587900
+    Headers: {Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=47, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username": "Philip", "password": "pass12345"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 173.34 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:49:59 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 213 bytes (starts on next line):
+    {"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNTk5LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.XBAkp7iuY8jiNQFOmjRRXv0qlQKC4y8m_EWtikSgimg","username":"Philip"}
+----------------------------------------------------------------------------------
+2025-11-06 12:50:00 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5ec91ee4
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNTk5LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.XBAkp7iuY8jiNQFOmjRRXv0qlQKC4y8m_EWtikSgimg, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=78, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 195.80 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:50:00 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 107 bytes (starts on next line):
+    {"id":2,"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+2025-11-06 12:50:00 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/2]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@436cd3b6
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzYyNDMxNTk5LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.XBAkp7iuY8jiNQFOmjRRXv0qlQKC4y8m_EWtikSgimg, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.16), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204 No Content], execution took 45.07 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Thu, 06 Nov 2025 11:50:00 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    No body was set
+----------------------------------------------------------------------------------
+2025-11-06 12:50:00 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30dbcffd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-11-06 12:50:00 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]

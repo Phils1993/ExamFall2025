@@ -1,18 +1,17 @@
 ### Get all candidates (no filter)
 GET {{url}}/candidates
 Accept: application/json
-
-### Get all candidates filtered by skill category
-GET {{url}}/candidates?category=PROG_LANG
-Accept: application/json
+Authorization: Bearer {{jwt_token}}
 
 ### Get candidate by ID
 GET {{url}}/candidates/1
 Accept: application/json
+Authorization: Bearer {{jwt_token}}
 
 ### Create a new candidate
 POST {{url}}/candidates
 Content-Type: application/json
+Authorization: Bearer {{jwt_token}}
 
 {
   "name": "Lars Nielsen",
@@ -24,6 +23,7 @@ Content-Type: application/json
 ### Update candidate
 PUT {{url}}/candidates/3
 Content-Type: application/json
+Authorization: Bearer {{jwt_token}}
 
 {
   "name": "Lars N.",
@@ -32,19 +32,24 @@ Content-Type: application/json
   "skillIds": [1, 3]
 }
 
-### Delete candidate
+### Delete candidate (ADMIN only)
 DELETE {{url}}/candidates/3
+Authorization: Bearer {{jwt_token}}
 
 ### Link existing skill to candidate
 PUT {{url}}/candidates/6/skills/3
+Authorization: Bearer {{jwt_token}}
 
 ### Unlink existing skill from candidate
-DELETE {{url}}/candidates/10/skills/3
+DELETE {{url}}/candidates/1/skills/3
+Authorization: Bearer {{jwt_token}}
 
 ### Get top candidate by average popularity
 GET {{url}}/reports/candidates/top-by-popularity
 Accept: application/json
+Authorization: Bearer {{jwt_token}}
 
 ### Invalid category (expect 400)
 GET {{url}}/candidates?category=UNKNOWN
 Accept: application/json
+Authorization: Bearer {{jwt_token}}

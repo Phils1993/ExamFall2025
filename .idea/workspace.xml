@@ -5,89 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExamFall2025/ExamFall2025.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillEnrichedDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115134-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115134-1.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T115134.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122932-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122932.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122932.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122933-1.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122933.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122933.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122934-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122934-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122934.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122934.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T122934.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123039.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123049-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123049-2.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123049-3.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123049.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123049.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050-1.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123215.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123335.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123728.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T124150.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T124835.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105306.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105306.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105306.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105307-1.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105307.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105307.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105307.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105308.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105308.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105308.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105447.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105517.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T105705.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/Populator/Populator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/Populator/Populator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/RoutesRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/RoutesRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ServiceRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/ServiceRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/CandidateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/EksOFController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/SkillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/controllers/SkillController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/CandidateDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/ICandidateDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/IDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/IDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/ISkillDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/SkillDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/daos/SkillDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidateCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidateCreateDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillCreateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatsApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatsResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatsItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/SkillStatsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/TopCandidatePopularityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/dtos/CandidatePopularityReportDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkillId.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkillId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/CandidateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/CandidateMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/eksOfMapperUse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/SkillRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/SkillRoutes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/CandidateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/EksForServiceLayer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/ServiceAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/ServiceAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/SkillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/services/SkillService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/testPopulator/TestPopulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/testPopulator/TestPopulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/skillRoutes.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/Populator/Populator.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/Populator/Populator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/RoutesRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/RoutesRegistry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/config/ServiceRegistry.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/controllers/CandidateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/controllers/CandidateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/controllers/EksOFController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/controllers/SkillController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/CandidateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/CandidateDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/ICandidateDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/IDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/IDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/ISkillDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/daos/SkillDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateCreateDTO$CandidateCreateDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateCreateDTO$CandidateCreateDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateCreateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateCreateDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateDTO$CandidateDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateDTO$CandidateDTOBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/CandidateDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillCreateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillCreateDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO$SkillDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO$SkillDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillStatDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillStatsApiResponse$WrapperObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillStatsApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/SkillStatsItemDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/dtos/TopCandidatePopularityDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate$CandidateBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate$CandidateBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill$CandidateSkillBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkillId.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkillId.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill$SkillBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill$SkillBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/CandidateMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/CandidateMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/eksOfMapperUse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/CandidateRoutes.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/CandidateRoutes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/routes/SkillRoutes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/CandidateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/EksForServiceLayer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/ServiceAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/ServiceAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/services/SkillService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/testPopulator/TestPopulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/testPopulator/TestPopulator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
@@ -428,8 +419,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -481,10 +472,15 @@
     "HTTP Request.candidateRoutes | Delete candidate.executor": "Run",
     "HTTP Request.candidateRoutes | Diagnostic endpoint (optional).executor": "Run",
     "HTTP Request.candidateRoutes | Get all candidates (no auth).executor": "Run",
+    "HTTP Request.candidateRoutes | Get all candidates (no filter).executor": "Run",
     "HTTP Request.candidateRoutes | Get all skills.executor": "Run",
+    "HTTP Request.candidateRoutes | Get candidate by ID.executor": "Run",
     "HTTP Request.candidateRoutes | Get candidate by id.executor": "Run",
     "HTTP Request.candidateRoutes | Get top candidate by average popularity (report).executor": "Run",
+    "HTTP Request.candidateRoutes | Get top candidate by average popularity.executor": "Run",
+    "HTTP Request.candidateRoutes | Invalid category (expect 400).executor": "Run",
     "HTTP Request.candidateRoutes | Report: candidate with highest average popularity.executor": "Run",
+    "HTTP Request.candidateRoutes | Unlink existing skill from candidate.executor": "Run",
     "HTTP Request.candidateRoutes | Update candidate.executor": "Run",
     "HTTP Request.skillRoutes | Get skill by id.executor": "Run",
     "HTTP Request.userRoutes | Login as admin (Admin).executor": "Run",
@@ -493,7 +489,7 @@
     "HTTP Request.userRoutes | Register a new user (default role = USER) (1).executor": "Run",
     "HTTP Request.userRoutes | Register a new user (default role = USER).executor": "Run",
     "JUnit.CandidateControllerTest.create.executor": "Run",
-    "JUnit.CandidateControllerTest.delete.executor": "Run",
+    "JUnit.CandidateControllerTest.delete.executor": "Debug",
     "JUnit.CandidateControllerTest.executor": "Run",
     "JUnit.CandidateControllerTest.getAll.executor": "Run",
     "JUnit.CandidateControllerTest.getAllCandidates.executor": "Run",
@@ -549,7 +545,22 @@
       <recent name="app.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="All in candidateRoutes" value="STOPPED" />
+              <entry key="userRoutes | Login as admin (Admin)" value="STOPPED" />
+              <entry key="userRoutes | Login as normal user (Philip)" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CandidateControllerTest.delete">
     <configuration name="Main" type="Application" factoryName="Application">
       <envs>
         <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
@@ -587,34 +598,59 @@
     <configuration name="All in candidateRoutes" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http">
       <method v="2" />
     </configuration>
-    <configuration name="candidateRoutes | Delete candidate" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Delete candidate" index="6" runType="Run single request">
+    <configuration name="userRoutes | Login as admin (Admin)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/userRoutes.http" executionIdentifier="Login as admin (Admin)" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="candidateRoutes | Get candidate by ID" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Get candidate by ID" index="3" runType="Run single request">
+    <configuration name="userRoutes | Login as normal user (Philip)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/userRoutes.http" executionIdentifier="Login as normal user (Philip)" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="candidateRoutes | Get top candidate by average popularity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Get top candidate by average popularity" index="9" runType="Run single request">
-      <method v="2" />
+    <configuration name="CandidateControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamFall2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.controllers" />
+      <option name="MAIN_CLASS_NAME" value="app.controllers.CandidateControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="candidateRoutes | Update candidate" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" executionIdentifier="Update candidate" index="5" runType="Run single request">
-      <method v="2" />
+    <configuration name="CandidateControllerTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamFall2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.controllers" />
+      <option name="MAIN_CLASS_NAME" value="app.controllers.CandidateControllerTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.populator.Main" />
       <item itemvalue="HTTP Request.All in candidateRoutes" />
-      <item itemvalue="HTTP Request.candidateRoutes | Delete candidate" />
-      <item itemvalue="HTTP Request.candidateRoutes | Get candidate by ID" />
-      <item itemvalue="HTTP Request.candidateRoutes | Get top candidate by average popularity" />
-      <item itemvalue="HTTP Request.candidateRoutes | Update candidate" />
+      <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
+      <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
+      <item itemvalue="JUnit.CandidateControllerTest" />
+      <item itemvalue="JUnit.CandidateControllerTest.delete" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.candidateRoutes | Get top candidate by average popularity" />
-        <item itemvalue="HTTP Request.candidateRoutes | Delete candidate" />
-        <item itemvalue="HTTP Request.candidateRoutes | Update candidate" />
-        <item itemvalue="HTTP Request.candidateRoutes | Get candidate by ID" />
+        <item itemvalue="JUnit.CandidateControllerTest.delete" />
+        <item itemvalue="JUnit.CandidateControllerTest" />
         <item itemvalue="HTTP Request.All in candidateRoutes" />
+        <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
+        <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
       </list>
     </recent_temporary>
   </component>
@@ -637,7 +673,7 @@
       <workItem from="1761987963297" duration="1135000" />
       <workItem from="1762000341452" duration="2401000" />
       <workItem from="1762173810664" duration="3283000" />
-      <workItem from="1762413034679" duration="9621000" />
+      <workItem from="1762413034679" duration="16465000" />
     </task>
     <task id="LOCAL-00001" summary="merged US 1+2">
       <option name="closed" value="true" />

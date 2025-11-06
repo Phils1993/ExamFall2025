@@ -1,12 +1,11 @@
 package app.daos;
 
-import app.dtos.CandidatePopularityReportDTO;
+
 import app.dtos.SkillEnrichedDTO;
 import app.entities.Candidate;
 import app.entities.Skill;
 import app.enums.Category;
 import app.exceptions.ApiException;
-import app.services.ServiceAPI;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.NoResultException;
@@ -14,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 
@@ -44,9 +44,12 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
     public Candidate getById(Integer id) {
         try (EntityManager em = emf.createEntityManager()) {
             return em.createQuery(
-                            "SELECT c FROM Candidate c LEFT JOIN FETCH c.candidateSkills WHERE c.id = :id", Candidate.class)
-                    .setParameter("id", id)
-                    .getSingleResult();
+                    "SELECT c FROM Candidate c " +
+                            "LEFT JOIN FETCH c.candidateSkills cs " +
+                            "LEFT JOIN FETCH cs.skill " +
+                            "WHERE c.id = :id",
+                    Candidate.class
+            ).setParameter("id", id).getSingleResult();
         } catch (NoResultException e) {
             throw new ApiException(404, "Candidate not found with id: " + id);
         } catch (Exception e) {
@@ -90,15 +93,18 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
     public List<Candidate> getAll() {
         try (EntityManager em = emf.createEntityManager()) {
             return em.createQuery(
-                            "SELECT DISTINCT c FROM Candidate c LEFT JOIN FETCH c.candidateSkills", Candidate.class)
-                    .getResultList();
+                    "SELECT DISTINCT c FROM Candidate c " +
+                            "LEFT JOIN FETCH c.candidateSkills cs " +
+                            "LEFT JOIN FETCH cs.skill",
+                    Candidate.class
+            ).getResultList();
         } catch (Exception e) {
             throw new ApiException(500, "Failed to retrieve all candidates");
         }
     }
 
 
-    public CandidatePopularityReportDTO getTopCandidateByAveragePopularity(List<SkillEnrichedDTO> enrichedSkills) {
+    public Candidate getTopCandidateEntityByAveragePopularity(Map<String, SkillEnrichedDTO> enrichedMap) {
         try (EntityManager em = emf.createEntityManager()) {
             List<Candidate> candidates = em.createQuery(
                     "SELECT DISTINCT c FROM Candidate c LEFT JOIN FETCH c.candidateSkills cs LEFT JOIN FETCH cs.skill",
@@ -110,11 +116,7 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
 
             for (Candidate candidate : candidates) {
                 List<SkillEnrichedDTO> matched = candidate.getCandidateSkills().stream()
-                        .map(cs -> cs.getSkill().getSlug())
-                        .map(slug -> enrichedSkills.stream()
-                                .filter(es -> es.getSlug().equals(slug))
-                                .findFirst()
-                                .orElse(null))
+                        .map(cs -> enrichedMap.get(cs.getSkill().getSlug()))
                         .filter(Objects::nonNull)
                         .toList();
 
@@ -131,18 +133,14 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
                 }
             }
 
-            if (bestCandidate == null) {
-                throw new ApiException(404, "No candidate with enriched popularity data");
-            }
-
-            return CandidatePopularityReportDTO.builder()
-                    .id(bestCandidate.getId())
-                    .averagePopularity(bestAvg)
-                    .build();
+            return bestCandidate;
         } catch (Exception e) {
+            e.printStackTrace(); // ← tilføj dette
             throw new ApiException(500, "Failed to calculate top candidate by popularity");
         }
+
     }
+
 
     public Candidate linkSkill(Integer candidateId, Integer skillId) {
         try (EntityManager em = emf.createEntityManager()) {
@@ -192,12 +190,12 @@ public class CandidateDAO implements IDAO<Candidate, Integer> {
     public List<Candidate> getAllBySkillCategory(Category category) {
         try (EntityManager em = emf.createEntityManager()) {
             return em.createQuery("""
-                SELECT DISTINCT c
-                FROM Candidate c
-                JOIN c.candidateSkills cs
-                JOIN cs.skill s
-                WHERE s.category = :category
-                """, Candidate.class)
+                            SELECT DISTINCT c
+                            FROM Candidate c
+                            JOIN c.candidateSkills cs
+                            JOIN cs.skill s
+                            WHERE s.category = :category
+                            """, Candidate.class)
                     .setParameter("category", category)
                     .getResultList();
         } catch (Exception e) {

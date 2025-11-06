@@ -3,13 +3,12 @@ package app.services;
 import app.dtos.SkillEnrichedDTO;
 import app.dtos.SkillStatsResponseDTO;
 import app.dtos.SkillStatsDTO;
+import app.exceptions.ApiException;
+import app.utils.Utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
@@ -22,91 +21,70 @@ import java.util.stream.Collectors;
 
 public class ServiceAPI {
 
+    private final ObjectMapper objectMapper = new Utils().getObjectMapper();
     private final Logger logger = LoggerFactory.getLogger(ServiceAPI.class);
 
-    private static final String DEFAULT_BASE_URL = "https://apiprovider.cphbusinessapps.dk/api/v1/skills/stats";
-    private final String baseUrl;
-    private final HttpClient client;
-    private final ObjectMapper mapper;
-    private final Duration timeout;
-    private final String apiKeyHeaderName = "x-api-key";
+    private static final String BASE_URL = "https://apiprovider.cphbusinessapps.dk/api/v1/skills/stats";
+    private static final Duration TIMEOUT = Duration.ofSeconds(5);
 
-    public ServiceAPI() {
-        this(DEFAULT_BASE_URL, Duration.ofSeconds(5));
-    }
-
-    public ServiceAPI(String baseUrl, Duration timeout) {
-        this.baseUrl = (baseUrl == null || baseUrl.isBlank()) ? DEFAULT_BASE_URL : baseUrl;
-        this.timeout = (timeout == null) ? Duration.ofSeconds(5) : timeout;
-        this.client = HttpClient.newBuilder().connectTimeout(this.timeout).build();
-
-        this.mapper = new ObjectMapper();
-        // ensure Java 8+ date/time types are supported
-        this.mapper.registerModule(new JavaTimeModule());
-        // ensure ISO date/time strings are used instead of timestamps
-        this.mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-    }
-
-    /**
-     * Fetch stats for the provided slugs. Returns an empty map on error or when provider has no data.
-     */
-    public Map<String, SkillEnrichedDTO> fetchStatsForSlugs(Set<String> slugs) {
+    public Map<String, SkillEnrichedDTO> fetchSkillFromExternalApi(List<String> slugs) {
         if (slugs == null || slugs.isEmpty()) return Collections.emptyMap();
 
+        String joinedSlugs = slugs.stream()
+                .filter(Objects::nonNull)
+                .map(String::trim)
+                .filter(s -> !s.isEmpty())
+                .map(s -> URLEncoder.encode(s, StandardCharsets.UTF_8))
+                .collect(Collectors.joining(","));
+
+        if (joinedSlugs.isEmpty()) return Collections.emptyMap();
+
+        String url = BASE_URL + "?slugs=" + joinedSlugs;
+
         try {
-            String joined = slugs.stream()
-                    .filter(Objects::nonNull)
-                    .map(String::trim)
-                    .filter(s -> !s.isEmpty())
-                    .map(s -> URLEncoder.encode(s, StandardCharsets.UTF_8))
-                    .collect(Collectors.joining(","));
-            if (joined.isEmpty()) return Collections.emptyMap();
+            HttpClient client = HttpClient.newBuilder()
+                    .connectTimeout(TIMEOUT)
+                    .build();
 
-            String url = baseUrl + "?slugs=" + joined;
-            HttpRequest.Builder rb = HttpRequest.newBuilder()
+            HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
-                    .timeout(timeout)
+                    .timeout(TIMEOUT)
                     .GET()
-                    .header("Accept", "application/json");
+                    .header("Accept", "application/json")
+                    .build();
 
-            String apiKey = System.getenv("SKILL_STATS_API_KEY");
-            if (apiKey != null && !apiKey.isBlank()) {
-                rb.header(apiKeyHeaderName, apiKey);
-            }
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            HttpRequest req = rb.build();
-            HttpResponse<String> resp = client.send(req, HttpResponse.BodyHandlers.ofString());
-
-            if (resp.statusCode() != 200 || resp.body() == null || resp.body().isBlank()) {
-                System.err.println("API call failed: " + resp.statusCode());
+            if (response.statusCode() != 200 || response.body() == null || response.body().isBlank()) {
+                logger.warn("API call failed with status: {}", response.statusCode());
                 return Collections.emptyMap();
             }
 
-            SkillStatsResponseDTO wrapper = mapper.readValue(resp.body(), SkillStatsResponseDTO.class);
-            List<SkillStatsDTO> items = wrapper.getData();
+            SkillStatsResponseDTO responseDTO = objectMapper.readValue(response.body(), SkillStatsResponseDTO.class);
+            List<SkillStatsDTO> data = responseDTO.getData();
 
-            if (items == null || items.isEmpty()) {
-                System.err.println("No skill data returned from API");
+            if (data == null || data.isEmpty()) {
+                logger.info("No skill data returned from API");
                 return Collections.emptyMap();
             }
 
-            return items.stream()
+            return data.stream()
                     .filter(Objects::nonNull)
-                    .filter(i -> i.getSlug() != null && !i.getSlug().isBlank())
+                    .filter(dto -> dto.getSlug() != null && !dto.getSlug().isBlank())
                     .collect(Collectors.toMap(
                             SkillStatsDTO::getSlug,
-                            i -> new SkillEnrichedDTO(i.getSlug(), i.getPopularityScore(), i.getAverageSalary()),
+                            dto -> SkillEnrichedDTO.builder()
+                                    .slug(dto.getSlug())
+                                    .popularityScore(dto.getPopularityScore())
+                                    .averageSalary(dto.getAverageSalary())
+                                    .build(),
                             (a, b) -> a,
                             LinkedHashMap::new
                     ));
 
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-            if (e instanceof InterruptedException) Thread.currentThread().interrupt();
-            return Collections.emptyMap();
         } catch (Exception e) {
-            e.printStackTrace();
-            return Collections.emptyMap();
+            logger.error("Failed to fetch skill details from external API", e);
+            throw new ApiException( 500, "Failed to fetch data from external API");
         }
     }
 }

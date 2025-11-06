@@ -1,22 +1,22 @@
 package app.testPopulator;
 
 import app.config.HibernateConfig;
-import app.entities.Candidate;
-import app.entities.CandidateSkill;
-import app.entities.CandidateSkillId;
-import app.entities.Skill;
+import app.entities.*;
 import app.enums.Category;
+import app.security.ISecurityDAO;
+import app.security.SecurityDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.criteria.CriteriaBuilder;
 
 import java.util.List;
 
 public class TestPopulator {
 
     private final EntityManagerFactory emf;
-    private Long testCandidateId;
-    private Long testSkillId;
+    private Integer testCandidateId;
+    private Integer testSkillId;
 
     public TestPopulator(EntityManagerFactory emf) {
         this.emf = emf;
@@ -29,10 +29,12 @@ public class TestPopulator {
         try {
             tx.begin();
 
-            // Clear existing test data in the right order
+            // Clear existing test data
             em.createQuery("DELETE FROM CandidateSkill").executeUpdate();
             em.createQuery("DELETE FROM Candidate").executeUpdate();
             em.createQuery("DELETE FROM Skill").executeUpdate();
+            em.createQuery("DELETE FROM Role").executeUpdate();
+            em.createQuery("DELETE FROM User").executeUpdate();
 
             // --- Create skills ---
             Skill java = Skill.builder()
@@ -62,23 +64,14 @@ public class TestPopulator {
             em.persist(cand);
             em.flush(); // ensure IDs are assigned
 
-            // --- Create candidate-skill links ---
-            CandidateSkill cs1 = CandidateSkill.builder()
-                    .id(new CandidateSkillId(cand.getId(), java.getId()))
-                    .candidate(cand)
-                    .skill(java)
-                    .build();
-
-            CandidateSkill cs2 = CandidateSkill.builder()
-                    .id(new CandidateSkillId(cand.getId(), postgres.getId()))
-                    .candidate(cand)
-                    .skill(postgres)
-                    .build();
+            // --- Link candidate to skills using static factory method ---
+            CandidateSkill cs1 = CandidateSkill.of(cand, java);
+            CandidateSkill cs2 = CandidateSkill.of(cand, postgres);
 
             em.persist(cs1);
             em.persist(cs2);
 
-            // Keep both sides in sync (optional but good practice)
+            // Keep both sides in sync
             cand.getCandidateSkills().addAll(List.of(cs1, cs2));
             java.getCandidateSkills().add(cs1);
             postgres.getCandidateSkills().add(cs2);
@@ -88,6 +81,17 @@ public class TestPopulator {
             this.testCandidateId = cand.getId();
             this.testSkillId = java.getId();
 
+            // --- Create users and roles ---
+            ISecurityDAO securityDAO = new SecurityDAO(emf);
+            securityDAO.createRole("User");
+            securityDAO.createRole("Admin");
+
+            securityDAO.createUser("Philip", "pass12345");
+            securityDAO.createUser("PhilipAdmin", "pass12345");
+
+            securityDAO.addUserRole("Philip", "User");
+            securityDAO.addUserRole("PhilipAdmin", "Admin");
+
         } catch (Exception e) {
             if (tx.isActive()) tx.rollback();
             throw e;
@@ -96,23 +100,11 @@ public class TestPopulator {
         }
     }
 
-    public Long getTestCandidateId() {
+    public Integer getTestCandidateId() {
         return testCandidateId;
     }
 
-    public Long getTestSkillId() {
+    public Integer getTestSkillId() {
         return testSkillId;
-    }
-
-    public static void main(String[] args) {
-        EntityManagerFactory emf = HibernateConfig.getEntityManagerFactoryForTest();
-        try {
-            TestPopulator pop = new TestPopulator(emf);
-            pop.populate();
-            System.out.println("Candidate ID: " + pop.getTestCandidateId());
-            System.out.println("Skill ID: " + pop.getTestSkillId());
-        } finally {
-            if (emf != null && emf.isOpen()) emf.close();
-        }
     }
 }

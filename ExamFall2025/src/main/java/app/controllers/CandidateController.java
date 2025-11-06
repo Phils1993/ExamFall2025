@@ -1,12 +1,12 @@
 package app.controllers;
 
 import app.daos.CandidateDAO;
-import app.dtos.CandidateCreateDTO;
-import app.dtos.CandidateDTO;
-import app.dtos.CandidatePopularityReportDTO;
-import app.dtos.SkillEnrichedDTO;
-import app.enums.Category;
+import app.dtos.*;
 import app.entities.Candidate;
+import app.entities.CandidateSkill;
+import app.enums.Category;
+import app.exceptions.ApiException;
+import app.exceptions.EntityNotFoundException;
 import app.mapper.CandidateMapper;
 import app.services.ServiceAPI;
 import io.javalin.http.Handler;
@@ -44,13 +44,71 @@ public class CandidateController implements IController {
     @Override
     public Handler getAll() {
         return ctx -> {
-            List<Candidate> all = candidateDAO.getAll();
-            Set<CandidateDTO> dtos = all.stream()
-                    .map(CandidateDTO::new)
+            String categoryParam = ctx.queryParam("category");
+            List<Candidate> candidates;
+
+            if (categoryParam != null && !categoryParam.isBlank()) {
+                try {
+                    Category cat = Category.valueOf(categoryParam.trim().toUpperCase());
+                    candidates = candidateDAO.getAllBySkillCategory(cat);
+                } catch (IllegalArgumentException ex) {
+                    ctx.status(HttpStatus.BAD_REQUEST).json(Map.of(
+                            "error", "Invalid category",
+                            "message", "Unknown category: " + categoryParam
+                    ));
+                    return;
+                }
+            } else {
+                candidates = candidateDAO.getAll();
+            }
+
+            ServiceAPI apiService = new ServiceAPI();
+            List<String> allSlugs = candidates.stream()
+                    .flatMap(c -> c.getCandidateSkills().stream())
+                    .map(cs -> cs.getSkill().getSlug())
+                    .filter(Objects::nonNull)
+                    .distinct()
+                    .toList();
+
+            Map<String, SkillEnrichedDTO> enrichedMap = apiService.fetchSkillFromExternalApi(allSlugs);
+
+            Set<CandidateDTO> dtos = candidates.stream()
+                    .map(c -> new CandidateDTO(c, enrichedMap))
                     .collect(Collectors.toSet());
+
             ctx.status(HttpStatus.OK).json(dtos);
         };
     }
+
+
+    /*
+
+    @Override
+    public Handler getAll() {
+        return ctx -> {
+            List<Candidate> all = candidateDAO.getAll();
+            ServiceAPI apiService = new ServiceAPI();
+
+            // Hent alle slugs fra alle kandidaters skills
+            List<String> allSlugs = all.stream()
+                    .flatMap(c -> c.getCandidateSkills().stream())
+                    .map(cs -> cs.getSkill().getSlug())
+                    .filter(Objects::nonNull)
+                    .distinct()
+                    .toList();
+
+            // Hent enrichment fra ekstern API
+            Map<String, SkillEnrichedDTO> enrichedMap = apiService.fetchSkillFromExternalApi(allSlugs);
+
+            // Byg DTO'er med enrichment
+            Set<CandidateDTO> dtos = all.stream()
+                    .map(c -> new CandidateDTO(c, enrichedMap))
+                    .collect(Collectors.toSet());
+
+            ctx.status(HttpStatus.OK).json(dtos);
+        };
+    }
+
 
     public Handler getAllCandidates() {
         return ctx -> {
@@ -75,6 +133,8 @@ public class CandidateController implements IController {
             }
         };
     }
+
+     */
 
     @Override
     public Handler getById() {
@@ -141,28 +201,44 @@ public class CandidateController implements IController {
         };
     }
 
-    public Handler getTopByPopularity() {
+    public Handler getTopCandidateByPopularity() {
         return ctx -> {
-            // 1. Hent alle slugs fra dine lokale skills
-            List<Candidate> candidates = candidateDAO.getAll();
-            Set<String> slugs = candidates.stream()
+            ServiceAPI apiService = new ServiceAPI();
+
+            // Hent alle slugs fra databasen
+            List<String> allSlugs = candidateDAO.getAll().stream()
                     .flatMap(c -> c.getCandidateSkills().stream())
                     .map(cs -> cs.getSkill().getSlug())
                     .filter(Objects::nonNull)
-                    .collect(Collectors.toSet());
+                    .distinct()
+                    .toList();
 
-            // 2. Fetch enriched data fra ekstern API
-            ServiceAPI api = new ServiceAPI();
-            Map<String, SkillEnrichedDTO> enrichedMap = api.fetchStatsForSlugs(slugs);
+            Map<String, SkillEnrichedDTO> enrichedMap = apiService.fetchSkillFromExternalApi(allSlugs);
+            Candidate topCandidate = candidateDAO.getTopCandidateEntityByAveragePopularity(enrichedMap);
 
-            // 3. Konverter til liste og send til DAO
-            List<SkillEnrichedDTO> enrichedList = new ArrayList<>(enrichedMap.values());
-            CandidatePopularityReportDTO best = candidateDAO.getTopCandidateByAveragePopularity(enrichedList);
+            if (topCandidate == null) {
+                throw new EntityNotFoundException("No candidate with enriched skills was found");
+            }
 
-            ctx.status(HttpStatus.OK).json(best);
+            // Beregn gennemsnit igen for DTO
+            List<SkillEnrichedDTO> matched = topCandidate.getCandidateSkills().stream()
+                    .map(cs -> enrichedMap.get(cs.getSkill().getSlug()))
+                    .filter(Objects::nonNull)
+                    .toList();
+
+            double avg = matched.stream()
+                    .mapToInt(SkillEnrichedDTO::getPopularityScore)
+                    .average()
+                    .orElse(0);
+
+            CandidatePopularityReportDTO dto = CandidatePopularityReportDTO.builder()
+                    .id(topCandidate.getId())
+                    .averagePopularity(Math.round(avg * 10.0) / 10.0)
+                    .build();
+
+            ctx.json(dto).status(200);
         };
     }
-
 
 
 }
