@@ -3,6 +3,389 @@ Accept: application/json
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 
+<> 2025-11-06T142341.400.json
+
+###
+
+GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T142341-2.404.json
+
+###
+
+DELETE http://localhost:7070/api/v1/candidates/10/skills/3
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T142341-1.404.json
+
+###
+
+PUT http://localhost:7070/api/v1/candidates/6/skills/3
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T142341.500.json
+
+###
+
+DELETE http://localhost:7070/api/v1/candidates/8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T142341.404.json
+
+###
+
+PUT http://localhost:7070/api/v1/candidates/7
+Content-Type: application/json
+Content-Length: 129
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+
+<> 2025-11-06T142341.200.json
+
+###
+
+POST http://localhost:7070/api/v1/candidates
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+
+<> 2025-11-06T142340.201.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates/5
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T142340.404.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates?category=PROG_LANG
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T142340.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T142339.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates?category=UNKNOWN
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141416.400.json
+
+###
+
+GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141415.200.json
+
+###
+
+DELETE http://localhost:7070/api/v1/candidates/10/skills/3
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T141415.404.json
+
+###
+
+PUT http://localhost:7070/api/v1/candidates/6/skills/3
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T141414-1.200.json
+
+###
+
+DELETE http://localhost:7070/api/v1/candidates/8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T141414.404.json
+
+###
+
+PUT http://localhost:7070/api/v1/candidates/7
+Content-Type: application/json
+Content-Length: 129
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+
+<> 2025-11-06T141414.200.json
+
+###
+
+POST http://localhost:7070/api/v1/candidates
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+
+<> 2025-11-06T141414.201.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates/5
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141413-2.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates?category=PROG_LANG
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141413-1.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141413.200.json
+
+###
+
+POST http://localhost:7070/api/v1/auth/login/
+Content-Type: application/json
+Content-Length: 58
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "PhilipAdmin",
+  "password": "pass12345"
+}
+
+<> 2025-11-06T141402.200.json
+
+###
+
+POST http://localhost:7070/api/v1/auth/login/
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "Philip",
+  "password": "pass12345"
+}
+
+<> 2025-11-06T141358.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates?category=UNKNOWN
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141043.400.json
+
+###
+
+GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141043.200.json
+
+###
+
+DELETE http://localhost:7070/api/v1/candidates/10/skills/3
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T141042-1.404.json
+
+###
+
+PUT http://localhost:7070/api/v1/candidates/6/skills/3
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T141042.500.json
+
+###
+
+DELETE http://localhost:7070/api/v1/candidates/8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-11-06T141042.404.json
+
+###
+
+PUT http://localhost:7070/api/v1/candidates/7
+Content-Type: application/json
+Content-Length: 129
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+
+<> 2025-11-06T141042.200.json
+
+###
+
+POST http://localhost:7070/api/v1/candidates
+Content-Type: application/json
+Content-Length: 135
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+
+<> 2025-11-06T141042.201.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates/5
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141041.404.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates?category=PROG_LANG
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141041-1.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+<> 2025-11-06T141041.200.json
+
+###
+
+GET http://localhost:7070/api/v1/candidates?category=UNKNOWN
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
 <> 2025-11-06T140602.400.json
 
 ###
@@ -211,339 +594,6 @@ User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
 Accept-Encoding: br, deflate, gzip, x-gzip
 
 <> 2025-11-06T140433.404.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates?category=PROG_LANG
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T140433.200.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T140432.200.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T133125.200.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T133040.200.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T133020.200.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates/5
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T132959.200.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates?category=UNKNOWN
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T132919.400.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T132919.200.json
-
-###
-
-DELETE http://localhost:7070/api/v1/candidates/10/skills/3
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-11-06T132917.404.json
-
-###
-
-PUT http://localhost:7070/api/v1/candidates/6/skills/3
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-11-06T132917.500.json
-
-###
-
-DELETE http://localhost:7070/api/v1/candidates/8
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-11-06T132916.404.json
-
-###
-
-PUT http://localhost:7070/api/v1/candidates/7
-Content-Type: application/json
-Content-Length: 129
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Lars N.",
-  "phone": "+45 20 12 34 56",
-  "education": "MSc Distributed Systems",
-  "skillIds": [
-    1,
-    3
-  ]
-}
-
-<> 2025-11-06T132916.200.json
-
-###
-
-POST http://localhost:7070/api/v1/candidates
-Content-Type: application/json
-Content-Length: 135
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Lars Nielsen",
-  "phone": "+45 20 12 34 56",
-  "education": "MSc Software Engineering",
-  "skillIds": [
-    1,
-    2
-  ]
-}
-
-<> 2025-11-06T132916.201.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates/5
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T132915.404.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates?category=PROG_LANG
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T132915.200.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-06T132914.200.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T124835.404.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T124150.404.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123728.404.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123335.404.json
-
-###
-
-GET http://localhost:7070/api/v1/skills/4
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123215.200.json
-
-###
-
-DELETE http://localhost:7070/api/v1/skills/1
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-content-length: 0
-
-<> 2025-11-04T123150-2.404.json
-
-###
-
-PUT http://localhost:7070/api/v1/skills/1
-Content-Type: application/json
-Content-Length: 89
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Kotlin",
-  "category": "PROG_LANG",
-  "description": "Updated description"
-}
-
-<> 2025-11-04T123150-1.404.json
-
-###
-
-GET http://localhost:7070/api/v1/skills/1
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123150.404.json
-
-###
-
-GET http://localhost:7070/api/v1/skills
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123150.200.json
-
-###
-
-POST http://localhost:7070/api/v1/skills
-Content-Type: application/json
-Content-Length: 82
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Kotlin",
-  "category": "PROG_LANG",
-  "description": "JVM language"
-}
-
-<> 2025-11-04T123150.500.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates?category=UNKNOWN
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123050.400.json
-
-###
-
-GET http://localhost:7070/api/v1/candidates/diag
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123050-1.500.json
-
-###
-
-GET http://localhost:7070/api/v1/reports/candidates/top-by-popularity
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-
-<> 2025-11-04T123050.404.json
-
-###
-
-DELETE http://localhost:7070/api/v1/candidates/10/skills/3
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-11-04T123050.200.json
-
-###
-
-PUT http://localhost:7070/api/v1/candidates/6/skills/3
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2025-11-04T123050.500.json
-
-###
-
-DELETE http://localhost:7070/api/v1/candidates/8
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
 
 ###
 
