@@ -7,44 +7,69 @@
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/51bd3c9e-c231-48e5-8151-e9e72e27629f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050-1.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123050.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150-1.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150-2.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123150.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123215.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123335.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T123728.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T124150.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-04T124835.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132914.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132915.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132915.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132916.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132916.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132916.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132917.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132917.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132919.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132919.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T132959.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T133020.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T133040.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T133125.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140432.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140433.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140433.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140435-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140435.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140435.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140600-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140600.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140600.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140602-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140602.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140602.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141041-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141041.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141041.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141043.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141043.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141358.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141402.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141413-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141413-2.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141413.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141415.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141415.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141416.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142339.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142340.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142340.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142340.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.500.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -389,6 +414,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -451,7 +481,7 @@
     "JUnit.CandidateControllerTest.executor": "Run",
     "JUnit.CandidateControllerTest.getAll.executor": "Run",
     "JUnit.CandidateControllerTest.getAllCandidates.executor": "Run",
-    "JUnit.CandidateControllerTest.getById.executor": "Run",
+    "JUnit.CandidateControllerTest.getById.executor": "Debug",
     "JUnit.CandidateControllerTest.update.executor": "Run",
     "Maven. [clean,validate,compile,test,package...].executor": "Run",
     "Maven.ExamFall2025 [clean,validate,compile...].executor": "Run",
@@ -522,7 +552,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CandidateControllerTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <envs>
         <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
@@ -536,29 +566,6 @@
       </envs>
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="ExamFall2025" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Populator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
-        <env name="DB_NAME" value="exam_fall_2025" />
-        <env name="DB_PASSWORD" value="postgres" />
-        <env name="DB_USERNAME" value="postgres" />
-        <env name="DEPLOYED" value="prod" />
-        <env name="ISSUER" value="philip1993" />
-        <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
-        <env name="TOKEN_EXPIRE_TIME" value="1800000" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="app.Populator.Populator" />
-      <module name="ExamFall2025" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.Populator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -604,22 +611,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CandidateControllerTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamFall2025" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.controllers" />
+      <option name="MAIN_CLASS_NAME" value="app.controllers.CandidateControllerTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.security.Main" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Populator" />
       <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
       <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
       <item itemvalue="HTTP Request.All in candidateRoutes" />
+      <item itemvalue="JUnit.CandidateControllerTest.create" />
       <item itemvalue="JUnit.CandidateControllerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CandidateControllerTest" />
         <item itemvalue="HTTP Request.All in candidateRoutes" />
-        <item itemvalue="Application.Populator" />
         <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
         <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
-        <item itemvalue="JUnit.CandidateControllerTest" />
+        <item itemvalue="JUnit.CandidateControllerTest.create" />
       </list>
     </recent_temporary>
   </component>
@@ -644,6 +667,7 @@
       <workItem from="1762173810664" duration="3283000" />
       <workItem from="1762433709335" duration="484000" />
       <workItem from="1762592751065" duration="3492000" />
+      <workItem from="1762758675554" duration="13682000" />
     </task>
     <task id="LOCAL-00001" summary="merged US 1+2">
       <option name="closed" value="true" />
@@ -662,5 +686,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merged US 1+2" />
     <option name="LAST_COMMIT_MESSAGE" value="merged US 1+2" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ExamFall2025$CandidateControllerTest.ic" NAME="CandidateControllerTest Coverage Results" MODIFIED="1762766410457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>app.controllers.*</FILTER>
+    </SUITE>
   </component>
 </project>

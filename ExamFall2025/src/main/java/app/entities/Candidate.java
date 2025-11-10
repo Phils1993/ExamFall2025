@@ -30,6 +30,7 @@ public class Candidate {
 
     @OneToMany(mappedBy = "candidate", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
+    // FIXME burde have en @ToString.Exclude for at undgå rekursion
     private Set<CandidateSkill> candidateSkills = new HashSet<>();
 
     // Helper methods to keep both sides in sync

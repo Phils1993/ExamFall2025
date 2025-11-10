@@ -1,7 +1,9 @@
 {
-  "id": 5,
+  "id": 6,
   "name": "Lars N.",
   "phone": "+45 20 12 34 56",
   "education": "MSc Distributed Systems",
-  "skillIds": []
+  "skillIds": [
+    3
+  ]
 }

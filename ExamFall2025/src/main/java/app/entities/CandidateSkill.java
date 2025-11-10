@@ -11,8 +11,11 @@ import java.util.Objects;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
+//FIXME burde have @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class CandidateSkill {
 
+    // FIXME burde have @EqualsAndHashCode.Include
     @EmbeddedId
     private CandidateSkillId id;
 

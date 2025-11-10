@@ -43,6 +43,8 @@ class CandidateControllerTest {
 
         TestPopulator populator = new TestPopulator(emf);
         populator.populate();
+        //anyCandidateId = populator.getTestCandidateId(); // FIXME: dette mangler for at getById virker!
+        //anySkillId = populator.getTestSkillId();
     }
 
     @AfterAll
@@ -53,7 +55,8 @@ class CandidateControllerTest {
 
     @Test
     void create() {
-        CandidateDTO dto = CandidateDTO.builder()
+        CandidateDTO dto = CandidateDTO.builder() // FIXME: Jeg bruger den forkerte DTO til at create.
+                // alle create metoder
                 .name("Test Candidate")
                 .phone("+45 11 22 33 44")
                 .education("BSc Testing")

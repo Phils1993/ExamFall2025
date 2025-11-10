@@ -5,7 +5,8 @@
     "phone": "+45 20000001",
     "education": "MSc Computer Science",
     "skillIds": [
-      1
+      1,
+      3
     ]
   },
   {
@@ -14,11 +15,12 @@
     "phone": "+45 20000002",
     "education": "BSc Information Systems",
     "skillIds": [
-      2
+      2,
+      4
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Lars Nielsen",
     "phone": "+45 20 12 34 56",
     "education": "MSc Software Engineering",
@@ -26,5 +28,12 @@
       1,
       2
     ]
+  },
+  {
+    "id": 4,
+    "name": "Lars N.",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Distributed Systems",
+    "skillIds": []
   }
 ]

@@ -5,7 +5,8 @@
     "phone": "+45 20000001",
     "education": "MSc Computer Science",
     "skillIds": [
-      1
+      1,
+      4
     ]
   },
   {
@@ -14,7 +15,8 @@
     "phone": "+45 20000002",
     "education": "BSc Information Systems",
     "skillIds": [
-      2
+      2,
+      5
     ]
   }
 ]

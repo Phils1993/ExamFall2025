@@ -13,6 +13,7 @@ public class SkillMapper {
                 .name(s.getName())
                 .category(s.getCategory())
                 .description(s.getDescription())
+                // .slug(s.getSlug()) // FIXME: Burde have været på i build
                 .build();
     }
 

@@ -3,17 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-4||-9223372036854775808|c|G
-4||10|c|G
-4||10|C|G
-4||10|T|G</Grants>
-      <IntrospectionStateNumber>15771</IntrospectionStateNumber>
+      <IntrospectionStateNumber>15920</IntrospectionStateNumber>
       <ServerVersion>16.2</ServerVersion>
-      <StartupTime>1762593036</StartupTime>
+      <StartupTime>1762758698</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1457,7 +1449,7 @@ false posixrules
 13212||10|C|G
 13212||-9223372036854775808|U|G
 13212||10|U|G</Grants>
-      <IntrospectionStateNumber>15771</IntrospectionStateNumber>
+      <IntrospectionStateNumber>15920</IntrospectionStateNumber>
       <ObjectId>178942</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4948,72 +4940,72 @@ false posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>15771</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>15771</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>15771</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>15920</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>15920</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>15920</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2025-11-08.12:16:47</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-11-10.12:04:36</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <sequence id="293" parent="292" name="candidate_candidate_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181321</ObjectId>
+      <ObjectId>181639</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>15746</StateNumber>
+      <StateNumber>15893</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="294" parent="292" name="skill_skill_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181340</ObjectId>
+      <ObjectId>181658</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="295" parent="292" name="candidate">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181322</ObjectId>
-      <StateNumber>15752</StateNumber>
+      <ObjectId>181640</ObjectId>
+      <StateNumber>15899</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="296" parent="292" name="candidate_skill">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181330</ObjectId>
-      <StateNumber>15752</StateNumber>
+      <ObjectId>181648</ObjectId>
+      <StateNumber>15899</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="297" parent="292" name="roles">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181335</ObjectId>
-      <StateNumber>15754</StateNumber>
+      <ObjectId>181653</ObjectId>
+      <StateNumber>15901</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="298" parent="292" name="skill">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181341</ObjectId>
-      <StateNumber>15753</StateNumber>
+      <ObjectId>181659</ObjectId>
+      <StateNumber>15900</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="299" parent="292" name="user_roles">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181354</ObjectId>
-      <StateNumber>15754</StateNumber>
+      <ObjectId>181672</ObjectId>
+      <StateNumber>15901</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="300" parent="292" name="users">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>181359</ObjectId>
-      <StateNumber>15755</StateNumber>
+      <ObjectId>181677</ObjectId>
+      <StateNumber>15902</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -5021,104 +5013,104 @@ false posixrules
       <DefaultExpression>nextval(&apos;candidate_candidate_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>15746</StateNumber>
+      <StateNumber>15893</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>181321</SequenceId>
+      <SequenceId>181639</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="302" parent="295" name="education">
       <Position>2</Position>
-      <StateNumber>15746</StateNumber>
+      <StateNumber>15893</StateNumber>
       <StoredType>varchar(1000)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="303" parent="295" name="name">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>15746</StateNumber>
+      <StateNumber>15893</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="304" parent="295" name="phone">
       <Position>4</Position>
-      <StateNumber>15746</StateNumber>
+      <StateNumber>15893</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="305" parent="295" name="candidate_pkey">
       <ColNames>candidate_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181328</ObjectId>
+      <ObjectId>181646</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15746</StateNumber>
+      <StateNumber>15893</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="306" parent="295" name="candidate_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181329</ObjectId>
+      <ObjectId>181647</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15746</StateNumber>
-      <UnderlyingIndexId>181328</UnderlyingIndexId>
+      <StateNumber>15893</StateNumber>
+      <UnderlyingIndexId>181646</UnderlyingIndexId>
     </key>
     <column id="307" parent="296" name="candidate_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>15747</StateNumber>
+      <StateNumber>15894</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <column id="308" parent="296" name="skill_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>15747</StateNumber>
+      <StateNumber>15894</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <foreign-key id="309" parent="296" name="fkijjf42p0sh2c2na28g5aalx2p">
       <ColNames>candidate_id</ColNames>
-      <ObjectId>181364</ObjectId>
-      <StateNumber>15752</StateNumber>
+      <ObjectId>181682</ObjectId>
+      <StateNumber>15899</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>181322</RefTableId>
+      <RefTableId>181640</RefTableId>
     </foreign-key>
     <foreign-key id="310" parent="296" name="fkb7cxhiqhcah7c20a2cdlvr1f8">
       <ColNames>skill_id</ColNames>
-      <ObjectId>181369</ObjectId>
-      <StateNumber>15753</StateNumber>
+      <ObjectId>181687</ObjectId>
+      <StateNumber>15900</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>181341</RefTableId>
+      <RefTableId>181659</RefTableId>
     </foreign-key>
     <index id="311" parent="296" name="candidate_skill_pkey">
       <ColNames>candidate_id
 skill_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181333</ObjectId>
+      <ObjectId>181651</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15747</StateNumber>
+      <StateNumber>15894</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="312" parent="296" name="candidate_skill_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181334</ObjectId>
+      <ObjectId>181652</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15747</StateNumber>
-      <UnderlyingIndexId>181333</UnderlyingIndexId>
+      <StateNumber>15894</StateNumber>
+      <UnderlyingIndexId>181651</UnderlyingIndexId>
     </key>
     <column id="313" parent="297" name="role_name">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>15748</StateNumber>
+      <StateNumber>15895</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="314" parent="297" name="roles_pkey">
       <ColNames>role_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181338</ObjectId>
+      <ObjectId>181656</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15748</StateNumber>
+      <StateNumber>15895</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -5127,65 +5119,65 @@ skill_id</ColNames>
     </index>
     <key id="315" parent="297" name="roles_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181339</ObjectId>
+      <ObjectId>181657</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15748</StateNumber>
-      <UnderlyingIndexId>181338</UnderlyingIndexId>
+      <StateNumber>15895</StateNumber>
+      <UnderlyingIndexId>181656</UnderlyingIndexId>
     </key>
     <check id="316" parent="298" name="skill_category_check">
       <ColNames>category</ColNames>
-      <ObjectId>181345</ObjectId>
+      <ObjectId>181663</ObjectId>
       <Predicate>(category)::text = ANY ((ARRAY[&apos;PROG_LANG&apos;::character varying, &apos;DB&apos;::character varying, &apos;DEVOPS&apos;::character varying, &apos;FRONTEND&apos;::character varying, &apos;TESTING&apos;::character varying, &apos;DATA&apos;::character varying, &apos;FRAMEWORK&apos;::character varying])::text[])</Predicate>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
     </check>
     <column id="317" parent="298" name="skill_id">
       <DefaultExpression>nextval(&apos;skill_skill_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>181340</SequenceId>
+      <SequenceId>181658</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="318" parent="298" name="description">
       <Position>2</Position>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <StoredType>varchar(2000)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="319" parent="298" name="category">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="320" parent="298" name="name">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="321" parent="298" name="slug">
       <Position>5</Position>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="322" parent="298" name="skill_pkey">
       <ColNames>skill_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181348</ObjectId>
+      <ObjectId>181666</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15749</StateNumber>
+      <StateNumber>15896</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <index id="323" parent="298" name="uk5ljf2l2h4odhtxrsuohlro4ir">
       <ColNames>name</ColNames>
-      <ObjectId>181352</ObjectId>
-      <StateNumber>15749</StateNumber>
+      <ObjectId>181670</ObjectId>
+      <StateNumber>15896</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -5195,8 +5187,8 @@ skill_id</ColNames>
     <index id="324" parent="298" name="skill_slug_key">
       <ColNames>slug</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181350</ObjectId>
-      <StateNumber>15749</StateNumber>
+      <ObjectId>181668</ObjectId>
+      <StateNumber>15896</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -5205,57 +5197,57 @@ skill_id</ColNames>
     </index>
     <key id="325" parent="298" name="skill_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181349</ObjectId>
+      <ObjectId>181667</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15749</StateNumber>
-      <UnderlyingIndexId>181348</UnderlyingIndexId>
+      <StateNumber>15896</StateNumber>
+      <UnderlyingIndexId>181666</UnderlyingIndexId>
     </key>
     <key id="326" parent="298" name="uk5ljf2l2h4odhtxrsuohlro4ir">
-      <ObjectId>181353</ObjectId>
-      <StateNumber>15749</StateNumber>
-      <UnderlyingIndexId>181352</UnderlyingIndexId>
+      <ObjectId>181671</ObjectId>
+      <StateNumber>15896</StateNumber>
+      <UnderlyingIndexId>181670</UnderlyingIndexId>
     </key>
     <key id="327" parent="298" name="skill_slug_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181351</ObjectId>
-      <StateNumber>15749</StateNumber>
-      <UnderlyingIndexId>181350</UnderlyingIndexId>
+      <ObjectId>181669</ObjectId>
+      <StateNumber>15896</StateNumber>
+      <UnderlyingIndexId>181668</UnderlyingIndexId>
     </key>
     <column id="328" parent="299" name="role_name">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>15750</StateNumber>
+      <StateNumber>15897</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="329" parent="299" name="user_name">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>15750</StateNumber>
+      <StateNumber>15897</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <foreign-key id="330" parent="299" name="fkdcdh0gl1mdce42vy0klyio6fi">
       <ColNames>role_name</ColNames>
-      <ObjectId>181374</ObjectId>
-      <StateNumber>15754</StateNumber>
+      <ObjectId>181692</ObjectId>
+      <StateNumber>15901</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>181335</RefTableId>
+      <RefTableId>181653</RefTableId>
     </foreign-key>
     <foreign-key id="331" parent="299" name="fkscvbq0n9bo03s7w6ujfyrtg4a">
       <ColNames>user_name</ColNames>
-      <ObjectId>181379</ObjectId>
-      <StateNumber>15755</StateNumber>
+      <ObjectId>181697</ObjectId>
+      <StateNumber>15902</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>181359</RefTableId>
+      <RefTableId>181677</RefTableId>
     </foreign-key>
     <index id="332" parent="299" name="user_roles_pkey">
       <ColNames>role_name
 user_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181357</ObjectId>
+      <ObjectId>181675</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15750</StateNumber>
+      <StateNumber>15897</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationIds>100
@@ -5267,31 +5259,31 @@ pg_catalog</CollationParentNames>
     </index>
     <key id="333" parent="299" name="user_roles_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181358</ObjectId>
+      <ObjectId>181676</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15750</StateNumber>
-      <UnderlyingIndexId>181357</UnderlyingIndexId>
+      <StateNumber>15897</StateNumber>
+      <UnderlyingIndexId>181675</UnderlyingIndexId>
     </key>
     <column id="334" parent="300" name="user_name">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>15751</StateNumber>
+      <StateNumber>15898</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="335" parent="300" name="password">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>15751</StateNumber>
+      <StateNumber>15898</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="336" parent="300" name="users_pkey">
       <ColNames>user_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181362</ObjectId>
+      <ObjectId>181680</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15751</StateNumber>
+      <StateNumber>15898</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -5300,10 +5292,10 @@ pg_catalog</CollationParentNames>
     </index>
     <key id="337" parent="300" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>181363</ObjectId>
+      <ObjectId>181681</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>15751</StateNumber>
-      <UnderlyingIndexId>181362</UnderlyingIndexId>
+      <StateNumber>15898</StateNumber>
+      <UnderlyingIndexId>181680</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
