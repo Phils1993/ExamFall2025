@@ -5,72 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140433.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434-1.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140434.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140435-1.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140435.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140435.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140600-1.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140600.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140600.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140601.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140602-1.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140602.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T140602.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141041-1.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141041.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141041.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042-1.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141042.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141043.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141043.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141358.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141402.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141413-1.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141413-2.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141413.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414-1.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141414.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141415.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141415.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T141416.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142339.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142340.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142340.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142340.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341-1.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341-2.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-06T142341.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/CandidateSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/entities/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/mapper/SkillMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/java/app/controllers/CandidateControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Candidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/CandidateSkill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/entities/Skill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/app/mapper/SkillMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -667,7 +602,7 @@
       <workItem from="1762173810664" duration="3283000" />
       <workItem from="1762433709335" duration="484000" />
       <workItem from="1762592751065" duration="3492000" />
-      <workItem from="1762758675554" duration="13682000" />
+      <workItem from="1762758675554" duration="14349000" />
     </task>
     <task id="LOCAL-00001" summary="merged US 1+2">
       <option name="closed" value="true" />
