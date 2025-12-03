@@ -1,0 +1,88 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_03-12-2025_09_05_[Changes]" date="1764749151513" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03-12-2025_09_05_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 03-12-2025 09:05 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillStatsResponseDTO$SkillStatsResponseDTOBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/daos/CandidateDAO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/config/RoutesRegistry.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/CandidateDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillStatsResponseDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/CandidateDTO$CandidateDTOBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/CandidateCreateDTO$CandidateCreateDTOBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillStatsDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/entities/Candidate$CandidateBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/Populator/Populator.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillEnrichedDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillDTO$SkillDTOBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/config/ApplicationConfig.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/CandidatePopularityReportDTO$CandidatePopularityReportDTOBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/services/ServiceAPI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/CandidatePopularityReportDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillEnrichedDTO$SkillEnrichedDTOBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/controllers/CandidateController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/entities/Skill$SkillBuilder.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/mapper/CandidateMapper.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/Populator/UserPopulator.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/daos/IDAO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillCreateDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/entities/CandidateSkillId.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/CandidateCreateDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ExamFall2025/target/classes/app/dtos/SkillCreateDTO$SkillCreateDTOBuilder.class" />
+  </binary>
+</changelist>
