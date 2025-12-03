@@ -1,6 +1,7 @@
 package app.routes;
 
 import app.controllers.CandidateController;
+import app.security.Roles;
 import app.services.CandidateService;
 import io.javalin.apibuilder.EndpointGroup;
 import static io.javalin.apibuilder.ApiBuilder.*;
