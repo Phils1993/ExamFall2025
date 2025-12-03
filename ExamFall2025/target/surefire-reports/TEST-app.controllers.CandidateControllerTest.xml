@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="app.controllers.CandidateControllerTest" time="15.191" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025\target\test-classes;C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025\target\classes;C:\Users\phils\.m2\repository\com\github\Hartmannsolution\TokenSecurity\1.0.2\TokenSecurity-1.0.2.jar;C:\Users\phils\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.0.1\nimbus-jose-jwt-9.0.1.jar;C:\Users\phils\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\phils\.m2\repository\io\javalin\javalin\6.4.0\javalin-6.4.0.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-server\11.0.24\jetty-server-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-http\11.0.24\jetty-http-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-util\11.0.24\jetty-util-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-io\11.0.24\jetty-io-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.24\websocket-jetty-server-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.24\jetty-servlet-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-security\11.0.24\jetty-security-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.24\jetty-webapp-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.24\jetty-xml-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.24\websocket-jetty-api-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.24\websocket-jetty-common-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.24\websocket-core-common-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.24\websocket-servlet-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.24\websocket-core-server-11.0.24.jar;C:\Users\phils\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.25\kotlin-stdlib-jdk8-1.9.25.jar;C:\Users\phils\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.25\kotlin-stdlib-1.9.25.jar;C:\Users\phils\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\phils\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.25\kotlin-stdlib-jdk7-1.9.25.jar;C:\Users\phils\.m2\repository\gg\jte\jte\3.1.0\jte-3.1.0.jar;C:\Users\phils\.m2\repository\gg\jte\jte-runtime\3.1.0\jte-runtime-3.1.0.jar;C:\Users\phils\.m2\repository\gg\jte\jte-extension-api\3.1.0\jte-extension-api-3.1.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\phils\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\phils\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\phils\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\phils\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\phils\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\phils\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\phils\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\phils\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\phils\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\phils\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\phils\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\phils\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\phils\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\phils\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\phils\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\phils\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\phils\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\phils\.m2\repository\org\postgresql\postgresql\42.7.2\postgresql-42.7.2.jar;C:\Users\phils\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\phils\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\phils\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\phils\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\phils\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\phils\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\phils\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\phils\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\phils\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\phils\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\phils\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\phils\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\phils\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\phils\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\phils\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\phils\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\phils\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\phils\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\phils\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\phils\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\phils\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\phils\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\phils\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\phils\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\phils\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\phils\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\phils\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\phils\.m2\repository\org\testcontainers\postgresql\1.21.3\postgresql-1.21.3.jar;C:\Users\phils\.m2\repository\org\testcontainers\jdbc\1.21.3\jdbc-1.21.3.jar;C:\Users\phils\.m2\repository\org\testcontainers\database-commons\1.21.3\database-commons-1.21.3.jar;C:\Users\phils\.m2\repository\org\testcontainers\testcontainers\1.21.3\testcontainers-1.21.3.jar;C:\Users\phils\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\phils\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\phils\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\phils\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\phils\.m2\repository\com\github\docker-java\docker-java-api\3.4.2\docker-java-api-3.4.2.jar;C:\Users\phils\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.4.2\docker-java-transport-zerodep-3.4.2.jar;C:\Users\phils\.m2\repository\com\github\docker-java\docker-java-transport\3.4.2\docker-java-transport-3.4.2.jar;C:\Users\phils\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Copenhagen"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="DK"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Users\phils\.jdks\corretto-17.0.17\bin"/>
+    <property name="sun.java.command" value="C:\Users\phils\AppData\Local\Temp\surefire10532121202823101751\surefirebooter-20251203094359816_3.jar C:\Users\phils\AppData\Local\Temp\surefire10532121202823101751 2025-12-03T09-43-59_314-jvmRun1 surefire-20251203094359816_1tmp surefire_0-20251203094359816_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025\target\test-classes;C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025\target\classes;C:\Users\phils\.m2\repository\com\github\Hartmannsolution\TokenSecurity\1.0.2\TokenSecurity-1.0.2.jar;C:\Users\phils\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.0.1\nimbus-jose-jwt-9.0.1.jar;C:\Users\phils\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\phils\.m2\repository\io\javalin\javalin\6.4.0\javalin-6.4.0.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-server\11.0.24\jetty-server-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-http\11.0.24\jetty-http-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-util\11.0.24\jetty-util-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-io\11.0.24\jetty-io-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\toolchain\jetty-jakarta-servlet-api\5.0.2\jetty-jakarta-servlet-api-5.0.2.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-server\11.0.24\websocket-jetty-server-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-servlet\11.0.24\jetty-servlet-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-security\11.0.24\jetty-security-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-webapp\11.0.24\jetty-webapp-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\jetty-xml\11.0.24\jetty-xml-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-api\11.0.24\websocket-jetty-api-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-jetty-common\11.0.24\websocket-jetty-common-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-core-common\11.0.24\websocket-core-common-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-servlet\11.0.24\websocket-servlet-11.0.24.jar;C:\Users\phils\.m2\repository\org\eclipse\jetty\websocket\websocket-core-server\11.0.24\websocket-core-server-11.0.24.jar;C:\Users\phils\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.25\kotlin-stdlib-jdk8-1.9.25.jar;C:\Users\phils\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.25\kotlin-stdlib-1.9.25.jar;C:\Users\phils\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\phils\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.25\kotlin-stdlib-jdk7-1.9.25.jar;C:\Users\phils\.m2\repository\gg\jte\jte\3.1.0\jte-3.1.0.jar;C:\Users\phils\.m2\repository\gg\jte\jte-runtime\3.1.0\jte-runtime-3.1.0.jar;C:\Users\phils\.m2\repository\gg\jte\jte-extension-api\3.1.0\jte-extension-api-3.1.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.0\jackson-databind-2.15.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.0\jackson-annotations-2.15.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.0\jackson-core-2.15.0.jar;C:\Users\phils\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.0\jackson-datatype-jsr310-2.15.0.jar;C:\Users\phils\.m2\repository\org\hibernate\orm\hibernate-core\6.2.4.Final\hibernate-core-6.2.4.Final.jar;C:\Users\phils\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\phils\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\phils\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\phils\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\phils\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\phils\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\phils\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\phils\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\phils\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\phils\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\phils\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\phils\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\phils\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\phils\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\phils\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\phils\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\phils\.m2\repository\org\postgresql\postgresql\42.7.2\postgresql-42.7.2.jar;C:\Users\phils\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\phils\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\phils\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\phils\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\phils\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\phils\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\phils\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\phils\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\phils\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\phils\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\phils\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\phils\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;C:\Users\phils\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\phils\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\phils\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\phils\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\phils\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\phils\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\phils\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\phils\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\phils\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\phils\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\phils\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\phils\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\phils\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\phils\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\phils\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\phils\.m2\repository\org\testcontainers\postgresql\1.21.3\postgresql-1.21.3.jar;C:\Users\phils\.m2\repository\org\testcontainers\jdbc\1.21.3\jdbc-1.21.3.jar;C:\Users\phils\.m2\repository\org\testcontainers\database-commons\1.21.3\database-commons-1.21.3.jar;C:\Users\phils\.m2\repository\org\testcontainers\testcontainers\1.21.3\testcontainers-1.21.3.jar;C:\Users\phils\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\phils\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\phils\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\phils\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\phils\.m2\repository\com\github\docker-java\docker-java-api\3.4.2\docker-java-api-3.4.2.jar;C:\Users\phils\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.4.2\docker-java-transport-zerodep-3.4.2.jar;C:\Users\phils\.m2\repository\com\github\docker-java\docker-java-transport\3.4.2\docker-java-transport-3.4.2.jar;C:\Users\phils\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\phils"/>
+    <property name="user.language" value="da"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Users\phils\.jdks\corretto-17.0.17"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\phils\AppData\Local\Temp\surefire10532121202823101751\surefirebooter-20251203094359816_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.17+10-LTS"/>
+    <property name="user.name" value="phils"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.17.10.1"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\phils\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="jetty.git.hash" value="5dfc59a691b748796f922208956bd1f2794bcd16"/>
+    <property name="java.io.tmpdir" value="C:\Users\phils\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.2.5"/>
+    <property name="java.version" value="17.0.17"/>
+    <property name="user.dir" value="C:\Users\phils\Datamatiker\3.Semester\Backend\Eksamen\EksamenFall2025\ExamFall2025\ExamFall2025"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\phils\.jdks\corretto-17.0.17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\phils\AppData\Local\Programs\Python\Launcher\;C:\Users\phils\AppData\Local\Microsoft\WindowsApps;C:\Users\phils\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\phils\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.17+10-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\phils\.m2\repository"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="create" classname="app.controllers.CandidateControllerTest" time="0.516">
+    <system-out><![CDATA[2025-12-03 09:44:02 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-12-03 09:44:02 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-12-03 09:44:02 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-03 09:44:02 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-12-03 09:44:02 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-12-03 09:44:02 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-12-03 09:44:02 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-12-03 09:44:02 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-12-03 09:44:03 [INFO] tc.testcontainers/ryuk:0.12.0 - Creating container for image: testcontainers/ryuk:0.12.0
+2025-12-03 09:44:03 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 is starting: b3c7c09be09f2cadf23064d88400ebb1508814489fe4a5975e32fd9d3604da14
+2025-12-03 09:44:04 [INFO] tc.testcontainers/ryuk:0.12.0 - Container testcontainers/ryuk:0.12.0 started in PT1.2868557S
+2025-12-03 09:44:04 [INFO] tc.postgres:15.3-alpine3.18 - Creating container for image: postgres:15.3-alpine3.18
+2025-12-03 09:44:04 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 is starting: 142411130b01d430df17c176c2581fe619ef6bb6797e61165b071988ce81867f
+2025-12-03 09:44:08 [INFO] tc.postgres:15.3-alpine3.18 - Container postgres:15.3-alpine3.18 started in PT3.6905497S
+2025-12-03 09:44:08 [INFO] tc.postgres:15.3-alpine3.18 - Container is started (JDBC URL: jdbc:postgresql://localhost:56204/test?loggerLevel=OFF)
+2025-12-03 09:44:09 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+Hibernate: alter table if exists candidate_skill drop constraint if exists FKijjf42p0sh2c2na28g5aalx2p
+2025-12-03 09:44:10 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4aba7617] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: alter table if exists candidate_skill drop constraint if exists FKb7cxhiqhcah7c20a2cdlvr1f8
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "candidate_skill" does not exist, skipping
+Hibernate: alter table if exists user_roles drop constraint if exists FKdcdh0gl1mdce42vy0klyio6fi
+Hibernate: alter table if exists user_roles drop constraint if exists FKscvbq0n9bo03s7w6ujfyrtg4a
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - relation "user_roles" does not exist, skipping
+Hibernate: drop table if exists candidate cascade
+Hibernate: drop table if exists candidate_skill cascade
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate" does not exist, skipping
+Hibernate: drop table if exists roles cascade
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "candidate_skill" does not exist, skipping
+Hibernate: drop table if exists skill cascade
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "roles" does not exist, skipping
+Hibernate: drop table if exists user_roles cascade
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "skill" does not exist, skipping
+Hibernate: drop table if exists users cascade
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "user_roles" does not exist, skipping
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-12-03 09:44:10 [WARN] o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+Hibernate: create table candidate (candidate_id serial not null, education varchar(1000), name varchar(255) not null, phone varchar(255), primary key (candidate_id))
+2025-12-03 09:44:10 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3dd66ff5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: create table candidate_skill (candidate_id integer not null, skill_id integer not null, primary key (candidate_id, skill_id))
+Hibernate: create table roles (role_name varchar(20) not null, primary key (role_name))
+Hibernate: create table skill (skill_id serial not null, description varchar(2000), category varchar(255) not null check (category in ('PROG_LANG','DB','DEVOPS','FRONTEND','TESTING','DATA','FRAMEWORK')), name varchar(255) not null, slug varchar(255) unique, primary key (skill_id), constraint UK5ljf2l2h4odhtxrsuohlro4ir unique (name))
+Hibernate: create table user_roles (role_name varchar(20) not null, user_name varchar(25) not null, primary key (role_name, user_name))
+Hibernate: create table users (user_name varchar(25) not null, password varchar(255) not null, primary key (user_name))
+Hibernate: alter table if exists candidate_skill add constraint FKijjf42p0sh2c2na28g5aalx2p foreign key (candidate_id) references candidate
+Hibernate: alter table if exists candidate_skill add constraint FKb7cxhiqhcah7c20a2cdlvr1f8 foreign key (skill_id) references skill
+Hibernate: alter table if exists user_roles add constraint FKdcdh0gl1mdce42vy0klyio6fi foreign key (role_name) references roles
+Hibernate: alter table if exists user_roles add constraint FKscvbq0n9bo03s7w6ujfyrtg4a foreign key (user_name) references users
+Hibernate: delete from candidate_skill
+Hibernate: delete from candidate
+Hibernate: delete from skill
+2025-12-03 09:44:11 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.testcontainers.jdbc.ContainerDatabaseDriver
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:tc:postgresql:15.3-alpine3.18:///test_db]
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-12-03 09:44:11 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+Hibernate: alter table if exists candidate_skill drop constraint if exists FKijjf42p0sh2c2na28g5aalx2p
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@c29b0dc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: alter table if exists candidate_skill drop constraint if exists FKb7cxhiqhcah7c20a2cdlvr1f8
+Hibernate: alter table if exists user_roles drop constraint if exists FKdcdh0gl1mdce42vy0klyio6fi
+Hibernate: alter table if exists user_roles drop constraint if exists FKscvbq0n9bo03s7w6ujfyrtg4a
+Hibernate: drop table if exists candidate cascade
+Hibernate: drop table if exists candidate_skill cascade
+Hibernate: drop table if exists roles cascade
+Hibernate: drop table if exists skill cascade
+Hibernate: drop table if exists user_roles cascade
+Hibernate: drop table if exists users cascade
+Hibernate: create table candidate (candidate_id serial not null, education varchar(1000), name varchar(255) not null, phone varchar(255), primary key (candidate_id))
+2025-12-03 09:44:11 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@228958a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: create table candidate_skill (candidate_id integer not null, skill_id integer not null, primary key (candidate_id, skill_id))
+Hibernate: create table roles (role_name varchar(20) not null, primary key (role_name))
+Hibernate: create table skill (skill_id serial not null, description varchar(2000), category varchar(255) not null check (category in ('PROG_LANG','DB','DEVOPS','FRONTEND','TESTING','DATA','FRAMEWORK')), name varchar(255) not null, slug varchar(255) unique, primary key (skill_id), constraint UK5ljf2l2h4odhtxrsuohlro4ir unique (name))
+Hibernate: create table user_roles (role_name varchar(20) not null, user_name varchar(25) not null, primary key (role_name, user_name))
+Hibernate: create table users (user_name varchar(25) not null, password varchar(255) not null, primary key (user_name))
+Hibernate: alter table if exists candidate_skill add constraint FKijjf42p0sh2c2na28g5aalx2p foreign key (candidate_id) references candidate
+Hibernate: alter table if exists candidate_skill add constraint FKb7cxhiqhcah7c20a2cdlvr1f8 foreign key (skill_id) references skill
+Hibernate: alter table if exists user_roles add constraint FKdcdh0gl1mdce42vy0klyio6fi foreign key (role_name) references roles
+Hibernate: alter table if exists user_roles add constraint FKscvbq0n9bo03s7w6ujfyrtg4a foreign key (user_name) references users
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-12-03 09:44:11 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.17+10-LTS
+2025-12-03 09:44:11 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-12-03 09:44:11 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7bad18f5{/api/v1,null,AVAILABLE}
+2025-12-03 09:44:11 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@2f498f21{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-12-03 09:44:11 [INFO] org.eclipse.jetty.server.Server - Started Server@76b019c4{STARTING}[11.0.24,sto=0] @11760ms
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - Javalin started in 312ms \o/
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-12-03 09:44:11 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 350 days old. Consider checking for a newer version.).
+Hibernate: delete from candidate_skill
+Hibernate: delete from candidate
+Hibernate: delete from skill
+Hibernate: delete from user_roles
+Hibernate: delete from roles
+Hibernate: delete from user_roles
+Hibernate: delete from users
+Hibernate: insert into skill (category,description,name,slug) values (?,?,?,?)
+Hibernate: insert into skill (category,description,name,slug) values (?,?,?,?)
+Hibernate: insert into candidate (education,name,phone) values (?,?,?)
+Hibernate: insert into candidate_skill (candidate_id,skill_id) values (?,?)
+Hibernate: insert into candidate_skill (candidate_id,skill_id) values (?,?)
+Hibernate: insert into roles (role_name) values (?)
+Hibernate: insert into roles (role_name) values (?)
+Hibernate: insert into users (password,user_name) values (?,?)
+Hibernate: insert into users (password,user_name) values (?,?)
+Hibernate: select u1_0.user_name,u1_0.password,r1_0.user_name,r1_1.role_name from users u1_0 left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u1_0.user_name=r1_0.user_name where u1_0.user_name=?
+Hibernate: select r1_0.role_name from roles r1_0 where r1_0.role_name=?
+Hibernate: select u1_0.role_name,u1_1.user_name,u1_1.password from user_roles u1_0 join users u1_1 on u1_1.user_name=u1_0.user_name where u1_0.role_name=?
+Hibernate: insert into user_roles (user_name,role_name) values (?,?)
+Hibernate: select u1_0.user_name,u1_0.password,r1_0.user_name,r1_1.role_name from users u1_0 left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u1_0.user_name=r1_0.user_name where u1_0.user_name=?
+Hibernate: select r1_0.role_name from roles r1_0 where r1_0.role_name=?
+Hibernate: select u1_0.role_name,u1_1.user_name,u1_1.password from user_roles u1_0 join users u1_1 on u1_1.user_name=u1_0.user_name where u1_0.role_name=?
+Hibernate: insert into user_roles (user_name,role_name) values (?,?)
+Request path: /auth/login/
+Header: Accept = */*
+Header: Connection = keep-alive
+Header: User-Agent = Apache-HttpClient/4.5.13 (Java/17.0.17)
+Header: Host = localhost:7070
+Header: Accept-Encoding = gzip,deflate
+Header: Content-Length = 47
+Header: Content-Type = application/json
+Hibernate: select u1_0.user_name,u1_0.password,r1_0.user_name,r1_1.role_name from users u1_0 left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u1_0.user_name=r1_0.user_name where u1_0.user_name=?
+Successfully logged inPhilip
+2025-12-03 09:44:14 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/auth/login/]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3c891096
+    Headers: {Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.17), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=47, Content-Type=application/json}
+    Cookies: {}
+    Body: {"username": "Philip", "password": "pass12345"}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 222.58 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:44:13 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 213 bytes (starts on next line):
+    {"token":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM","username":"Philip"}
+----------------------------------------------------------------------------------
+Request path: /candidates
+Header: Authorization = Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM
+Header: Accept = */*
+Header: Connection = keep-alive
+Header: User-Agent = Apache-HttpClient/4.5.13 (Java/17.0.17)
+Header: Host = localhost:7070
+Header: Accept-Encoding = gzip,deflate
+Header: Content-Length = 91
+Header: Content-Type = application/json
+Hibernate: insert into candidate (education,name,phone) values (?,?,?)
+Hibernate: select c1_0.candidate_id,c2_0.candidate_id,c2_0.skill_id,s1_0.skill_id,s1_0.category,s1_0.description,s1_0.name,s1_0.slug,c1_0.education,c1_0.name,c1_0.phone from candidate c1_0 left join candidate_skill c2_0 on c1_0.candidate_id=c2_0.candidate_id left join skill s1_0 on s1_0.skill_id=c2_0.skill_id where c1_0.candidate_id=?
+2025-12-03 09:44:15 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@475e6146
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.17), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=91, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Test Candidate","phone":"+45 11 22 33 44","education":"BSc Testing","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 225.23 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:44:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 120 bytes (starts on next line):
+    {"id":2,"name":"Test Candidate","phone":"+45 11 22 33 44","education":"BSc Testing","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="delete" classname="app.controllers.CandidateControllerTest" time="0.214">
+    <system-out><![CDATA[Request path: /candidates
+Header: Authorization = Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM
+Header: Accept = */*
+Header: Connection = keep-alive
+Header: User-Agent = Apache-HttpClient/4.5.13 (Java/17.0.17)
+Header: Host = localhost:7070
+Header: Accept-Encoding = gzip,deflate
+Header: Content-Length = 78
+Header: Content-Type = application/json
+Hibernate: insert into candidate (education,name,phone) values (?,?,?)
+Hibernate: select c1_0.candidate_id,c2_0.candidate_id,c2_0.skill_id,s1_0.skill_id,s1_0.category,s1_0.description,s1_0.name,s1_0.slug,c1_0.education,c1_0.name,c1_0.phone from candidate c1_0 left join candidate_skill c2_0 on c1_0.candidate_id=c2_0.candidate_id left join skill s1_0 on s1_0.skill_id=c2_0.skill_id where c1_0.candidate_id=?
+2025-12-03 09:44:15 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@4de619f9
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.17), Host=localhost:7070, Accept-Encoding=gzip,deflate, Content-Length=78, Content-Type=application/json}
+    Cookies: {}
+    Body: {"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[]}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [201 Created], execution took 17.81 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:44:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 107 bytes (starts on next line):
+    {"id":3,"name":"Temp Delete","phone":"+45 90000000","education":"Temp","skillIds":[],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+Request path: /candidates/3
+Header: Authorization = Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM
+Header: Accept = */*
+Header: Connection = keep-alive
+Header: User-Agent = Apache-HttpClient/4.5.13 (Java/17.0.17)
+Header: Host = localhost:7070
+Header: Accept-Encoding = gzip,deflate
+Hibernate: select c1_0.candidate_id,c1_0.education,c1_0.name,c1_0.phone from candidate c1_0 where c1_0.candidate_id=?
+Hibernate: select c1_0.candidate_id,c1_0.skill_id from candidate_skill c1_0 where c1_0.candidate_id=?
+Hibernate: delete from candidate where candidate_id=?
+2025-12-03 09:44:15 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@3e9fcf1a
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM, Accept=*/*, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.17), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [204 No Content], execution took 50.66 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:44:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    No body was set
+----------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="getAll" classname="app.controllers.CandidateControllerTest" time="0.851">
+    <system-out><![CDATA[Request path: /candidates
+Header: Authorization = Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM
+Header: Accept = application/json, application/javascript, text/javascript, text/json
+Header: Connection = keep-alive
+Header: User-Agent = Apache-HttpClient/4.5.13 (Java/17.0.17)
+Header: Host = localhost:7070
+Header: Accept-Encoding = gzip,deflate
+Hibernate: select distinct c1_0.candidate_id,c2_0.candidate_id,c2_0.skill_id,s1_0.skill_id,s1_0.category,s1_0.description,s1_0.name,s1_0.slug,c1_0.education,c1_0.name,c1_0.phone from candidate c1_0 left join candidate_skill c2_0 on c1_0.candidate_id=c2_0.candidate_id left join skill s1_0 on s1_0.skill_id=c2_0.skill_id
+2025-12-03 09:44:16 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@592d305d
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM, Accept=application/json, application/javascript, text/javascript, text/json, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.17), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 820.63 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:44:15 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 364 bytes (starts on next line):
+    [{"id":1,"name":"Test Candidate","phone":"+45 10000000","education":"MSc Testing","skillIds":[2,1],"enrichedSkills":[{"slug":"postgresql","popularityScore":86,"averageSalary":130000},{"slug":"java","popularityScore":93,"averageSalary":120000}]},{"id":2,"name":"Test Candidate","phone":"+45 11 22 33 44","education":"BSc Testing","skillIds":[],"enrichedSkills":[]}]
+----------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="getById" classname="app.controllers.CandidateControllerTest" time="0.037">
+    <system-out><![CDATA[Request path: /candidates/1
+Header: Authorization = Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM
+Header: Accept = application/json, application/javascript, text/javascript, text/json
+Header: Connection = keep-alive
+Header: User-Agent = Apache-HttpClient/4.5.13 (Java/17.0.17)
+Header: Host = localhost:7070
+Header: Accept-Encoding = gzip,deflate
+Hibernate: select c1_0.candidate_id,c2_0.candidate_id,c2_0.skill_id,s1_0.skill_id,s1_0.category,s1_0.description,s1_0.name,s1_0.slug,c1_0.education,c1_0.name,c1_0.phone from candidate c1_0 left join candidate_skill c2_0 on c1_0.candidate_id=c2_0.candidate_id left join skill s1_0 on s1_0.skill_id=c2_0.skill_id where c1_0.candidate_id=?
+2025-12-03 09:44:16 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/1]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@4498d630
+    Headers: {Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaGlsaXAxOTkzIiwic3ViIjoiUGhpbGlwIiwiZXhwIjoxNzY0NzUzMjU0LCJyb2xlcyI6IlVzZXIiLCJ1c2VybmFtZSI6IlBoaWxpcCJ9.NaPsmlQLG2m75aDQ8-osZQHlaQeRdsY-Y0lCQO8i8QM, Accept=application/json, application/javascript, text/javascript, text/json, Connection=keep-alive, User-Agent=Apache-HttpClient/4.5.13 (Java/17.0.17), Host=localhost:7070, Accept-Encoding=gzip,deflate}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [200 OK], execution took 9.84 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:44:16 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 120 bytes (starts on next line):
+    {"id":1,"name":"Test Candidate","phone":"+45 10000000","education":"MSc Testing","skillIds":[2,1],"enrichedSkills":null}
+----------------------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -19,10 +19,9 @@
           </execution>
         </executions>
         <configuration>
-          <outputFile>${project.build.directory}/app.jar</outputFile>
           <transformers>
             <transformer>
-              <mainClass>${project.groupId}.Main</mainClass>
+              <mainClass>app.Main</mainClass>
             </transformer>
           </transformers>
           <filters>

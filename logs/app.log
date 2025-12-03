@@ -332,3 +332,251 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 2025-12-03 08:55:53 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a2e563e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-12-03 08:55:54 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55d8c2c4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2025-12-03 08:55:57 [INFO] o.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://207.154.236.89:5432/exam_fall_2025]
+2025-12-03 09:16:09 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.4.Final
+2025-12-03 09:16:09 [INFO] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-12-03 09:16:09 [WARN] o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-12-03 09:16:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2025-12-03 09:16:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://207.154.236.89:5432/exam_fall_2025]
+2025-12-03 09:16:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2025-12-03 09:16:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-12-03 09:16:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-12-03 09:16:11 [INFO] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-12-03 09:16:12 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@aa1bb14] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-12-03 09:16:13 [INFO] o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6dae70f9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/candidates]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/candidates/{id}]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{id}]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{id}]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: PUT[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: DELETE[/api/v1/candidates/{candidateId}/skills/{skillId}]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/reports/candidates/top-by-popularity]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/login]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: POST[/api/v1/auth/register]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/auth/healthcheck]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/user_demo]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/protected/admin_demo]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: GET[/api/v1/routes]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: OPTIONS[/api/v1/*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE_MATCHED[*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - JAVALIN HANDLER REGISTRATION DEBUG LOG: BEFORE[*]
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - Starting Javalin ...
+2025-12-03 09:16:15 [INFO] org.eclipse.jetty.server.Server - jetty-11.0.24; built: 2024-08-26T18:11:22.448Z; git: 5dfc59a691b748796f922208956bd1f2794bcd16; jvm 17.0.17+10-LTS
+2025-12-03 09:16:15 [INFO] o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2025-12-03 09:16:15 [INFO] o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@134abd78{/api/v1,null,AVAILABLE}
+2025-12-03 09:16:15 [INFO] o.e.jetty.server.AbstractConnector - Started ServerConnector@1182d1df{HTTP/1.1, (http/1.1)}{0.0.0.0:7070}
+2025-12-03 09:16:15 [INFO] org.eclipse.jetty.server.Server - Started Server@d84418a{STARTING}[11.0.24,sto=0] @6691ms
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - Javalin started in 223ms \o/
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - Static file handler added: StaticFileConfig(hostedPath=/, directory=/public, location=CLASSPATH, precompress=false, aliasCheck=null, headers={Cache-Control=max-age=0}, skipFileFunction=Function1<jakarta.servlet.http.HttpServletRequest, java.lang.Boolean>, mimeTypes={}). File system location: 'file:///C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025/ExamFall2025/target/classes/public/'
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - Listening on http://localhost:7070/api/v1
+2025-12-03 09:16:15 [INFO] io.javalin.Javalin - You are running Javalin 6.4.0 (released December 17, 2024. Your Javalin version is 350 days old. Consider checking for a newer version.).
+2025-12-03 09:16:21 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@5d44a738
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 30.53 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:21 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:21 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@1671981
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=PROG_LANG
+    QueryParams: {category=[PROG_LANG]}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 1.48 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:21 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:21 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates/5]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@6b60f578
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 3.55 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:21 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:21 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: POST [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@244a6886
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=135, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars Nielsen",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Software Engineering",
+  "skillIds": [
+    1,
+    2
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 0.81 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:21 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:21 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/7]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@71e303e0
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=129, Content-Type=application/json}
+    Cookies: {}
+    Body: {
+  "name": "Lars N.",
+  "phone": "+45 20 12 34 56",
+  "education": "MSc Distributed Systems",
+  "skillIds": [
+    1,
+    3
+  ]
+}
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 1.75 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:21 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:22 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/8]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@244bd10
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 1.65 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:22 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:22 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: PUT [/api/v1/candidates/6/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@18da2e6a
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 2.68 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:22 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:22 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: DELETE [/api/v1/candidates/10/skills/3]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@f21719d
+    Headers: {Accept=*/*, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip, Content-Length=0}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 1.73 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:22 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:22 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/reports/candidates/top-by-popularity]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@7df348cc
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: null
+    QueryParams: {}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 1.62 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:22 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
+2025-12-03 09:16:22 [INFO] io.javalin.Javalin - JAVALIN REQUEST DEBUG LOG:
+Request: GET [/api/v1/candidates]
+    Matching endpoint-handlers: java.util.stream.ReferencePipeline$3@646fd677
+    Headers: {Accept=application/json, User-Agent=IntelliJ HTTP Client/IntelliJ IDEA 2025.2.5, Host=localhost:7070, Accept-Encoding=br, deflate, gzip, x-gzip}
+    Cookies: {}
+    Body: 
+    QueryString: category=UNKNOWN
+    QueryParams: {category=[UNKNOWN]}
+    FormParams: {}
+Response: [401 Unauthorized], execution took 1.40 ms
+    Headers: {Access-Control-Allow-Origin=*, Access-Control-Allow-Methods=GET, POST, PUT, PATCH, DELETE, OPTIONS, Access-Control-Allow-Credentials=true, Date=Wed, 03 Dec 2025 08:16:22 GMT, Access-Control-Allow-Headers=Content-Type, Authorization, Content-Type=application/json}
+    Body is 157 bytes (starts on next line):
+    {
+    "title": "Authorization header is missing",
+    "status": 401,
+    "type": "https://javalin.io/documentation#unauthorizedresponse",
+    "details": {}
+}
+----------------------------------------------------------------------------------
