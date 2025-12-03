@@ -5,7 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b1bf9-fd03-4036-b25c-98f1fb11e7a2" name="Changes" comment="merged US 1+2">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1098e1a3-3b6d-4710-bf76-2a6a29d6ed7f/storage_v2/_src_/database/exam_fall_2025.JSMxXw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083042.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083043.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083043.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083044-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083044-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083044.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083044.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T083045.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084205-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084205.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084205.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084206.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084206.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084207-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084207-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084207-3.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084207.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084208.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084324-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084324.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084324.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084325.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084326-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084326.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084326.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084326.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084327.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T084327.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102417.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102421.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102427.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102428.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102428.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102428.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102429-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102429-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102429.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102429.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102429.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T102430.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130315.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130316.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130316.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130317-1.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130317-1.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130317-2.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130317.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130317.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130317.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-11-10T130318.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/java/app/routes/CandidateRoutes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ExamFall2025/target/test-classes/app/controllers/CandidateControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -344,12 +408,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -370,6 +439,7 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/ExamFall2025/src/test/userRoutes.http" environment="dev" />
     <file url="file://$PROJECT_DIR$/ExamFall2025/src/test/candidateRoutes.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/ExamFall2025/src/test/skillRoutes.http" environment="dev" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -388,7 +458,7 @@
     &quot;Application.Populator.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestPopulator.executor&quot;: &quot;Run&quot;,
     &quot;Application.app.security.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.populator.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.security.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.src.main.java.Main.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.All in candidateRoutes.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.All in skillRoutes.executor&quot;: &quot;Run&quot;,
@@ -397,15 +467,11 @@
     &quot;HTTP Request.candidateRoutes | Delete candidate.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Diagnostic endpoint (optional).executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Get all candidates (no auth).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.candidateRoutes | Get all candidates (no filter).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.candidateRoutes | Get all candidates filtered by skill category.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Get all skills.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.candidateRoutes | Get candidate by ID.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Get candidate by id.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Get top candidate by average popularity (report).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.candidateRoutes | Get top candidate by average popularity.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.candidateRoutes | Invalid category (expect 400).executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Report: candidate with highest average popularity.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.candidateRoutes | Unlink existing skill from candidate.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.candidateRoutes | Update candidate.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.skillRoutes | Get skill by id.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.userRoutes | Login as admin (Admin).executor&quot;: &quot;Run&quot;,
@@ -414,11 +480,10 @@
     &quot;HTTP Request.userRoutes | Register a new user (default role = USER) (1).executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.userRoutes | Register a new user (default role = USER).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CandidateControllerTest.create.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CandidateControllerTest.delete.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CandidateControllerTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CandidateControllerTest.getAll.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.CandidateControllerTest.getAllCandidates.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CandidateControllerTest.getById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CandidateControllerTest.getById.executor&quot;: &quot;Debug&quot;,
     &quot;JUnit.CandidateControllerTest.update.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [clean,validate,compile,test,package...].executor&quot;: &quot;Run&quot;,
     &quot;Maven.ExamFall2025 [clean,validate,compile...].executor&quot;: &quot;Run&quot;,
@@ -431,7 +496,7 @@
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;testingToWork&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/phils/Datamatiker/3.Semester/Backend/Eksamen/EksamenFall2025/ExamFall2025&quot;,
@@ -444,7 +509,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -474,17 +539,32 @@
       <recent name="app.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.populator.Main">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="All in candidateRoutes" value="STOPPED" />
+              <entry key="candidateRoutes | Get all candidates filtered by skill category" value="STOPPED" />
+              <entry key="userRoutes | Login as normal user (Philip)" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CandidateControllerTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <envs>
-        <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
+        <env name="CONNECTION_STR" value="jdbc:postgresql://207.154.236.89:5432/exam_fall_2025" />
         <env name="DB_NAME" value="exam_fall_2025" />
-        <env name="DB_PASSWORD" value="postgres" />
+        <env name="DB_PASSWORD" value="Philip3012" />
         <env name="DB_USERNAME" value="postgres" />
+        <env name="DEPLOYED" value="prod" />
         <env name="ISSUER" value="philip1993" />
         <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
         <env name="TOKEN_EXPIRE_TIME" value="1800000" />
-        <env name="DEPLOYED" value="prod" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="ExamFall2025" />
@@ -492,18 +572,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="populator.Main" type="Application" factoryName="Application">
+    <configuration name="security.Main" type="Application" factoryName="Application">
       <envs>
-        <env name="CONNECTION_STR" value="jdbc:postgresql://localhost:5432/exam_fall_2025" />
+        <env name="CONNECTION_STR" value="jdbc:postgresql://207.154.236.89:5432/exam_fall_2025" />
         <env name="DB_NAME" value="exam_fall_2025" />
-        <env name="DB_PASSWORD" value="postgres" />
+        <env name="DB_PASSWORD" value="Philip3012" />
         <env name="DB_USERNAME" value="postgres" />
         <env name="DEPLOYED" value="prod" />
         <env name="ISSUER" value="philip1993" />
         <env name="SECRET_KEY" value="4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b" />
         <env name="TOKEN_EXPIRE_TIME" value="1800000" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="app.Populator.Populator" />
+      <option name="MAIN_CLASS_NAME" value="app.security.Main" />
       <module name="ExamFall2025" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -550,29 +630,29 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.security.Main" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.populator.Main" />
-      <item itemvalue="HTTP Request.All in candidateRoutes" />
       <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
       <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
-      <item itemvalue="JUnit.CandidateControllerTest" />
+      <item itemvalue="HTTP Request.All in candidateRoutes" />
       <item itemvalue="JUnit.CandidateControllerTest.delete" />
+      <item itemvalue="JUnit.CandidateControllerTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CandidateControllerTest" />
         <item itemvalue="JUnit.CandidateControllerTest.delete" />
-        <item itemvalue="HTTP Request.All in candidateRoutes" />
-        <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
         <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
+        <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
+        <item itemvalue="HTTP Request.All in candidateRoutes" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
       </set>
     </attachedChunks>
   </component>
@@ -587,8 +667,14 @@
       <workItem from="1761987963297" duration="1135000" />
       <workItem from="1762000341452" duration="2401000" />
       <workItem from="1762173810664" duration="3283000" />
-      <workItem from="1762413034679" duration="16718000" />
-      <workItem from="1762429913922" duration="920000" />
+      <workItem from="1762433709335" duration="484000" />
+      <workItem from="1762592751065" duration="3492000" />
+      <workItem from="1762758675554" duration="14559000" />
+      <workItem from="1762867261085" duration="3638000" />
+      <workItem from="1763295731355" duration="177000" />
+      <workItem from="1763363279407" duration="34000" />
+      <workItem from="1764747285499" duration="286000" />
+      <workItem from="1764747784195" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="merged US 1+2">
       <option name="closed" value="true" />
@@ -608,8 +694,9 @@
     <MESSAGE value="merged US 1+2" />
     <option name="LAST_COMMIT_MESSAGE" value="merged US 1+2" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ExamFall2025$CandidateControllerTest.ic" NAME="CandidateControllerTest Coverage Results" MODIFIED="1762766410457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>app.controllers.*</FILTER>
+    </SUITE>
   </component>
 </project>
