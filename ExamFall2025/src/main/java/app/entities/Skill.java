@@ -20,7 +20,7 @@ public class Skill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     @Column(name = "skill_id")
-    private Long id;
+    private Integer id;
 
     @Column(unique = true)
     private String slug;

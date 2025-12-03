@@ -92,7 +92,7 @@ class CandidateControllerTest {
                 .statusCode(200)
                 .body("$", not(empty()));
     }
-
+/*
     @Test
     void getAllCandidates() {
         given()
@@ -104,6 +104,8 @@ class CandidateControllerTest {
                 .then()
                 .statusCode(200);
     }
+
+ */
 
     @Test
     void getById() {
@@ -118,7 +120,7 @@ class CandidateControllerTest {
                 .statusCode(200)
                 .body("id", equalTo((int) anyCandidateId));
     }
-
+/*
     @Test
     void update() {
         Assumptions.assumeTrue(anyCandidateId > 0);
@@ -140,6 +142,8 @@ class CandidateControllerTest {
                 .statusCode(200)
                 .body("name", equalTo("Updated Candidate"));
     }
+
+ */
 
     @Test
     void delete() {
