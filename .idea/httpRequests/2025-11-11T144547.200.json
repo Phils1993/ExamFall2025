@@ -1,0 +1,38 @@
+[
+  {
+    "id": 5,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob Berg",
+    "phone": "+45 20000002",
+    "education": "BSc Information Systems",
+    "skillIds": [
+      2
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Lars Nielsen",
+    "phone": "+45 20 12 34 56",
+    "education": "MSc Software Engineering",
+    "skillIds": [
+      2
+    ]
+  }
+]

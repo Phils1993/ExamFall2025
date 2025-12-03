@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "name": "Alice Andersen",
+  "phone": "+45 20000001",
+  "education": "MSc Computer Science",
+  "skillIds": [
+    5,
+    1
+  ],
+  "enrichedSkills": null
+}

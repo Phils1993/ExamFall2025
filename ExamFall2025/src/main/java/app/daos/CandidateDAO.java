@@ -1,27 +1,25 @@
 package app.daos;
 
+
+import app.dtos.SkillEnrichedDTO;
 import app.entities.Candidate;
-import app.entities.CandidateSkill;
-import app.entities.CandidateSkillId;
 import app.entities.Skill;
 import app.enums.Category;
+import app.exceptions.ApiException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.NoResultException;
-import jakarta.persistence.TypedQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.Map;
+import java.util.Objects;
 
 
-public class CandidateDAO implements ICandidateDAO {
+public class CandidateDAO implements IDAO<Candidate, Integer> {
 
-    private static final Logger logger = LoggerFactory.getLogger(CandidateDAO.class);
-    private static final Logger debugLogger = LoggerFactory.getLogger("app");
+    private final Logger logger = LoggerFactory.getLogger(CandidateDAO.class);
 
     private final EntityManagerFactory emf;
 
@@ -29,186 +27,186 @@ public class CandidateDAO implements ICandidateDAO {
         this.emf = emf;
     }
 
-    @Override
-    public Candidate getById(Long id) {
-        try (EntityManager em = emf.createEntityManager()) {
-            return em.find(Candidate.class, id);
-        }
-    }
 
     @Override
-    public Set<Candidate> getAll() {
-        try (EntityManager em = emf.createEntityManager()) {
-            String jpql = "SELECT DISTINCT c FROM Candidate c " +
-                    "LEFT JOIN FETCH c.candidateSkills cs " +
-                    "LEFT JOIN FETCH cs.skill s";
-            TypedQuery<Candidate> q = em.createQuery(jpql, Candidate.class);
-            List<Candidate> list = q.getResultList();
-            return new HashSet<>(list);
-        }
-    }
-
-    @Override
-    public Candidate create(Candidate c) {
+    public Candidate create(Candidate candidate) {
         try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-            em.persist(c);
+            em.persist(candidate);
             em.getTransaction().commit();
-            // return a reloaded instance with skills (likely empty) to be explicit
-            return findByIdWithSkills(c.getId());
-        } catch (RuntimeException ex) {
-            logger.error("Failed to create candidate", ex);
-            throw ex;
+            return candidate;
+        } catch (Exception e) {
+            logger.error("Failed to create candidate", e);
+            throw new ApiException(500, "Failed to create candidate");
         }
     }
 
     @Override
-    public Candidate update(Candidate c) {
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-            Candidate merged = em.merge(c);
-            em.getTransaction().commit();
-            // return merged with skills loaded
-            return findByIdWithSkills(merged.getId());
-        } catch (RuntimeException ex) {
-            logger.error("Failed to update candidate id={}", c.getId(), ex);
-            throw ex;
-        }
-    }
-
-    @Override
-    public void delete(Long id) {
-        try (EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-            Candidate found = em.find(Candidate.class, id);
-            if (found != null) {
-                em.remove(found);
-            }
-            em.getTransaction().commit();
-        } catch (RuntimeException ex) {
-            logger.error("Failed to delete candidate id={}", id, ex);
-            throw ex;
-        }
-    }
-
-    public Set<Candidate> getAllBySkillCategory(Category category) {
-        try (EntityManager em = emf.createEntityManager()) {
-            String jpql = "SELECT DISTINCT c FROM Candidate c " +
-                    "LEFT JOIN FETCH c.candidateSkills cs " +
-                    "LEFT JOIN FETCH cs.skill s " +
-                    "WHERE s.category = :cat";
-            TypedQuery<Candidate> q = em.createQuery(jpql, Candidate.class);
-            q.setParameter("cat", category);
-            List<Candidate> list = q.getResultList();
-            return new HashSet<>(list);
-        }
-    }
-
-    @Override
-    public Candidate findByIdWithSkills(Long id) {
+    public Candidate getById(Integer id) {
         try (EntityManager em = emf.createEntityManager()) {
             return em.createQuery(
-                            "select c from Candidate c left join fetch c.candidateSkills " +
-                                    "cs left join fetch cs.skill where c.id " +
-                                    "= :id", Candidate.class)
-                    .setParameter("id", id)
-                    .getResultStream()
-                    .findFirst()
-                    .orElse(null);
+                    "SELECT c FROM Candidate c " +
+                            "LEFT JOIN FETCH c.candidateSkills cs " +
+                            "LEFT JOIN FETCH cs.skill " +
+                            "WHERE c.id = :id",
+                    Candidate.class
+            ).setParameter("id", id).getSingleResult();
+        } catch (NoResultException e) {
+            logger.error("Candidate not found with id: {}", id, e);
+            throw new ApiException(404, "Candidate not found with id: " + id);
+        } catch (Exception e) {
+            logger.error("Failed to retrieve candidate by id: {}", id, e);
+            throw new ApiException(500, "Failed to retrieve candidate by id");
         }
     }
 
     @Override
-    public Candidate addSkill(Long candidateId, Long skillId) {
-        EntityManager em = null;
-        try {
-            em = emf.createEntityManager();
+    public Candidate update(Candidate candidate) {
+        try (EntityManager em = emf.createEntityManager()) {
             em.getTransaction().begin();
-
-            Candidate managedCandidate = em.find(Candidate.class, candidateId);
-            Skill managedSkill = em.find(Skill.class, skillId);
-
-            if (managedCandidate == null) {
-                em.getTransaction().rollback();
-                throw new IllegalArgumentException("Candidate not found: " + candidateId);
-            }
-            if (managedSkill == null) {
-                em.getTransaction().rollback();
-                throw new IllegalArgumentException("Skill not found: " + skillId);
-            }
-
-            CandidateSkill cs = CandidateSkill.builder()
-                    .id(new CandidateSkillId(managedCandidate.getId(), managedSkill.getId()))
-                    .candidate(managedCandidate)
-                    .skill(managedSkill)
-                    .build();
-
-            // keep both sides consistent
-            managedCandidate.addSkill(cs);
-            managedSkill.addCandidateSkill(cs);
-
-            em.persist(cs);
+            Candidate updatedCandidate = em.merge(candidate);
             em.getTransaction().commit();
-
-            // reload candidate with skills in a new EntityManager to return a safe detached instance
-            try (EntityManager em2 = emf.createEntityManager()) {
-                return em2.createQuery(
-                                "select c from Candidate c " +
-                                        "left join fetch c.candidateSkills cs left join fetch cs.skill " +
-                                        "where c.id = :id", Candidate.class)
-                        .setParameter("id", candidateId)
-                        .getResultStream()
-                        .findFirst()
-                        .orElse(null);
-            }
-        } catch (RuntimeException ex) {
-            if (em != null && em.getTransaction().isActive()) {
-                try { em.getTransaction().rollback(); } catch (Exception ignored) {}
-            }
-            logger.error("addSkill failed", ex);
-            throw ex;
+            return updatedCandidate;
+        } catch (Exception e) {
+            logger.error("Failed to update candidate with id: {}", candidate.getId(), e);
+            throw new ApiException(500, "Failed to update candidate with id: " + candidate.getId());
         }
     }
 
+    @Override
+    public boolean delete(Integer id) {
+        try (EntityManager em = emf.createEntityManager()) {
+            Candidate candidate = em.find(Candidate.class, id);
+            if (candidate != null) {
+                em.getTransaction().begin();
+                em.remove(candidate);
+                em.getTransaction().commit();
+                return true;
+            } else {
+                throw new ApiException(404, "Candidate not found with id: " + id);
+            }
+        } catch (Exception e) {
+            logger.error("Failed to delete candidate with id: {}", id, e);
+            throw new ApiException(500, "Failed to delete candidate with id: " + id);
+        }
+    }
 
     @Override
-    public Candidate removeSkill(Long candidateId, Long skillId) {
-        EntityManager em = emf.createEntityManager();
-        try {
-            em.getTransaction().begin();
+    public List<Candidate> getAll() {
+        try (EntityManager em = emf.createEntityManager()) {
+            return em.createQuery(
+                    "SELECT DISTINCT c FROM Candidate c " +
+                            "LEFT JOIN FETCH c.candidateSkills cs " +
+                            "LEFT JOIN FETCH cs.skill",
+                    Candidate.class
+            ).getResultList();
+        } catch (Exception e) {
+            logger.error("Failed to retrieve all candidates", e);
+            throw new ApiException(500, "Failed to retrieve all candidates");
+        }
+    }
 
-            // find the CandidateSkill relation directly
-            TypedQuery<CandidateSkill> q = em.createQuery(
-                    "SELECT cs FROM CandidateSkill cs WHERE cs.candidate.id = :cid AND cs.skill.id = :sid",
-                    CandidateSkill.class);
-            q.setParameter("cid", candidateId);
-            q.setParameter("sid", skillId);
+    public Candidate getTopCandidateEntityByAveragePopularity(Map<String, SkillEnrichedDTO> enrichedMap) {
+        try (EntityManager em = emf.createEntityManager()) {
+            List<Candidate> candidates = em.createQuery(
+                    "SELECT DISTINCT c FROM Candidate c LEFT JOIN FETCH c.candidateSkills cs LEFT JOIN FETCH cs.skill",
+                    Candidate.class
+            ).getResultList();
 
-            List<CandidateSkill> matches = q.getResultList();
-            if (matches.isEmpty()) {
-                em.getTransaction().commit(); // nothing to remove
-                return findByIdWithSkills(candidateId);
-            }
+            Candidate bestCandidate = null;
+            double bestAvg = -1;
 
-            for (CandidateSkill cs : matches) {
-                CandidateSkill managed = em.find(CandidateSkill.class, cs.getId());
-                if (managed != null) {
-                    // remove relation from owning side and delete
-                    if (managed.getCandidate() != null && managed.getCandidate().getCandidateSkills() != null) {
-                        managed.getCandidate().getCandidateSkills().removeIf(x -> x.getId().equals(managed.getId()));
-                    }
-                    em.remove(managed);
+            for (Candidate candidate : candidates) {
+                List<SkillEnrichedDTO> matched = candidate.getCandidateSkills().stream()
+                        .map(cs -> enrichedMap.get(cs.getSkill().getSlug()))
+                        .filter(Objects::nonNull)
+                        .toList();
+
+                if (matched.isEmpty()) continue;
+
+                double avg = matched.stream()
+                        .mapToInt(SkillEnrichedDTO::getPopularityScore)
+                        .average()
+                        .orElse(0);
+
+                if (avg > bestAvg) {
+                    bestAvg = avg;
+                    bestCandidate = candidate;
                 }
             }
 
-            em.getTransaction().commit();
-            return findByIdWithSkills(candidateId);
-        } catch (RuntimeException ex) {
-            if (em.getTransaction().isActive()) em.getTransaction().rollback();
-            logger.error("Failed to remove skill {} from candidate {}", skillId, candidateId, ex);
-            throw ex;
-        } finally {
-            em.close();
+            return bestCandidate;
+        } catch (Exception e) {
+            logger.error("Failed to calculate top candidate by popularity", e);
+            throw new ApiException(500, "Failed to calculate top candidate by popularity");
         }
     }
+
+    public Candidate linkSkill(Integer candidateId, Integer skillId) {
+        try (EntityManager em = emf.createEntityManager()) {
+            em.getTransaction().begin();
+
+            Candidate candidate = em.find(Candidate.class, candidateId);
+            Skill skill = em.find(Skill.class, skillId);
+
+            if (candidate == null || skill == null) {
+                em.getTransaction().rollback();
+                return null;
+            }
+
+            candidate.addSkill(skill);
+            em.merge(candidate);
+
+            em.getTransaction().commit();
+            return candidate;
+        } catch (Exception e) {
+            logger.error("Failed to link skill {} to candidate {}", skillId, candidateId, e);
+            throw new ApiException(500, "Failed to link skill to candidate");
+        }
+    }
+
+    public Candidate removeSkill(Integer candidateId, Integer skillId) {
+        try (EntityManager em = emf.createEntityManager()) {
+            em.getTransaction().begin();
+
+            Candidate candidate = em.find(Candidate.class, candidateId);
+            Skill skill = em.find(Skill.class, skillId);
+
+            if (candidate == null || skill == null) {
+                em.getTransaction().rollback();
+                return null;
+            }
+
+            candidate.removeSkill(skill);
+            em.merge(candidate);
+
+            em.getTransaction().commit();
+            return candidate;
+        } catch (Exception e) {
+            logger.error("Failed to remove skill {} from candidate {}", skillId, candidateId, e);
+            throw new ApiException(500, "Failed to remove skill from candidate");
+        }
+    }
+
+    public List<Candidate> getAllBySkillCategory(Category category) {
+        try (EntityManager em = emf.createEntityManager()) {
+            return em.createQuery("""
+                        SELECT DISTINCT c
+                        FROM Candidate c
+                        JOIN c.candidateSkills cs
+                        JOIN cs.skill s
+                        WHERE s.category = :category
+                        """, Candidate.class)
+                    .setParameter("category", category)
+                    .getResultList();
+        } catch (Exception e) {
+            logger.error("Failed to retrieve candidates by skill category: {}", category, e);
+            throw new ApiException(500, "Failed to retrieve candidates by skill category");
+        }
+    }
+
+
+
 }
+
+

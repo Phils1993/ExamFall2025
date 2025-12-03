@@ -1,5 +1,6 @@
 package app.daos;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -7,10 +8,10 @@ import java.util.Set;
  **
  * @param <T>
  */
-interface IDAO<T> {
-    T getById(Long id);
-    Set<T> getAll();
+interface IDAO<T, I> {
+    T getById(Integer id);
+    List<T> getAll();
     T create(T t);
     T update(T t);
-    void delete(Long id);
+    boolean delete(Integer id);
 }

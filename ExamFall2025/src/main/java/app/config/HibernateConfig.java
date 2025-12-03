@@ -1,6 +1,7 @@
 package app.config;
 
 import app.entities.*;
+import app.enums.Category;
 import app.utils.Utils;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
@@ -14,7 +15,7 @@ public class HibernateConfig {
 
     private static EntityManagerFactory emf;
     private static EntityManagerFactory emfTest;
-    private static Boolean isTest = false;
+    private static Boolean isTest = (Boolean) false;
 
     public static void setTest(Boolean test) {
         isTest = test;
@@ -32,7 +33,7 @@ public class HibernateConfig {
 
     public static EntityManagerFactory getEntityManagerFactoryForTest() {
         if (emfTest == null){
-            setTest(true);
+            setTest(Boolean.valueOf(true));
             emfTest = createEMF(getTest());  // No DB needed for test
         }
         return emfTest;
@@ -45,6 +46,7 @@ public class HibernateConfig {
         configuration.addAnnotatedClass(CandidateSkill.class);
         configuration.addAnnotatedClass(Candidate.class);
         configuration.addAnnotatedClass(Skill.class);
+
     }
 
     private static EntityManagerFactory createEMF(boolean forTest) {
