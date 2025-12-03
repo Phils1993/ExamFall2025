@@ -575,9 +575,9 @@
       <list>
         <item itemvalue="JUnit.CandidateControllerTest" />
         <item itemvalue="JUnit.CandidateControllerTest.delete" />
+        <item itemvalue="HTTP Request.All in candidateRoutes" />
         <item itemvalue="HTTP Request.userRoutes | Login as normal user (Philip)" />
         <item itemvalue="HTTP Request.userRoutes | Login as admin (Admin)" />
-        <item itemvalue="HTTP Request.All in candidateRoutes" />
       </list>
     </recent_temporary>
   </component>
